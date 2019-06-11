@@ -1,2 +1,2 @@
 # basprofiler-r4
-Repository for suggested base profiles withing the r4 release
+Repository for suggested Swedish base profiles withing the r4 release
