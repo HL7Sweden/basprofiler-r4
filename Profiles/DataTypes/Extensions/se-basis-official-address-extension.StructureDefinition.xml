@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://electronichealth.se/fhir/r4/StructureDefinition/se-basis-official-address-extension" />
+  <name value="se-basis-official-address-extension" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Address" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.value[x]:se-basis-address">
+      <path value="Extension.value[x]" />
+      <sliceName value="se-basis-address" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:seBasisAddressPat">
+      <path value="Extension.value[x]" />
+      <sliceName value="seBasisAddressPat" />
+    </element>
+    <element id="Extension.value[x]:seBasisAddressOrg">
+      <path value="Extension.value[x]" />
+      <sliceName value="seBasisAddressOrg" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://electronichealth.se/fhir/r4/ValueSet/se-basis-address-org" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

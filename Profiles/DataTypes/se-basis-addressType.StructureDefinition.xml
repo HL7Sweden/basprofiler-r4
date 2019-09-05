@@ -9,4 +9,40 @@
   <type value="Address" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Address" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Address.extension">
+      <path value="Address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Address.extension:officialAddress">
+      <path value="Address.extension" />
+      <sliceName value="officialAddress" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://electronichealth.se/fhir/r4/StructureDefinition/se-basis-official-address-extension" />
+      </type>
+    </element>
+    <element id="Address.extension:officialAddress.value[x]:seBasisAddressPat">
+      <path value="Address.extension.value[x]" />
+      <sliceName value="seBasisAddressPat" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://electronichealth.se/fhir/r4/ValueSet/se-basis-address-pat" />
+      </binding>
+    </element>
+    <element id="Address.extension:officialAddress.value[x]:seBasisAddressOrg">
+      <path value="Address.extension.value[x]" />
+      <sliceName value="seBasisAddressOrg" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://electronichealth.se/fhir/r4/ValueSet/se-basis-address-org" />
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>
