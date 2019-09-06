@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://electronichealth.se/fhir/r4/StructureDefinition/se-basis-addressType" />
-  <name value="se-basis-addressType" />
+  <url value="http://electronichealth.se/fhir/r4/StructureDefinition/se-basis-addressType-pat" />
+  <name value="se-basis-addressType-pat" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -25,16 +25,16 @@
       <sliceName value="officialAddress" />
       <type>
         <code value="Extension" />
-        <profile value="http://electronichealth.se/fhir/r4/StructureDefinition/se-basis-official-address-extension" />
+        <profile value="http://electronichealth.se/fhir/r4/StructureDefinition/se-basis-address-pat-extension" />
       </type>
-    </element>
-    <element id="Address.extension:officialAddress.value[x]:seBasisAddressPat">
-      <path value="Address.extension.value[x]" />
-      <sliceName value="seBasisAddressPat" />
       <binding>
         <strength value="required" />
         <valueSet value="http://electronichealth.se/fhir/r4/ValueSet/se-basis-address-pat" />
       </binding>
+    </element>
+    <element id="Address.extension:officialAddress.value[x]:officialAddressType.system">
+      <path value="Address.extension.value[x].system" />
+      <fixedUri value="http://electronichealth.se/fhir/r4/ValueSet/se-basis-address-pat" />
     </element>
   </differential>
 </StructureDefinition>

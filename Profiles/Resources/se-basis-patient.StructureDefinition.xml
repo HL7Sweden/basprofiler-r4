@@ -9,4 +9,13 @@
   <type value="Patient" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://electronichealth.se/fhir/r4/StructureDefinition/se-basis-addressType-pat" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
