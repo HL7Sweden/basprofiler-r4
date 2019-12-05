@@ -83,11 +83,11 @@ https://bitbucket.org/rivta-domains/riv.strategicresourcemanagement.persons.pers
 >
 >Det finns 5st aktuella profiler, det är dock förberett för fler profiler. Vilken av dem man vill ha tillbaka i svar anger man i anropet. Man ska inte hämta mer data än man behöver.
 >
->· Profil 1: Basinformation om identiteten, namn, inklusive kopplade identiteter
->· Profil 2: Profil 1 + adress & folkbokförings och vissa uppgifter kring reservidentiteter.
->· Profil 3: Profil 2 + kontaktinformation och aktör
->· Profil 4: Profil 3 + all aktuell informationen kring personen (födelse, civilstatus etc)
->· Profil 5: Profil 4 + historisk information från SKV
+>* Profil 1: Basinformation om identiteten, namn, inklusive kopplade identiteter
+>* Profil 2: Profil 1 + adress & folkbokförings och vissa uppgifter kring reservidentiteter.
+>* Profil 3: Profil 2 + kontaktinformation och aktör
+>* Profil 4: Profil 3 + all aktuell informationen kring personen (födelse, civilstatus etc)
+>* Profil 5: Profil 4 + historisk information från SKV
 >
 >Detaljerad information om vad profilerna innehåller framgår av tabellen nedan. Poster markerade med (*) är enbart aktuella för personidentiteter av typen reservidentitet (NRID, LRID). **Notera att när protectedPersonIndicator är satt (sekretessmarkerad personpost), levereras endast uppgifter i enlighet med Profil 1, oavsett efterfrågad profil för de Get och Search-kontrakt som ej är av typen unrestricted**
 
