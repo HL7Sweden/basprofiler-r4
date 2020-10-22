@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: se-baseprofile
-canonical: http://hl7.se/fhir
+canonical: http://electronichealth.se/fhir
 version: 0.0.1
 name: SEBaseProfileImplementationGuide
 title: Swedish Base Profiles Implementation Guide
@@ -36,7 +36,7 @@ menu:
   Profiles: profiles.html
   Value Sets: valuesets.html
   Table of Contents: toc.html
-  #Artifact Index: artifacts.html
+  Artifact Index: artifacts.html
   #Support:
 
 # ╭────────────────────────────────────────────index.md────────────────────────────────────────────╮
