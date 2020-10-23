@@ -1,4 +1,4 @@
-# ig-template-base
-package-id = fhir.base.template
+# hl7.se.fhir.template
+package-id = hl7.se.fhir.template
 
-Base IG template managed by HL7 but usable by anyone (no logos).  The foundation for most HL7-published IGs
+IG template managed by HL7 Sweden
