@@ -12,7 +12,7 @@ Description: "Bla bla bla"
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
 
 Extension: SEBasisAddressPatExtension
-Title: "SE extension för oficiella adresstyper"
+Title: "SE extension för officiella adresstyper"
 Description: "Bla bla bla"
 * ^context[0].type = #element
 * ^context[0].expression = "Address" // Patient.address??
