@@ -1,7 +1,7 @@
 Alias:   SCT = http://snomed.info/sct
 
 ValueSet: SEBasisAddressPatVS
-Title: "SE urval för oficiella adresstyper"
+Title: "SE urval för officiella adresstyper"
 Description: "Bla bla bla"
 * SCT#63391000052104 "särskild postadress"
 * SCT#63381000052101 "folkbokföringsadress"
