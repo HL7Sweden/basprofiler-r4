@@ -3,6 +3,7 @@ Alias:   SCT = http://snomed.info/sct
 ValueSet: SEBasisAddressPatVS
 Title: "SE urval för officiella adresstyper"
 Description: "Bla bla bla"
+* insert SEStandardRuleSet
 * SCT#63391000052104 "särskild postadress"
 * SCT#63381000052101 "folkbokföringsadress"
 * SCT#63401000052101 "utlandsadress"
@@ -14,6 +15,7 @@ Description: "Bla bla bla"
 Extension: SEBasisAddressPatExtension
 Title: "SE extension för officiella adresstyper"
 Description: "Bla bla bla"
+* insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "Address" // Patient.address??
 * value[x] only CodeableConcept
@@ -24,6 +26,7 @@ Profile: SEPatient
 Parent: http://hl7.org/fhir/StructureDefinition/Patient
 Title: "SE basprofil patient"
 Description: "Bla bla bla"
+* insert SEStandardRuleSet
 * address.extension contains SEBasisAddressPatExtension named officialAddressType 1..1
 
 Instance: PatientExample1

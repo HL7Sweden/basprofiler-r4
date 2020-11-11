@@ -19,6 +19,7 @@ status: active
 publisher:
   name: HL7 Sweden
   url: http://hl7.se/
+  email: info@hl7.se
 description: Implementation Guide for Swedish Base Profiles
 license: CC0-1.0
 fhirVersion: 4.0.1
