@@ -36,6 +36,13 @@ Description: "Bla bla bla"
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
 * identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnumer"
 * name only SEBasisHumanName 0..1
+* identifier contains 
+    personnummer 0..1 and 
+    samordningsnummer 0..1 and 
+    nationelltReservnummer 0..1
+* identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
+* identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
+* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnumer"
 
 Extension: SEBasisMiddleNameExtension
 Id: se-basis-middlename
@@ -53,16 +60,6 @@ Profile: SEBasisHumanName
 Parent: http://hl7.org/fhir/StructureDefinition/HumanName
 * extension contains SEBasisMiddleNameExtension named middleName 0..1
 * extension contains SEBasisOwnFamilyExtension named ownFamily 0..1
-
-=======
-* identifier contains 
-    personnummer 0..1 and 
-    samordningsnummer 0..1 and 
-    nationelltReservnummer 0..1
-* identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
-* identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
-* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnumer"
->>>>>>> caa78066e3148bf35c052bf92cd8446e5f5df2f7
 
 Instance: PatientExample1
 InstanceOf: SEPatient
