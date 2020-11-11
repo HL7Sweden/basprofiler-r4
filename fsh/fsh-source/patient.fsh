@@ -30,7 +30,6 @@ Description: "Bla bla bla"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.description = "Slice for swedish patient identifier types"
-<<<<<<< HEAD
 * identifier contains personnummer 0..1 and samordningsnummer 0..1 and nationelltReservnummer 0..1
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
@@ -54,7 +53,6 @@ Parent: http://hl7.org/fhir/StructureDefinition/HumanName
 * extension contains SEBasisMiddleNameExtension named middleName 0..1
 * extension contains SEBasisOwnFamilyExtension named ownFamily 0..1
 
-=======
 * identifier contains 
     personnummer 0..1 and 
     samordningsnummer 0..1 and 
@@ -62,7 +60,6 @@ Parent: http://hl7.org/fhir/StructureDefinition/HumanName
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
 * identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnumer"
->>>>>>> caa78066e3148bf35c052bf92cd8446e5f5df2f7
 
 Instance: PatientExample1
 InstanceOf: SEPatient
@@ -70,9 +67,12 @@ Description: "Patientexempel"
 * id = "Patientexempel1"
 * identifier[personnummer].value = "19121212-1212"
 * name[0].use = #official
-* name[0].family = "Goode"
+* name[0].family = "Goode Johansson"
 * name[0].given[0] = "John"
 * name[0].given[1] = "B."
+* name[0].middleName = "Johansson"
+* name[0].ownFamily = "Goode"
+* name[0].text = "John B. Goode Johansson"
 * name[1].use = #usual
 * name[1].given = "Johnny"
 * gender = #male
