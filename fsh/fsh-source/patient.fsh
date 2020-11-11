@@ -37,7 +37,10 @@ Description: "Bla bla bla"
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
 * identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnumer"
-* name only SEBasisHumanName
+* name.extension contains 
+    SEBasisMiddleNameExtension named middleName 0..1 and
+    SEBasisOwnFamilyExtension named ownFamily 0..1
+//* name only SEBasisHumanName
 * name 1..1
 
 
@@ -53,11 +56,11 @@ Title: "SE extension för explicit efternamn"
 Description: "Bla bla bla"
 * value[x] only string
 
-Profile: SEBasisHumanName
+/*Profile: SEBasisHumanName
 Parent: http://hl7.org/fhir/StructureDefinition/HumanName
 * extension contains SEBasisMiddleNameExtension named middleName 0..1
 * extension contains SEBasisOwnFamilyExtension named ownFamily 0..1
-
+*/
 Instance: PatientExample1
 InstanceOf: SEPatient
 Description: "Patientexempel"
