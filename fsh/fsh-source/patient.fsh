@@ -11,6 +11,7 @@ Description: "Bla bla bla"
 * SCT#64281000052109 "tillfällig postadress"
 // från 500201000057102 | urval adresstyp |
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
+
 Extension: SEBasisAddressPatExtension
 Title: "SE extension för officiella adresstyper"
 Description: "Bla bla bla"
@@ -42,24 +43,6 @@ Description: "Bla bla bla"
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
 * name only SEBasisHumanName
 * name 1..1
-
-
-Extension: SEBasisMiddleNameExtension
-Id: se-basis-middlename
-Title: "SE extension för mellannamn"
-Description: "Bla bla bla"
-* value[x] only string
-
-Extension: SEBasisOwnFamilyExtension
-Id: se-basis-own-family
-Title: "SE extension för explicit efternamn"
-Description: "Bla bla bla"
-* value[x] only string
-
-Profile: SEBasisHumanName
-Parent: http://hl7.org/fhir/StructureDefinition/HumanName
-* extension contains SEBasisMiddleNameExtension named middleName 0..1
-* extension contains SEBasisOwnFamilyExtension named ownFamily 0..1
 
 Instance: PatientExample1
 InstanceOf: SEPatient
