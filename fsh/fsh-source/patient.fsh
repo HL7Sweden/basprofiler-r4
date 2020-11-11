@@ -67,7 +67,7 @@ Description: "Patientexempel"
 * id = "Patientexempel1"
 * identifier[personnummer].value = "19121212-1212"
 * name[0].use = #official
-* name[0].family = "Goode"
+* name[0].family = "Goode Johansson"
 * name[0].given[0] = "John"
 * name[0].extension[middleName].valueString = "B."
 * gender = #male
