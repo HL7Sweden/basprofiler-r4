@@ -1,4 +1,4 @@
-Alias:   SCT = http://snomed.info/sct
+Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
 ValueSet: SEBasisAddressPatVS
 Title: "SE urval för officiella adresstyper"
@@ -42,6 +42,7 @@ Instance: PatientExample1
 InstanceOf: SEPatient
 Description: "Patientexempel"
 * id = "Patientexempel1"
+* identifier[personnummer].value = "19121212-1212"
 * name[0].use = #official
 * name[0].family = "Goode"
 * name[0].given[0] = "John"
