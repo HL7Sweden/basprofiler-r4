@@ -30,7 +30,6 @@ Description: "Bla bla bla"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.description = "Slice for swedish patient identifier types"
-<<<<<<< HEAD
 * identifier contains personnummer 0..1 and samordningsnummer 0..1 and nationelltReservnummer 0..1
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
