@@ -11,7 +11,6 @@ Description: "Bla bla bla"
 * SCT#64281000052109 "tillfällig postadress"
 // från 500201000057102 | urval adresstyp |
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
-
 Extension: SEBasisAddressPatExtension
 Title: "SE extension för officiella adresstyper"
 Description: "Bla bla bla"
@@ -28,6 +27,13 @@ Title: "SE basprofil patient"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
 * address.extension contains SEBasisAddressPatExtension named officialAddressType 1..1
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.description = "Slice for swedish patient identifier types"
+* identifier contains personnummer 0..1 and samordningsnummer 0..1 and nationelltReservnummer 0..1
+* identifer[personnummer].system = "http://electronichealth.se/identifier/personnummer"
+* identifer[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
+* identifer[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnumer"
 
 Instance: PatientExample1
 InstanceOf: SEPatient
