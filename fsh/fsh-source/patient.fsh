@@ -1,7 +1,7 @@
 Alias:   SCT = http://snomed.info/sct
 
 ValueSet: SEBasisAddressPatVS
-Title: "SE urval för oficiella adresstyper"
+Title: "SE urval för officiella adresstyper"
 Description: "Bla bla bla"
 * SCT#63391000052104 "särskild postadress"
 * SCT#63381000052101 "folkbokföringsadress"
@@ -11,8 +11,10 @@ Description: "Bla bla bla"
 // från 500201000057102 | urval adresstyp |
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
 Extension: SEBasisAddressPatExtension
-Title: "SE extension för oficiella adresstyper"
+Title: "SE extension för officiella adresstyper"
 Description: "Bla bla bla"
+* ^context[0].type = #element
+* ^context[0].expression = "Address" // Patient.address??
 * value[x] only CodeableConcept
 * valueCodeableConcept from SEBasisAddressPatVS (required)
 // alt. * valueCodeableConcept from http://snomed.info/sct/45991000052106/ValueSet?fhir_vs=refset/64691000052109 (required)
