@@ -6,5 +6,5 @@ Utökningarna (extensions) kan däremot ofta vara lämpliga att nyttja utan vida
 Framtagandet av dessa basprofiler och utökningar genomförs av en arbetsgrupp under HL7 Sverige <http://hl7.se>. Gruppen består av representanter från regioner, myndigheter, systemleverantörer samt andra experter inom FHIR, informatik, arkitektur, terminologi etc.
 
 # Kontaktpersoner
-För att komma i kontakt med gruppen som arbetar med FHIR basprofiler:
+För att komma i kontakt med gruppen som arbetar med FHIR basprofiler: 
 [Arvid Thunholm](mailto:arvid.thunholm@gmail.com) - Ordförande HL7 basprofiler
