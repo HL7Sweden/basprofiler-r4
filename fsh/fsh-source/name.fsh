@@ -1,6 +1,6 @@
 
-Extension: SEBasisMiddleNameExtension
-Id: se-basis-middlename
+Extension: SEBaseMiddleNameExtension
+Id: se-base-middlename
 Title: "SE extension för mellannamn"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
@@ -9,8 +9,8 @@ Description: "Bla bla bla"
 * value[x] only string
 * value[x] 1..1
 
-Extension: SEBasisOwnFamilyExtension
-Id: se-basis-own-family
+Extension: SEBaseOwnFamilyExtension
+Id: se-base-own-family
 Title: "SE extension för explicit efternamn"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
@@ -19,8 +19,8 @@ Description: "Bla bla bla"
 * value[x] only string
 * value[x] 1..1
 
-Profile: SEBasisHumanName
+Profile: SEBaseHumanName
 Parent: http://hl7.org/fhir/StructureDefinition/HumanName
 * insert SEStandardRuleSet
-* extension contains SEBasisMiddleNameExtension named middleName 0..1
-* extension contains SEBasisOwnFamilyExtension named ownFamily 0..1
+* extension contains SEBaseMiddleNameExtension named middleName 0..1
+* extension contains SEBaseOwnFamilyExtension named ownFamily 0..1

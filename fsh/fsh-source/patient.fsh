@@ -1,6 +1,6 @@
 Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
-ValueSet: SEBasisAddressPatVS
+ValueSet: SEBaseAddressPatVS
 Title: "SE urval för officiella adresstyper"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
@@ -12,22 +12,22 @@ Description: "Bla bla bla"
 // från 500201000057102 | urval adresstyp |
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
 
-Extension: SEBasisAddressPatExtension
+Extension: SEBaseAddressPatExtension
 Title: "SE extension för officiella adresstyper"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "Address" // Patient.address??
 * value[x] only CodeableConcept
-* valueCodeableConcept from SEBasisAddressPatVS (required)
+* valueCodeableConcept from SEBaseAddressPatVS (required)
 // alt. * valueCodeableConcept from http://snomed.info/sct/45991000052106/ValueSet?fhir_vs=refset/64691000052109 (required)
 
-Profile: SEPatient
+Profile: SEBasePatient
 Parent: http://hl7.org/fhir/StructureDefinition/Patient
-Title: "SE basprofil patient"
+Title: "SE base profil for patient"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
-* address.extension contains SEBasisAddressPatExtension named officialAddressType 1..1
+* address.extension contains SEBaseAddressPatExtension named officialAddressType 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -42,11 +42,11 @@ Description: "Bla bla bla"
 //* name.extension contains 
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
-* name only SEBasisHumanName
+* name only SEBaseHumanName
 * name 1..1
 
 Instance: PatientExample1
-InstanceOf: SEPatient
+InstanceOf: SEBasePatient
 Description: "Patientexempel"
 * id = "Patientexempel1"
 * identifier[personnummer].value = "19121212-1212"
