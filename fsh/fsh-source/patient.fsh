@@ -30,6 +30,7 @@ Description: "Bla bla bla"
 * address.extension contains SEBasisAddressPatExtension named officialAddressType 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for swedish patient identifier types"
 * identifier contains 
     personnummer 0..1 and 
