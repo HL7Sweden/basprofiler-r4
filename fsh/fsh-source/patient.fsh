@@ -1,7 +1,7 @@
 Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
 ValueSet: SEBaseAddressPatVS
-Title: "SE urval för officiella adresstyper"
+Title: "SE ValueSet for official address types"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
 * SCT#63391000052104 "särskild postadress"
@@ -13,11 +13,11 @@ Description: "Bla bla bla"
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
 
 Extension: SEBaseAddressPatExtension
-Title: "SE extension för officiella adresstyper"
+Title: "SE extension for official address types"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
 * ^context[0].type = #element
-* ^context[0].expression = "Address" // Patient.address??
+* ^context[0].expression = "Address"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SEBaseAddressPatVS (required)
 // alt. * valueCodeableConcept from http://snomed.info/sct/45991000052106/ValueSet?fhir_vs=refset/64691000052109 (required)
@@ -47,8 +47,8 @@ Description: "Bla bla bla"
 
 Instance: PatientExample1
 InstanceOf: SEBasePatient
-Description: "Patientexempel"
-* id = "Patientexempel1"
+Description: "Patient example"
+* id = "PatientExample1"
 * identifier[personnummer].value = "19121212-1212"
 * name[0].use = #official
 * name[0].family = "Goode Johansson"
