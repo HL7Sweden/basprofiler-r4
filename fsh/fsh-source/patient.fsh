@@ -27,7 +27,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/Patient
 Title: "SE base profil for patient"
 Description: "Bla bla bla"
 * insert SEStandardRuleSet
-* address.extension contains SEBaseAddressPatExtension named officialAddressType 1..1
+* address.extension contains SEBaseAddressPatExtension named officialAddressType 0..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -43,7 +43,7 @@ Description: "Bla bla bla"
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
 * name only SEBaseHumanName
-* name 1..1
+* name 0..1
 
 Instance: PatientExample1
 InstanceOf: SEBasePatient
