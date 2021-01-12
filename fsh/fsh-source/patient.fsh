@@ -2,7 +2,7 @@ Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
 ValueSet: SEBaseAddressPatVS
 Title: "SE ValueSet for official address types"
-Description: "Bla bla bla"
+Description: "This is the ValueSet for address type in accordance with the swedish authorities"
 * insert SEStandardRuleSet
 * SCT#63391000052104 "särskild postadress"
 * SCT#63381000052101 "folkbokföringsadress"
@@ -14,7 +14,7 @@ Description: "Bla bla bla"
 
 Extension: SEBaseAddressPatExtension
 Title: "SE extension for official address types"
-Description: "Bla bla bla"
+Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities"
 * insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
@@ -25,7 +25,7 @@ Description: "Bla bla bla"
 Profile: SEBasePatient
 Parent: http://hl7.org/fhir/StructureDefinition/Patient
 Title: "SE base profil for patient"
-Description: "Bla bla bla"
+Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * insert SEStandardRuleSet
 * address.extension contains SEBaseAddressPatExtension named officialAddressType 0..1
 * identifier ^slicing.discriminator.type = #value
