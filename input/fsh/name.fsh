@@ -1,6 +1,5 @@
 
 Extension: SEBaseMiddleNameExtension
-Id: se-base-middlename
 Title: "SE extension för mellannamn"
 Description: "The extension is used in the base profile for Swedish Patient to express the middle name that a person born before 2017 can have a middlename"
 * insert SEStandardRuleSet
@@ -10,7 +9,6 @@ Description: "The extension is used in the base profile for Swedish Patient to e
 * value[x] 1..1
 
 Extension: SEBaseOwnFamilyExtension
-Id: se-base-own-family
 Title: "SE extension för explicit efternamn"
 Description: "The extension is used in the base profile for Swedish Patient to explicity express which part of the name is used as the family name."
 * insert SEStandardRuleSet
