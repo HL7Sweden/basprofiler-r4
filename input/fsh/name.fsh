@@ -1,3 +1,4 @@
+Alias:   NameQualifier =  http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2
 
 Extension: SEBaseMiddleNameExtension
 Title: "SE extension för mellannamn"
@@ -23,3 +24,9 @@ Description: "This profile provides the use of Swedish middlename as extensions 
 * insert SEStandardRuleSet
 * extension contains SEBaseMiddleNameExtension named middleName 0..1
 * extension contains SEBaseOwnFamilyExtension named ownFamily 0..1
+
+ValueSet: SEBaseNamePartQualifierVS
+Title: "SE ValueSet for preferred name"
+Description: "This is the ValueSet for..."
+* insert SEStandardRuleSet
+* NameQualifier#CL "Call me"
