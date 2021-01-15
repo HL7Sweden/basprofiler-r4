@@ -25,8 +25,7 @@ Description: "This profile provides the use of Swedish middlename as extensions 
 * extension contains SEBaseMiddleNameExtension named middleName 0..1
 * extension contains SEBaseOwnFamilyExtension named ownFamily 0..1
 * given.extension contains http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier named nameQualifier 0..1
-* given.extension[nameQualifier] only code
-* given.extension[nameQualifier].valueCode only SEBaseNamePartQualifierVS
+* given.extension[nameQualifier].valueCode from SEBaseNamePartQualifierVS (required)
 
 ValueSet: SEBaseNamePartQualifierVS
 Title: "SE ValueSet for preferred name"
