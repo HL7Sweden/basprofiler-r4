@@ -53,6 +53,8 @@ Description: "Patient example"
 * name[0].use = #official
 * name[0].family = "Goode Johansson"
 * name[0].given[0] = "John"
+* name[0].given[1] = "Bob"
+* name[0].given[0].extension[nameQualifier].valueCode ="CL"
 * name[0].extension[middleName].valueString = "Johansson"
 * name[0].extension[ownFamily].valueString = "Goode"
 * name[0].text = "John Goode Johansson"
