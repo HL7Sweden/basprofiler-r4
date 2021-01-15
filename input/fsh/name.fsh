@@ -25,7 +25,7 @@ Description: "This profile provides the use of Swedish middlename as extensions 
 * extension contains SEBaseMiddleNameExtension named middleName 0..1
 * extension contains SEBaseOwnFamilyExtension named ownFamily 0..1
 * given.extension contains http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier named nameQualifier 0..1
-* given.extension[nameQualifier] only valueCode
+* given.extension[nameQualifier] only code
 * given.extension[nameQualifier].valueCode only SEBaseNamePartQualifierVS
 
 ValueSet: SEBaseNamePartQualifierVS
@@ -33,11 +33,3 @@ Title: "SE ValueSet for preferred name"
 Description: "This is the ValueSet for..."
 * insert SEStandardRuleSet
 * NameQualifier#CL "Call me"
-
-Extension: SEBaseNameQualifier
-Title: "SE ValueSet for preferred name"
-Description: "This is the ValueSet for..."
-* insert SEStandardRuleSet
-* ^context[0].type = #element
-* ^context[0].expression = "HumanName.given"
-* extension contains  named middleName 0..1
