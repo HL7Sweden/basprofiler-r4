@@ -6,7 +6,7 @@ Id: SecurityLabel
 Title: "SE CodeSystem security labels"
 Description: "This is the CodeSystem for security labels in accordance with the swedish authorities"
 * #protected-information "Protected information" 
-    "Protected demographic information according to the Swedish Tax Agency"
+    "Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)"
 
 ValueSet: SecurityLabelVS
 Title: "SE ValueSet security labels"
