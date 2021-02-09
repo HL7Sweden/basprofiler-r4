@@ -27,6 +27,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/Patient
 Title: "SE base profil for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * insert SEStandardRuleSet
+* meta.security.code from SecurityLabelVS (extensible)
 * address.extension contains SEBaseAddressPatExtension named officialAddressType 0..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -48,16 +49,18 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 Instance: PatientExample1
 InstanceOf: SEBasePatient
 Description: "Patient example"
+* meta.security[0] = ACTCODE#DEMO
+* meta.security[1] = SecurityLabelCS#protected-information
 * id = "PatientExample1"
 * identifier[personnummer].value = "19121212-1212"
 * name[0].use = #official
 * name[0].family = "Goode Johansson"
 * name[0].given[0] = "John"
 * name[0].given[1] = "Bob"
+* name[0].given[0].extension[nameQualifier].valueCode = #CL
 * name[0].extension[middleName].valueString = "Johansson"
 * name[0].extension[ownFamily].valueString = "Goode"
 * name[0].text = "John Bob Goode Johansson"
-* name[0].given[1].extension[nameQualifier].valueCode = #CL
 * gender = #male
 * birthDate = "1958-01-06"
 * address.line = "2120 S Michigan Ave"
