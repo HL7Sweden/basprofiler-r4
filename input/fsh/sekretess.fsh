@@ -7,8 +7,8 @@ Title: "SE CodeSystem security labels"
 Description: "This is the CodeSystem for security labels in accordance with the swedish authorities"
 * #protected-information "Protected information" 
     "Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)"
-* code.designation.use = #900000000000013009
-* code.designation.value = "Sekretessmarkering"
+* designation.use = #900000000000013009
+* designation.value = "Sekretessmarkering"
 ValueSet: SecurityLabelVS
 Title: "SE ValueSet security labels"
 Description: "This is the ValueSet for security labels in accordance with the swedish authorities"
