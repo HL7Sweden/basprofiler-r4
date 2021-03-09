@@ -24,6 +24,8 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * name only SEBaseHumanName
 * name 0..1
 
+* address.extension contains SEBaseAddressPatExtension named officialAddressType 0..1
+
 * qualification ^slicing.discriminator.type = #value
 * qualification ^slicing.discriminator.path = "code.system"
 * qualification ^slicing.rules = #open
