@@ -28,6 +28,7 @@ Title: "SE base profil for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * insert SEStandardRuleSet
 * ^experimental = false
+* ^version = 0.1
 * meta.security.code from SecurityLabelVS (extensible)
 * address.extension contains SEBaseAddressPersonExtension named officialAddressType 0..1
 * identifier ^slicing.discriminator.type = #value
