@@ -1,6 +1,6 @@
 Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
-ValueSet: SEBaseAddressPatVS
+ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the swedish authorities"
 * insert SEStandardRuleSet
@@ -12,14 +12,14 @@ Description: "This is the ValueSet for address type in accordance with the swedi
 // från 500201000057102 | urval adresstyp |
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
 
-Extension: SEBaseAddressPatExtension
+Extension: SEBaseAddressPersonExtension
 Title: "SE extension for official address types"
-Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities"
+Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the swedish authorities"
 * insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
 * value[x] only CodeableConcept
-* valueCodeableConcept from SEBaseAddressPatVS (required)
+* valueCodeableConcept from SEBaseAddressPersonVS (required)
 // alt. * valueCodeableConcept from http://snomed.info/sct/45991000052106/ValueSet?fhir_vs=refset/64691000052109 (required)
 
 Profile: SEBasePatient
@@ -27,8 +27,10 @@ Parent: http://hl7.org/fhir/StructureDefinition/Patient
 Title: "SE base profil for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * insert SEStandardRuleSet
+* ^experimental = false
+* ^version = 0.1
 * meta.security.code from SecurityLabelVS (extensible)
-* address.extension contains SEBaseAddressPatExtension named officialAddressType 0..1
+* address.extension contains SEBaseAddressPersonExtension named officialAddressType 0..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open

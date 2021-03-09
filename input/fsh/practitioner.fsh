@@ -17,7 +17,7 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for swedish practitioner ID"
 * identifier contains 
-    hsaid 1..1
+    hsaid 0..1
 * identifier[hsaid].system = "urn:oid:1.2.752.29.6.2.1" (exactly)
 * identifier[hsaid].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN (exactly)
 
