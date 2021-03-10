@@ -4,6 +4,7 @@ ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the swedish authorities"
 * insert SEStandardRuleSet
+* ^version = "0.1"
 * SCT#63391000052104 "särskild postadress"
 * SCT#63381000052101 "folkbokföringsadress"
 * SCT#63401000052101 "utlandsadress"
