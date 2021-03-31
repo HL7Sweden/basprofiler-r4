@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: se-baseprofile
 canonical: http://electronichealth.se/fhir
-version: 0.0.1
+version: 0.5
 name: SEBaseProfileImplementationGuide
 title: Swedish Base Profiles Implementation Guide
 status: active
