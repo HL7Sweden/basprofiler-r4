@@ -20,7 +20,7 @@ Description: "The extension is used in the base profile for Swedish Patient to e
 
 Profile: SEBaseHumanName
 Parent: http://hl7.org/fhir/StructureDefinition/HumanName
-Description: "This profile provides the use of Swedish middlename and own famil name as extensions and is used in the base Patient profile"
+Description: "This profile provides the use of Swedish middlename and own family name as extensions and is used in the base Patient profile"
 * insert SEStandardRuleSet
 * extension contains SEBaseMiddleNameExtension named middleName 0..1
 * extension contains SEBaseOwnFamilyExtension named ownFamily 0..1
