@@ -5,7 +5,7 @@ CodeSystem: SecurityLabelCS
 Id: SecurityLabel
 Title: "SE CodeSystem security labels"
 Description: "This is the CodeSystem for security labels in accordance with the swedish authorities"
-* #protected-information "Protected information" 
+* #sekretessmarkering "Sekretessmarkering" 
     "Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)"
 
 ValueSet: SecurityLabelVS
