@@ -14,8 +14,8 @@ id: se-baseprofile
 canonical: http://electronichealth.se/fhir
 version: 0.5
 name: SEBaseProfileImplementationGuide
-title: Swedish Base Profiles Implementation Guide
-status: active
+title: Swedish Base Profiles Implementation Guide - ballot for Patient profile
+status: draft
 publisher:
   name: HL7 Sweden
   url: http://hl7.se/
