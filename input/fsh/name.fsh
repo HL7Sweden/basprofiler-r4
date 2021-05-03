@@ -1,7 +1,7 @@
 Alias:   NameQualifier =  http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2
 
 Extension: SEBaseMiddleNameExtension
-Title: "SE extension för mellannamn"
+Title: "SE extension for middle name"
 Description: "The extension is used in the base profile for Swedish Patient to express the middle name that a person born before 2017 can have"
 * insert SEStandardRuleSet
 * ^context[0].type = #element
