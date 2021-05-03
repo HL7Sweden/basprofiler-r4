@@ -1,6 +1,9 @@
-# HL7 FHIR version R4 base profiles for Sweden
+# HL7 FHIR version R4 base profiles for Sweden - Ballot 2021-05
 This FHIR implementation guide is published by HL7 Sweden and expresses the base profiles and extensions of FHIR resourses that are widely used in Sweden. The implementations guide is a description of the lowerst common denominator in adjustesments that needs to be made on the FHIR standard for applying it in a Swedish context. The profiles in this IG can be used without an further altering, but in most cases it is probably neccesary (and recommended) to make further adjustments in accordance with your applicable use case.
 The extenstions on the other hand will often be useful without further alteration.
+
+This ballot version includes profiles, code systems, value sets and extensions related to the Patient profile.
+Commnts and suggestions for change for this ballot should be sent to [Arvid Thunholm](mailto:arvid.thunholm@gmail.com) before 2021-05-31.
 
 <!---
 Denna implementationsguide publiceras av HL7 Sverige och samlar de grundläggande profileringar och utökningar av FHIR resurser som har bred användning i Sverige. I guiden beskrivs minsta gemensamma nämnare i förändingar som behöver göras på FHIR standarden för tillämpning i ett svenskt sammanhang. Profilerna kan användas utan vidare förändingar men det är antagligen nödvändigt (och rekommenderat) att anpassa dessa genom ytterligare profilering för att bättre passa tänkt användning.
