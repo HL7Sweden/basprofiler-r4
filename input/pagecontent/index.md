@@ -3,7 +3,7 @@ This FHIR implementation guide is published by HL7 Sweden and expresses the base
 The extenstions on the other hand will often be useful without further alteration.
 
 This ballot version includes profiles, code systems, value sets and extensions related to the Patient profile.
-Commnts and suggestions for change for this ballot should be sent to [Arvid Thunholm](mailto:arvid.thunholm@gmail.com) before 2021-05-31.
+Comments and suggestions for change for this ballot should be sent to [Arvid Thunholm](mailto:arvid.thunholm@gmail.com) before 2021-05-31.
 
 <!---
 Denna implementationsguide publiceras av HL7 Sverige och samlar de grundläggande profileringar och utökningar av FHIR resurser som har bred användning i Sverige. I guiden beskrivs minsta gemensamma nämnare i förändingar som behöver göras på FHIR standarden för tillämpning i ett svenskt sammanhang. Profilerna kan användas utan vidare förändingar men det är antagligen nödvändigt (och rekommenderat) att anpassa dessa genom ytterligare profilering för att bättre passa tänkt användning.
