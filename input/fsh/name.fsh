@@ -10,7 +10,7 @@ Description: "The extension is used in the base profile for Swedish Patient to e
 * value[x] 1..1
 
 Extension: SEBaseOwnFamilyExtension
-Title: "SE extension för explicit efternamn"
+Title: "SE extension for explicit family name"
 Description: "The extension is used in the base profile for Swedish Patient to explicity express which part of the name is used as the family name."
 * insert SEStandardRuleSet
 * ^context[0].type = #element
@@ -20,7 +20,7 @@ Description: "The extension is used in the base profile for Swedish Patient to e
 
 Profile: SEBaseHumanName
 Parent: http://hl7.org/fhir/StructureDefinition/HumanName
-Description: "This profile provides the use of Swedish middlename and own famil name as extensions and is used in the base Patient profile"
+Description: "This profile provides the use of Swedish middlename and own family name as extensions and is used in the base Patient profile"
 * insert SEStandardRuleSet
 * extension contains SEBaseMiddleNameExtension named middleName 0..1
 * extension contains SEBaseOwnFamilyExtension named ownFamily 0..1
