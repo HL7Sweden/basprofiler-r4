@@ -42,6 +42,13 @@ Parent: http://hl7.org/fhir/StructureDefinition/PractitionerRole
 Title: "SE base profil for practitioner role"
 Description: "This is the base Practitioner Role profile to be used when profiling on Practitioner Role in a Swedish context"
 * insert SEStandardRuleSet
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice for swedish practitioner role ID (Medarbetaruppdrag)"
+* identifier contains hsaid 0..1
+* identifier[hsaid].system = "urn:oid:1.2.752.29.6.2.1" (exactly)
+* identifier[hsaid].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN (exactly)
 
 Instance: PractitionerExample1
 InstanceOf: SEBasePractitioner
