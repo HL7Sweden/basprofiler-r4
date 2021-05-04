@@ -25,7 +25,7 @@ Description: "This extension defines the official ValueSet to be used when expre
 
 Profile: SEBasePatient
 Parent: http://hl7.org/fhir/StructureDefinition/Patient
-Title: "SE base profil for patient"
+Title: "SE base profile for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * insert SEStandardRuleSet
 * ^experimental = false
