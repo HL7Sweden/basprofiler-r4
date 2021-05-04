@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: se-baseprofile
-canonical: http://electronichealth.se/fhir
+canonical: http://hl7.se/fhir
 version: 0.5
 name: SEBaseProfileImplementationGuide
 title: Swedish Base Profiles Implementation Guide - ballot for Patient profile
@@ -23,13 +23,13 @@ publisher:
 jurisdiction:
   system: urn:iso:std:iso:3166
   code: "SE"
-description: Implementation Guide for Swedish Base Profiles
+description: Implementation Guide for Swedish Base Profiles - Ballot 2021-05
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
-releaseLabel: Ballot 2021-04
+releaseLabel: Ballot 2021-05
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
