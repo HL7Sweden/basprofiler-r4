@@ -13,9 +13,18 @@ Description: "This is the CodeSystem for martial status in accordance with the s
 * #SP "Skild partner"
 * #EP "Efterlevande partner"
 
+
 ValueSet: SEBaseMaritalStatusVS
+Title: "SE ValueSet for marital status"
+Description: "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."
 * insert SEStandardRuleSet
-* include codes from system SEBaseMaritalStatusCS
+* http://hl7.org/fhir/ValueSet/marital-status#M "Married"
+* http://hl7.org/fhir/ValueSet/marital-status#D "Divorced"
+* http://hl7.org/fhir/ValueSet/marital-status#W "Widowed"
+* http://hl7.org/fhir/ValueSet/marital-status#U "unmarried"
+* SEBaseMaritalStatusCS#RP "Registrerad partner"
+* SEBaseMaritalStatusCS#SP "Skild partner"
+* SEBaseMaritalStatusCS#EP "Efterlevande partner"
 
 ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
