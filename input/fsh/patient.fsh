@@ -1,5 +1,21 @@
 Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
+CodeSystem: SEBaseMaritalStatusCS
+Title: "SE CodeSystem for martial status"
+Description: "This is the CodeSystem for martial status in accordance with the swedish authorities (Skatteverket Navet)"
+* insert SEStandardRuleSet
+* #G "Gift" 
+* #OG "Ogift"
+* #S "Skild"
+* #Ä "Änka/änkling"
+* #RP "Registrerad partner"
+* #SP "Skild partner"
+* #EP "Efterlevande partner"
+
+ValueSet: SEBaseMaritalStatusVS
+* insert SEStandardRuleSet
+* include codes from system SEBaseMartialStatusCS
+
 ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the swedish authorities"
@@ -48,6 +64,7 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
 * name only SEBaseHumanName
 * name 0..1
+* maritalStatus from SEBaseMaritalStatusVS (extensible)
 
 Instance: PatientExample1
 InstanceOf: SEBasePatient
