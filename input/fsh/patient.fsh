@@ -1,6 +1,7 @@
 Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
 CodeSystem: SEBaseMaritalStatusCS
+Id: se-base-marital-status
 Title: "SE CodeSystem for martial status"
 Description: "This is the CodeSystem for martial status in accordance with the swedish authorities (Skatteverket Navet)"
 * insert SEStandardRuleSet
