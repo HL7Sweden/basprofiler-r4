@@ -15,7 +15,7 @@ Description: "This is the CodeSystem for martial status in accordance with the s
 
 ValueSet: SEBaseMaritalStatusVS
 * insert SEStandardRuleSet
-* include codes from system SEBaseMartialStatusCS
+* include codes from system SEBaseMaritalStatusCS
 
 ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
