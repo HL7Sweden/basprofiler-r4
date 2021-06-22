@@ -29,6 +29,6 @@ Description: "This profile provides the use of Swedish middlename and own famil 
 
 ValueSet: SEBaseNamePartQualifierVS
 Title: "SE ValueSet for preferred name"
-Description: "This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that the person would like to be called by"
+Description: "This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry"
 * insert SEStandardRuleSet
 * NameQualifier#CL "Call me"

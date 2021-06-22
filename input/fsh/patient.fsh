@@ -82,7 +82,7 @@ Description: "Patient example"
 * meta.security[0] = ACTCODE#DEMO
 * meta.security[1] = SecurityLabelCS#protected-information
 * id = "PatientExample1"
-* identifier[personnummer].value = "19121212-1212"
+* identifier[personnummer].value = "19500907-2553"
 * name[0].use = #official
 * name[0].family = "Goode Johansson"
 * name[0].given[0] = "John"
@@ -92,7 +92,8 @@ Description: "Patient example"
 * name[0].extension[ownFamily].valueString = "Goode"
 * name[0].text = "John Bob Goode Johansson"
 * gender = #male
-* birthDate = "1958-01-06"
+* maritalStatus = #RP "Registrerad partner"
+* birthDate = "1950-09-07"
 * address.line = "2120 S Michigan Ave"
 * address.city = "Chicago"
 * address.postalCode = "60616"
