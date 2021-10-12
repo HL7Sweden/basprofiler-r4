@@ -17,14 +17,14 @@ ValueSet: SEBaseSOSNYKVS
 
 ValueSet: SEBaseSKRYrkeVS
 * insert SEStandardRuleSet
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#67031000052107 // | urval legitimerade yrken |
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#68591000052102 // | urval ej legitimerade yrken |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67031000052107 // | urval legitimerade yrken |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#68591000052102 // | urval ej legitimerade yrken |
 
 ValueSet: SEBaseSKRYrkeSpecialtyVS
 * insert SEStandardRuleSet
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#67051000052103 // | urval specialistyrken sjuksköterska |
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#67081000052106 // | urval specialistyrken läkare |
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#67071000052109 // | urval specialistyrken tandläkare |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67051000052103 // | urval specialistyrken sjuksköterska |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67081000052106 // | urval specialistyrken läkare |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67071000052109 // | urval specialistyrken tandläkare |
 
 
 Profile: SEBasePractitioner
@@ -105,4 +105,4 @@ Description: "Practitioner example"
 * name[0].given[1].extension[nameQualifier].valueCode = #CL
 * identifier[hsaid].value = "SE2321000131-P000000123456"
 * qualification.identifier[prescriber].value = "12345678"
-* qualification.code = SCT#309453006 "barnmorska"
+* qualification.code = $SCT#309453006 "barnmorska"
