@@ -7,7 +7,7 @@ ValueSet: SEBasePrescriberCodeTypeVS
 * insert SEStandardRuleSet
 * include codes from system SEBasePrescriberCodeTypeCS
 
-ValueSet: SEBaseHOSPVS
+ValueSet: SEBaseHOSPLegitimationsYrkeVS
 * insert SEStandardRuleSet
 * include codes from system urn:oid:1.2.752.116.3.1.3
 
@@ -57,7 +57,7 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * qualification.code.coding contains hosp 0..1 and
     sosnyk 0..1 and
     skr-yrke 0..1
-* qualification.code.coding[hosp].code from SEBaseHOSPVS
+* qualification.code.coding[hosp].code from SEBaseHOSPLegitimationsYrkeVS
 * qualification.code.coding[sosnyk].code from SEBaseSOSNYKVS
 * qualification.code.coding[skr-yrke].code from SEBaseSKRYrkeVS
 
