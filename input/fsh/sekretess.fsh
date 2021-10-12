@@ -1,4 +1,5 @@
 Alias: $ACTCODE = http://terminology.hl7.org/CodeSystem/v3-ActCode
+// Alias: $SECLABEL = http://electronichealth.se/CodeSystem/SecurityLabel
 
 CodeSystem: SecurityLabelCS
 Id: SecurityLabel
