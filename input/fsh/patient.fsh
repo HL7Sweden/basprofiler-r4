@@ -80,7 +80,7 @@ Instance: PatientExample1
 InstanceOf: SEBasePatient
 Description: "Patient example"
 * meta.security[0] = ACTCODE#DEMO
-* meta.security[1] = SecurityLabelCS#protected-information
+* meta.security[1] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample1"
 * identifier[personnummer].value = "19500907-2553"
 * name[0].use = #official
