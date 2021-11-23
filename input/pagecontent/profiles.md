@@ -1,6 +1,4 @@
-title: Profiles and extesions defined as part of this Guide
-layout: default
-active: profiles
+
 
 #### Profiles
 
