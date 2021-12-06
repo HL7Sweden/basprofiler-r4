@@ -17,8 +17,6 @@ Description: "This is the CodeSystem for martial status in accordance with the s
 ValueSet: SEBaseMaritalStatusVS
 Title: "SE ValueSet for marital status"
 Description: "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."
-# Rubriktest
-MD text
 * insert SEStandardRuleSet
 * http://hl7.org/fhir/ValueSet/marital-status#M "Married"
 * http://hl7.org/fhir/ValueSet/marital-status#D "Divorced"
