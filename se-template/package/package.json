@@ -1,7 +1,7 @@
 ﻿{
   "name": "hl7.se.fhir.template",
   "version": "0.1.0",
-  "type": "fhir.template",
+  "type": "module",
   "license": "CC0-1.0",
   "description": "SE FHIR Template",
   "author": "http://hl7.se",
