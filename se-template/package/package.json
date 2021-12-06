@@ -1,11 +1,11 @@
 ﻿{
   "name": "hl7.se.fhir.template",
   "version": "0.1.0",
-  "type": "module",
+  "type": "fhir.template",
   "license": "CC0-1.0",
   "description": "SE FHIR Template",
   "author": "http://hl7.se",
-  "canonical": "http://electronichealth.se/fhir/hl7.se.fhir.template",
+  "canonical": "http://hl7.se.fhir.template",
   "base": "fhir.base.template",
   "dependencies": {
       "fhir.base.template": "current"
