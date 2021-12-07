@@ -7,9 +7,9 @@ ValueSet: SEBasePrescriberCodeTypeVS
 * insert SEStandardRuleSet
 * include codes from system SEBasePrescriberCodeTypeCS
 
-ValueSet: SEBaseHOSPVS
+ValueSet: SEBaseHOSPLegitimationsYrkeVS
 * insert SEStandardRuleSet
-* include codes from system urn:oid:1.2.752.116.3.1.1
+* include codes from system urn:oid:1.2.752.116.3.1.3
 
 ValueSet: SEBaseSOSNYKVS
 * insert SEStandardRuleSet
@@ -17,14 +17,14 @@ ValueSet: SEBaseSOSNYKVS
 
 ValueSet: SEBaseSKRYrkeVS
 * insert SEStandardRuleSet
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "SCT#67031000052107" // | urval legitimerade yrken |
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "SCT#68591000052102" // | urval ej legitimerade yrken |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67031000052107 // | urval legitimerade yrken |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#68591000052102 // | urval ej legitimerade yrken |
 
 ValueSet: SEBaseSKRYrkeSpecialtyVS
 * insert SEStandardRuleSet
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "SCT#67051000052103" // | urval specialistyrken sjuksköterska |
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "SCT#67081000052106" // | urval specialistyrken läkare |
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "SCT#67071000052109" // | urval specialistyrken tandläkare |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67051000052103 // | urval specialistyrken sjuksköterska |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67081000052106 // | urval specialistyrken läkare |
+* include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67071000052109 // | urval specialistyrken tandläkare |
 
 
 Profile: SEBasePractitioner
@@ -45,24 +45,21 @@ Description: "This is the base Practitioner profile to be used when profiling on
 
 * address.extension contains SEBaseAddressPersonExtension named officialAddressType 0..1
 
-* qualification ^slicing.discriminator.type = #value
-* qualification ^slicing.discriminator.path = "code.system"
-* qualification ^slicing.rules = #open
-* qualification contains prescriber 0..1 and
-    hosp 0..1 and
+* qualification.identifier ^slicing.discriminator.type = #value
+* qualification.identifier ^slicing.discriminator.path = "system"
+* qualification.identifier ^slicing.rules = #open
+* qualification.identifier contains prescriber 0..1 
+* qualification.identifier[prescriber].system = "urn:oid:1.2.752.116.3.1.2" (exactly)
+
+* qualification.code.coding ^slicing.discriminator.type = #value
+* qualification.code.coding ^slicing.discriminator.path = "system"
+* qualification.code.coding ^slicing.rules = #open
+* qualification.code.coding contains hosp 0..1 and
     sosnyk 0..1 and
     skr-yrke 0..1
-* qualification[prescriber].code from SEBasePrescriberCodeTypeVS
-* qualification[prescriber].identifier 1..1
-* qualification[prescriber].identifier ^slicing.discriminator.type = #value
-* qualification[prescriber].identifier ^slicing.discriminator.path = "system"
-* qualification[prescriber].identifier ^slicing.rules = #closed
-* qualification[prescriber].identifier contains prescriberCode 1..1
-* qualification[prescriber].identifier[prescriberCode].system = "urn:oid:1.2.752.116.3.1.2" (exactly)
-
-* qualification[hosp].code from SEBaseHOSPVS
-* qualification[sosnyk].code from SEBaseSOSNYKVS
-* qualification[skr-yrke].code from SEBaseSKRYrkeVS
+* qualification.code.coding[hosp].code from SEBaseHOSPLegitimationsYrkeVS (required)
+* qualification.code.coding[sosnyk].code from SEBaseSOSNYKVS (required)
+* qualification.code.coding[skr-yrke].code from SEBaseSKRYrkeVS (extensible)
 
 Profile: SEBasePractitionerRole
 Parent: http://hl7.org/fhir/StructureDefinition/PractitionerRole
@@ -107,5 +104,5 @@ Description: "Practitioner example"
 * name[0].text = "John Bob Goode Johansson"
 * name[0].given[1].extension[nameQualifier].valueCode = #CL
 * identifier[hsaid].value = "SE2321000131-P000000123456"
-* qualification[prescriber].code = #group-prescriber-code
-* qualification[prescriber].identifier[prescriberCode].value = "9000001"
+* qualification.identifier[prescriber].value = "12345678"
+* qualification.code = $SCT#309453006 "barnmorska"

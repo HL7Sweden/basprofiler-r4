@@ -1,4 +1,4 @@
-Alias:   SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
+Alias:   $SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
 CodeSystem: SEBaseMaritalStatusCS
 Id: se-base-marital-status
@@ -17,22 +17,6 @@ Description: "This is the CodeSystem for martial status in accordance with the s
 ValueSet: SEBaseMaritalStatusVS
 Title: "SE ValueSet for marital status"
 Description: """This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities.
-| FHIR internationella | Skatteverket | NI |
-|----------------------|--------------|----|
-| A Annulled | | |
-| D Divorced | S Skild | 20295000 \| skild \| |
-| I Interlocutory | | |
-| L Legally Separated | | |
-| M Married	| G Gift | 87915002 \| gift \| |
-| P Polygamous | | |
-| S Never Married | | |
-| T Domestic partner | | |
-| U unmarried | OG Ogift | 59961000052103 \| ogift \| (SE) |
-| W Widowed | Ä Änka/änkling | 33553000 \| änka/änkling \| |
-| |	EP Efterlevande partner	| |
-| |	RP Registrerad partner	| |
-| |	SP Skild partner	| |
-| UNK unknown | | |
 """
 * insert SEStandardRuleSet
 * http://hl7.org/fhir/ValueSet/marital-status#M "Married"
@@ -48,10 +32,10 @@ Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the swedish authorities"
 * insert SEStandardRuleSet
 * ^version = "0.1"
-* SCT#63391000052104 "särskild postadress"
-* SCT#63381000052101 "folkbokföringsadress"
-* SCT#63401000052101 "utlandsadress"
-* SCT#63411000052104 "uppgiven adress"
+* $SCT#63391000052104 "särskild postadress"
+* $SCT#63381000052101 "folkbokföringsadress"
+* $SCT#63401000052101 "utlandsadress"
+* $SCT#63411000052104 "uppgiven adress"
 // * SCT#64281000052109 "tillfällig postadress"
 // från 500201000057102 | urval adresstyp |
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
@@ -96,7 +80,7 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 Instance: PatientExample1
 InstanceOf: SEBasePatient
 Description: "Patient example"
-* meta.security[0] = ACTCODE#DEMO
+* meta.security[0] = $ACTCODE#DEMO
 * meta.security[1] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample1"
 * identifier[personnummer].value = "19500907-2553"
@@ -115,4 +99,4 @@ Description: "Patient example"
 * address.city = "Chicago"
 * address.postalCode = "60616"
 * address.country = "US"
-* address.extension[officialAddressType].valueCodeableConcept = SCT#63401000052101 "utlandsadress"
+* address.extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
