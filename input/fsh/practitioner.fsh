@@ -48,7 +48,7 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * qualification.identifier ^slicing.discriminator.type = #value
 * qualification.identifier ^slicing.discriminator.path = "system"
 * qualification.identifier ^slicing.rules = #open
-* qualification.identifier contains prescriber 0..1 and legitimation
+* qualification.identifier contains prescriber 0..1 and legitimation 0..1
 * qualification.identifier[prescriber].system = "urn:oid:1.2.752.116.3.1.2" (exactly)
 * qualification.identifier[legitimation].system = "urn:oid:1.2.752.116.3.1.1" (exactly)
 
