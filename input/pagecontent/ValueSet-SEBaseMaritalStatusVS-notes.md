@@ -1,5 +1,5 @@
 | FHIR internationella | Skatteverket | NI |
-|----------------------|--------------|----|
+|----------------------|:------------:|----|
 | A Annulled | | |
 | D Divorced | S Skild | 20295000 \| skild \| |
 | I Interlocutory | | |
