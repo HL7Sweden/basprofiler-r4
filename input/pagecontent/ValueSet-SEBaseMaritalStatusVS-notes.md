@@ -1,3 +1,6 @@
+### Comparison between different code systems for marital status. This value set is a combinations of values from the international FHIR code system and the code system from the Swedish authority Skatteverket. A mapping to the Snomed codes expressed in the Swedish reference model Nationell Informationsstruktur (NI).
+</br>
+
 | FHIR internationella | Skatteverket | NI |
 |----------------------|:------------:|----|
 | A Annulled | | |
