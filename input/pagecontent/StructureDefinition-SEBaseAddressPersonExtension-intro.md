@@ -2,7 +2,6 @@
 The different kinds of adresses that are used in the swedish context can be expressed with a combination of Address.use, Address.type and this extension. There are five kinds of addresses that should be expressed according to the table below. The parenthesis (PNR) and (SNR) mean that different values should be used for patients identified with Swedish personnummer (PNR) and Swedish samordningsnummer (SNR). 
 
 <br />
-
 | Type of address      | Address.use          | Address.type            | Extension value    |
 |----------------------|----------------------|-------------------------|--------------------|
 | Folkbokföringsadress | *                    | *                       | SCT#63381000052101 |
