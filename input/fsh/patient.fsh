@@ -2,8 +2,8 @@ Alias:   $SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
 CodeSystem: SEBaseMaritalStatusCS
 Id: se-base-marital-status
-Title: "SE CodeSystem for martial status"
-Description: "This is the CodeSystem for martial status in accordance with the swedish authorities (Skatteverket Navet)"
+Title: "SE CodeSystem for marital status"
+Description: "This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)"
 * insert SEStandardRuleSet
 * #G "Gift" 
 * #OG "Ogift"
@@ -29,7 +29,7 @@ Description: """This is a value set of marital status types that include both th
 
 ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
-Description: "This is the ValueSet for address type in accordance with the swedish authorities"
+Description: "This is the ValueSet for address type in accordance with the Swedish authorities"
 * insert SEStandardRuleSet
 * ^version = "0.1"
 * $SCT#63391000052104 "särskild postadress"
@@ -42,7 +42,7 @@ Description: "This is the ValueSet for address type in accordance with the swedi
 
 Extension: SEBaseAddressPersonExtension
 Title: "SE extension for official address types"
-Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the swedish authorities"
+Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities"
 * insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
@@ -62,7 +62,7 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Slice for swedish patient identifier types"
+* identifier ^slicing.description = "Slice for Swedish patient identifier types"
 * identifier contains 
     personnummer 0..1 and 
     samordningsnummer 0..1 and 
