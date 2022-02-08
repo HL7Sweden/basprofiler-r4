@@ -8,5 +8,3 @@ publisher.jar
 package-list.json
 .index.json
 /fsh-generated
-*.bat
-*.sh
