@@ -1,4 +1,7 @@
 
+ValueSet: SEBaseHSAVerksamhetVS
+* insert SEStandardRuleSet
+* include codes from system urn:oid:1.2.752.129.2.2.1.3
 
 Profile: SEBaseOrganization
 Parent: http://hl7.org/fhir/StructureDefinition/Organization
@@ -15,6 +18,7 @@ Description: "This is the base Organization profile to be used when profiling on
 * identifier contains organizationIdentifier 0..1
 * identifier[organizationIdentifier].system = "urn:oid:2.5.4.97" (exactly)
 * identifier[organizationIdentifier].type = http://terminology.hl7.org/CodeSystem/v2-0203#XX (exactly)
+* type from SEBaseHSAVerksamhetVS (extensible)
 
 Instance: OrganizationExample1
 InstanceOf: SEBaseOrganization
