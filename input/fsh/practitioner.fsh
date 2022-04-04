@@ -26,6 +26,11 @@ ValueSet: SEBaseSKRYrkeSpecialtyVS
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67081000052106 // | urval specialistyrken läkare |
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67071000052109 // | urval specialistyrken tandläkare |
 
+ValueSet: SEBaseHSABefattningVS
+* insert SEStandardRuleSet
+* include codes from system urn:oid:1.2.759.129.2.2.1.4
+
+
 
 Profile: SEBasePractitioner
 Parent: http://hl7.org/fhir/StructureDefinition/Practitioner
@@ -57,10 +62,12 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * qualification.code.coding ^slicing.rules = #open
 * qualification.code.coding contains hosp 0..1 and
     sosnyk 0..1 and
-    skr-yrke 0..1
+    skr-yrke 0..1 and
+    hsa-befattning 0..1
 * qualification.code.coding[hosp].code from SEBaseHOSPLegitimationsYrkeVS (required)
 * qualification.code.coding[sosnyk].code from SEBaseSOSNYKVS (required)
 * qualification.code.coding[skr-yrke].code from SEBaseSKRYrkeVS (extensible)
+* qualification.code.coding[hsa-befattning] from SEBaseHSABefattningVS
 
 Profile: SEBasePractitionerRole
 Parent: http://hl7.org/fhir/StructureDefinition/PractitionerRole
@@ -74,21 +81,20 @@ Description: "This is the base Practitioner Role profile to be used when profili
 * identifier contains hsaid 0..1
 * identifier[hsaid].system = "urn:oid:1.2.752.29.6.2.1" (exactly)
 * identifier[hsaid].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN (exactly)
-
 * code ^slicing.discriminator.type = #value
 * code ^slicing.discriminator.path = "system"
 * code ^slicing.rules = #open
 * code contains sosnyk 0..1 and
-    skr-yrke 0..1
+    skr-yrke 0..1 and
+    hsa-befattning 0..1
 * code[sosnyk] from SEBaseSOSNYKVS
 * code[skr-yrke] from SEBaseSKRYrkeVS
-
+* code[hsa-befattning] from SEBaseHSABefattningVS
 * specialty ^slicing.discriminator.type = #value
 * specialty ^slicing.discriminator.path = "system"
 * specialty ^slicing.rules = #open
 * specialty contains sosnyk 0..1 and
     skr-yrke 0..1
-* code[sosnyk] from SEBaseSOSNYKVS
 * specialty[skr-yrke] from SEBaseSKRYrkeSpecialtyVS
 
 
