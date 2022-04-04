@@ -1,4 +1,4 @@
-CodeSystem: SEBasePrescriberCodeTypeCS
+/*CodeSystem: SEBasePrescriberCodeTypeCS
 * insert SEStandardRuleSet
 * #prescriber-code "Prescriber code"
 * #group-prescriber-code "Group prescriber code"
@@ -6,7 +6,7 @@ CodeSystem: SEBasePrescriberCodeTypeCS
 ValueSet: SEBasePrescriberCodeTypeVS
 * insert SEStandardRuleSet
 * include codes from system SEBasePrescriberCodeTypeCS
-
+*/
 ValueSet: SEBaseHOSPLegitimationsYrkeVS
 * insert SEStandardRuleSet
 * include codes from system urn:oid:1.2.752.116.3.1.3
