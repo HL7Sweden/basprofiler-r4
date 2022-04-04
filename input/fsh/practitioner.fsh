@@ -67,7 +67,7 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * qualification.code.coding[hosp].code from SEBaseHOSPLegitimationsYrkeVS (required)
 * qualification.code.coding[sosnyk].code from SEBaseSOSNYKVS (required)
 * qualification.code.coding[skr-yrke].code from SEBaseSKRYrkeVS (extensible)
-* qualification.code.coding[hsa-befattning] from SEBaseHSABefattningVS
+* qualification.code.coding[hsa-befattning] from SEBaseHSABefattningVS (required)
 
 Profile: SEBasePractitionerRole
 Parent: http://hl7.org/fhir/StructureDefinition/PractitionerRole
