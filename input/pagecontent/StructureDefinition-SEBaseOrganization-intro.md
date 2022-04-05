@@ -1,5 +1,10 @@
 ### Use of organization.type
 There are multiple code systems describing organization types in Sweden. <br />
-- The National Board of Health and Welfare are maintaining a code system called "Verksamhetsområden" that are used for reporting quality data to national quality registries: [Verksamhetskoder](https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/klassifikationer-och-koder/sjukhuskoder-kodlista-verksamhetsomraden-2006.pdf) <br />
-- The Health and Social Care Inspectorate (IVO) also have a code system describing health care organizations that are used when reporting irregularities or register complaints. <br />
-- The only code system we have found with a clear namespace that can be idendified and that are used widely in a interoperablilty context is the [HSA Verksamhetskoder](https://inera.atlassian.net/wiki/spaces/OIKH/pages/346560593/HSA+kodverk). Therefore that is the only code system we chose to describe in the organization profile. Others can be used however.
+- The National Board of Health and Welfare are maintaining a code system called "Verksamhetsområden" that is used for reporting quality data to national quality registries: [Verksamhetskoder](https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/klassifikationer-och-koder/sjukhuskoder-kodlista-verksamhetsomraden-2006.pdf) <br />
+- The Health and Social Care Inspectorate (IVO) also have a code system describing health care organizations that is used when reporting irregularities or register complaints. <br />
+- The only code system that has been found with a clear namespace that can be identified and that is widely used in an interoperablilty context is the [HSA Verksamhetskoder](https://inera.atlassian.net/wiki/spaces/OIKH/pages/346560593/HSA+kodverk). Therefore the only code system used in the organization base profile is the HSA Verksamhetskoder. If necessary, other code systems can be used when suitable.
+
+### Use of identifiers
+There are currently different ways of representing the master source of the HSA identifier. HSA identifiers are used to identify a number of different kinds of objects, such as people, organisations and assigments. Each of these object types have their own OID, but that OID does not uniquely scope the identifier part, but the entire object. The OID chosen in the Swedish base profiles is the one referring to the identifiers as a whole, no matter what object class they represent. Unfortunately, this will lead to cases where the OID used here will differ from the OID used in other formal specifications.
+<br />
+This can be very important to keep in mind for implementors that get their HSA-ids from different sources and use them in different interactions.

@@ -5,7 +5,7 @@ ValueSet: SEBaseHSAVerksamhetVS
 
 Profile: SEBaseOrganization
 Parent: http://hl7.org/fhir/StructureDefinition/Organization
-Title: "SE base profil for organization"
+Title: "SE base profile for organization"
 Description: "This is the base Organization profile to be used when profiling on Organization in a Swedish context"
 * insert SEStandardRuleSet
 * identifier ^slicing.discriminator.type = #value

@@ -34,7 +34,7 @@ ValueSet: SEBaseHSABefattningVS
 
 Profile: SEBasePractitioner
 Parent: http://hl7.org/fhir/StructureDefinition/Practitioner
-Title: "SE base profil for practitioner"
+Title: "SE base profile for practitioner"
 Description: "This is the base Practitioner profile to be used when profiling on Practitioner in a Swedish context"
 * insert SEStandardRuleSet
 * identifier ^slicing.discriminator.type = #value
@@ -42,7 +42,7 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for swedish practitioner ID"
 * identifier contains hsaid 0..1
-* identifier[hsaid].system = "urn:oid:1.2.752.29.6.2.1" (exactly)
+* identifier[hsaid].system = "urn:oid:1.2.752.29.4.19" (exactly)
 * identifier[hsaid].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN (exactly)
 
 * name only SEBaseHumanName
@@ -79,7 +79,7 @@ Description: "This is the base Practitioner Role profile to be used when profili
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for swedish practitioner role ID (Medarbetaruppdrag)"
 * identifier contains hsaid 0..1
-* identifier[hsaid].system = "urn:oid:1.2.752.29.6.2.1" (exactly)
+* identifier[hsaid].system = "urn:oid:1.2.752.29.4.19" (exactly)
 * identifier[hsaid].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN (exactly)
 * code ^slicing.discriminator.type = #value
 * code ^slicing.discriminator.path = "system"
