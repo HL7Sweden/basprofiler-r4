@@ -18,4 +18,5 @@ Description: "This is the ValueSet for security labels in accordance with the sw
 * insert SEStandardRuleSet
 * $ACTCODE#DEMO
 * SecurityLabelCS#sekretessmarkering
+* SecurityLabelCS#skyddadFolkbokforing
 
