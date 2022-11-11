@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "./_genonce.sh",
+    "_publish": "java -jar input-cache/publisher.jar -go-publish -source . -destination $(pwd)/published -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/fhir-ig-history-template -temp $(pwd)/temp",
+    "publish": "npm run build && npm run _publish",
+    "serve": "npx http-server published/base",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "fsh-sushi": "^2.4.0"
+  }
+}

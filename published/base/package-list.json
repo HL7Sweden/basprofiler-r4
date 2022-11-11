@@ -1,0 +1,25 @@
+﻿{
+  "package-id": "hl7se.fhir.base",
+  "title": "HL7 Sweden base profiles",
+  "canonical": "http://hl7.se/fhir/ig/base",
+  "introduction": "Version history of the swedish base profiles",
+  "category": "National Base",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "1.0.0",
+      "date": "2022-11-11",
+      "path": "http://hl7.se/fhir/ig/base/1.0.0",
+      "status": "release",
+      "sequence": "Releases",
+      "fhirversion": "4.0.1",
+      "desc": "Swedish Base Profiles Implementation Guide"
+    }
+  ]
+}

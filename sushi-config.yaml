@@ -10,9 +10,10 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: se-baseprofile
+# id: hl7.fhir.se.base
+id: hl7se.fhir.base
 canonical: http://hl7.se/fhir/ig/base
-version: 0.0.1
+version: 1.0.0
 name: SEBaseProfileImplementationGuide
 title: Swedish Base Profiles Implementation Guide
 status: active
@@ -29,7 +30,7 @@ fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
-releaseLabel: CI Build
+releaseLabel: release
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
