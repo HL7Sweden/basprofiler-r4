@@ -3,6 +3,8 @@ Alias:   NameQualifier =  http://terminology.hl7.org/CodeSystem/v3-EntityNamePar
 Extension: SEBaseMiddleNameExtension
 Title: "SE extension för mellannamn"
 Description: "The extension is used in the base profile for Swedish Patient to express the middle name that a person born before 2017 can have"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "HumanName"
@@ -12,6 +14,8 @@ Description: "The extension is used in the base profile for Swedish Patient to e
 Extension: SEBaseOwnFamilyExtension
 Title: "SE extension för explicit efternamn"
 Description: "The extension is used in the base profile for Swedish Patient to explicity express which part of the name is used as the family name."
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "HumanName"
@@ -21,6 +25,8 @@ Description: "The extension is used in the base profile for Swedish Patient to e
 Profile: SEBaseHumanName
 Parent: http://hl7.org/fhir/StructureDefinition/HumanName
 Description: "This profile provides the use of Swedish middlename and own family name as extensions and is used in the base Patient profile"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * extension contains SEBaseMiddleNameExtension named middleName 0..1
 * extension contains SEBaseOwnFamilyExtension named ownFamily 0..1
@@ -30,5 +36,7 @@ Description: "This profile provides the use of Swedish middlename and own family
 ValueSet: SEBaseNamePartQualifierVS
 Title: "SE ValueSet for preferred name"
 Description: "This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * NameQualifier#CL "Call me"

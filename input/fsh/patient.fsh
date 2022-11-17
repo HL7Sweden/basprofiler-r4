@@ -4,6 +4,8 @@ CodeSystem: SEBaseMaritalStatusCS
 Id: se-base-marital-status
 Title: "SE CodeSystem for marital status"
 Description: "This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * #G "Gift" 
 * #OG "Ogift"
@@ -16,8 +18,9 @@ Description: "This is the CodeSystem for marital status in accordance with the S
 
 ValueSet: SEBaseMaritalStatusVS
 Title: "SE ValueSet for marital status"
-Description: """This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities.
-"""
+Description: "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * http://hl7.org/fhir/ValueSet/marital-status#M "Married"
 * http://hl7.org/fhir/ValueSet/marital-status#D "Divorced"
@@ -30,6 +33,8 @@ Description: """This is a value set of marital status types that include both th
 ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the Swedish authorities"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * ^version = "0.1"
 * $SCT#63391000052104 "särskild postadress"
@@ -43,6 +48,8 @@ Description: "This is the ValueSet for address type in accordance with the Swedi
 Extension: SEBaseAddressPersonExtension
 Title: "SE extension for official address types"
 Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
@@ -54,6 +61,8 @@ Profile: SEBasePatient
 Parent: http://hl7.org/fhir/StructureDefinition/Patient
 Title: "SE base profil for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * ^experimental = false
 * ^version = "0.1"

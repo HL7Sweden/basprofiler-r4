@@ -8,25 +8,35 @@ ValueSet: SEBasePrescriberCodeTypeVS
 * include codes from system SEBasePrescriberCodeTypeCS
 */
 ValueSet: SEBaseHOSPLegitimationsYrkeVS
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * include codes from system urn:oid:1.2.752.116.3.1.3
 
 ValueSet: SEBaseSOSNYKVS
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * include codes from system urn:oid:1.2.752.116.1.3.6
 
 ValueSet: SEBaseSKRYrkeVS
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67031000052107 // | urval legitimerade yrken |
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#68591000052102 // | urval ej legitimerade yrken |
 
 ValueSet: SEBaseSKRYrkeSpecialtyVS
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67051000052103 // | urval specialistyrken sjuksköterska |
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67081000052106 // | urval specialistyrken läkare |
 * include codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in $SCT#67071000052109 // | urval specialistyrken tandläkare |
 
 ValueSet: SEBaseHSABefattningVS
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * include codes from system urn:oid:1.2.759.129.2.2.1.4
 
@@ -36,6 +46,8 @@ Profile: SEBasePractitioner
 Parent: http://hl7.org/fhir/StructureDefinition/Practitioner
 Title: "SE base profile for practitioner"
 Description: "This is the base Practitioner profile to be used when profiling on Practitioner in a Swedish context"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -73,6 +85,8 @@ Profile: SEBasePractitionerRole
 Parent: http://hl7.org/fhir/StructureDefinition/PractitionerRole
 Title: "SE base profil for practitioner role"
 Description: "This is the base Practitioner Role profile to be used when profiling on Practitioner Role in a Swedish context"
+* ^status = #active
+* ^experimental = false
 * insert SEStandardRuleSet
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
