@@ -5,6 +5,7 @@ CI Build: http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/
 
 
 Release process
+Prereq: dependent repos has been cloned into /root
 
 1. Create release branch for version
 2. Change version and status in sushi-config.yaml
