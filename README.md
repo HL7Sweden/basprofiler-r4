@@ -5,7 +5,7 @@ CI Build: http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/
 
 
 Release process
-Prereq: dependent repos has been cloned into /root
+Prereq: npm run scripts assume https://github.com/HL7/fhir-ig-history-template.git and https://github.com/FHIR/ig-registry.git have been cloned into the root directory.
 
 1. Create release branch for version
 2. Change version and status in sushi-config.yaml
