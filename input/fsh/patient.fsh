@@ -78,7 +78,7 @@ Description: "This is the base Patient profile to be used when profiling on Pati
     nationelltReservnummer 0..1
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer" (exactly)
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer" (exactly)
-* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnumer" (exactly)
+* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer" (exactly)
 //* name.extension contains 
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
