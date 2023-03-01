@@ -75,10 +75,31 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier contains 
     personnummer 0..1 and 
     samordningsnummer 0..1 and 
-    nationelltReservnummer 0..1
+    nationelltReservnummer 0..1 and
+    SLL_local_reservnummer 0..1 and
+    VGR_local_reservnummer 0..1 and
+    LiV_local_reservnummer 0..1 and
+    IneraCareLink_local_reservnummer 0..1 and
+    Orebro_local_reservnummer 0..1 and
+    Skane_local_reservnummer 0..1 and
+    Blekinge_local_reservnummer 0..1 and
+    Vasternorrland_local_reservnummer 0..1 and
+    Sormland1_local_reservnummer 0..1 and
+    Sormland2_local_reservnummer 0..1
+
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer" (exactly)
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer" (exactly)
 * identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer" (exactly)
+* identifier[SLL_local_reservnummer].system = "urn:oid:1.2.752.97.3.1.3"
+* identifier[VGR_local_reservnummer].system = "urn:oid:1.2.752.113.11.0.2.1.1.1"
+* identifier[LiV_local_reservnummer].system = "urn:oid:1.2.752.74.9.2"
+* identifier[IneraCareLink_local_reservnummer].system = "urn:oid:1.2.752.129.2.1.3.2"
+* identifier[Orebro_local_reservnummer].system = "urn:oid:1.2.752.74.9.3"
+* identifier[Skane_local_reservnummer].system = "urn:oid:1.2.752.219.1.10.10.1"
+* identifier[Blekinge_local_reservnummer].system = "urn:oid:1.2.752.74.9.5"
+* identifier[Vasternorrland_local_reservnummer].system = "urn:oid:1.2.752.269.1.1"
+* identifier[Sormland1_local_reservnummer].system = "urn:oid:1.2.752.266.1.1.1"
+* identifier[Sormland2_local_reservnummer].system = "urn:oid:1.2.752.266.1.1.2"
 //* name.extension contains 
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
