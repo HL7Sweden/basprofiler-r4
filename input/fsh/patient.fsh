@@ -92,7 +92,7 @@ Description: "Patient example"
 * meta.security[0] = $ACTCODE#DEMO
 * meta.security[1] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample1"
-* identifier[personnummer].value = "19500907-2553"
+* identifier[personnummer].value = "195009072553"
 * name[0].use = #official
 * name[0].family = "Goode Johansson"
 * name[0].given[0] = "John"
