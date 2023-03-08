@@ -7,10 +7,9 @@ table.history-grid{
 
 table.history-grid th {
         border:1px solid silver;
-        padding:3px 7px 2px 7px;
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family: verdana, serif;
 	font-weight: bold;
 	padding: 3px;
 	vertical-align: top;
@@ -19,10 +18,9 @@ table.history-grid th {
 
 table.history-grid td {
         border:1px solid silver;
-        padding:3px 7px 2px 7px;
 	font-size: 12px;
 	line-height: 1.4em;
-	font-family: verdana;
+	font-family: verdana, serif;
 	font-weight: normal;
 	padding: 3px;
 	vertical-align: top;

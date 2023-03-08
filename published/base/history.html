@@ -11,13 +11,16 @@
   <link href="assets-hist/css/bootstrap-fhir.css" rel="stylesheet"/>
   <link href="assets-hist/css/project.css" rel="stylesheet"/>
   <link href="assets-hist/css/pygments-manni.css" rel="stylesheet"/>
-	<link href="jquery-ui.css" rel="stylesheet"/>
-  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
-  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
+  <link href="jquery-ui.css" rel="stylesheet"/>
+  <script type="application/javascript" src="history-cm.js"> </script>
+  <script type="application/javascript" src="history.js"> </script>
   <link href="history.css" rel="stylesheet"/>
   <!-- header.template starts here -->
-<link href="assets/css/hl7.se.css" rel="stylesheet"/>  
+  <link href="assets/css/hl7.se.css" rel="stylesheet"/>
   <!-- header.template ends here -->
+  <style>
+        #history-data table td { padding-right: 1em; }
+  </style>
 </head>
 <!-- preamble.template starts here -->
 <body>
@@ -85,9 +88,6 @@
   <!-- ============CONTENT CONTENT=============== -->
 
 <div id="history-data"></div>
-<style>
-    #history-data table td { padding-right: 1em; }
-</style>
 
   <!-- postamble.template starts here -->
   <!-- ==============END CONTENT END CONTENT=================== -->
@@ -149,7 +149,7 @@
 
 <!--- Include in the page --->
 <script>
-var pageJSON = '{"package-id":"hl7se.fhir.base","title":"HL7 Sweden base profiles","canonical":"http://hl7.se/fhir/ig/base","introduction":"Version history of the swedish base profiles","category":"National Base","list":[{"version":"current","desc":"Continuous Integration Build (latest in version control)","path":"http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/","status":"ci-build","current":true},{"version":"1.0.0","date":"2022-11-11","path":"http://hl7.se/fhir/ig/base/1.0.0","status":"release","sequence":"Releases","fhirversion":"4.0.1","desc":"Swedish Base Profiles Implementation Guide"}]}';
+var pageJSON = '{"package-id":"hl7se.fhir.base","title":"HL7 Sweden base profiles","canonical":"http://hl7.se/fhir/ig/base","introduction":"Version history of the swedish base profiles","category":"National Base","list":[{"version":"current","desc":"Continuous Integration Build (latest in version control)","path":"http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/","status":"ci-build","current":true},{"version":"1.0.0","date":"2023-03-08","path":"http://hl7.se/fhir/ig/base/1.0.0","status":"release","sequence":"Releases","fhirversion":"4.0.1","desc":"Swedish Base Profiles Implementation Guide"}]}';
 load(pageJSON);
 </script>
 
