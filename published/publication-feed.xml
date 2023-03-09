@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress XmlUnusedNamespaceDeclaration -->
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:fhir="http://hl7.org/fhir/feed" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>HL7 Sweden FHIR Publications</title>
     <description>New publications by HL7 Sweden></description>
     <link>http://hl7.se/fhir/ig/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Fri, 11 Nov 2022 06:42:04 +0100 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Mar 2023 04:21:58 +0100 GMT</lastBuildDate>
     <atom:link href="http://hl7.se/fhir/ig/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Nov 2022 06:42:04 +0100</pubDate>
+    <pubDate>Wed, 08 Mar 2023 04:21:58 +0100</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
@@ -18,7 +19,7 @@
       <dc:creator>HL7 Sweden</dc:creator>
       <fhir:version>4.0.1</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Fri, 11 Nov 2022 12:00:00 +0100 GMT</pubDate>
+      <pubDate>Wed, 08 Mar 2023 12:00:00 +0100 GMT</pubDate>
     </item>
   </channel>
 </rss>
