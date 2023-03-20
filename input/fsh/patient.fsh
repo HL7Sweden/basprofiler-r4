@@ -100,6 +100,47 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier[Vasternorrland_local_reservnummer].system = "urn:oid:1.2.752.269.1.1"
 * identifier[Sormland1_local_reservnummer].system = "urn:oid:1.2.752.266.1.1.1"
 * identifier[Sormland2_local_reservnummer].system = "urn:oid:1.2.752.266.1.1.2"
+
+* identifier[personnummer].value obeys personnummer-invariant
+* identifier[personnummer].value ^example.label = "General"
+* identifier[personnummer].value ^example.valueString = "191212121212"
+* identifier[samordningsnummer].value obeys samordningsnummer-invariant
+* identifier[samordningsnummer].value ^example.label = "General"
+* identifier[samordningsnummer].value ^example.valueString = "197010632391"
+* identifier[nationelltReservnummer].value obeys nationelltReservnummer-invariant
+* identifier[nationelltReservnummer].value ^example.label = "General"
+* identifier[nationelltReservnummer].value ^example.valueString = "22950606-FH20"
+* identifier[SLL_local_reservnummer].value obeys SLL-local-reservnummer-invariant
+* identifier[SLL_local_reservnummer].value ^example.label = "General"
+* identifier[SLL_local_reservnummer].value ^example.valueString = "991981000010"
+* identifier[VGR_local_reservnummer].value obeys VGR-local-reservnummer-invariant
+* identifier[VGR_local_reservnummer].value ^example.label = "General"
+* identifier[VGR_local_reservnummer].value ^example.valueString = "19810829M071"
+* identifier[LiV_local_reservnummer].value obeys LiV-local-reservnummer-invariant
+* identifier[LiV_local_reservnummer].value ^example.label = "General"
+* identifier[LiV_local_reservnummer].value ^example.valueString = "19810829SU3A"
+* identifier[IneraCareLink_local_reservnummer].value obeys IneraCareLink-local-reservnummer-invariant
+* identifier[IneraCareLink_local_reservnummer].value ^example.label = "General"
+* identifier[IneraCareLink_local_reservnummer].value ^example.valueString = "198108320014"
+* identifier[Orebro_local_reservnummer].value obeys Orebro-local-reservnummer-invariant
+* identifier[Orebro_local_reservnummer].value ^example.label = "General"
+* identifier[Orebro_local_reservnummer].value ^example.valueString = "19810829TB1F"
+* identifier[Skane_local_reservnummer].value obeys Skane-local-reservnummer-invariant
+* identifier[Skane_local_reservnummer].value ^example.label = "General"
+* identifier[Skane_local_reservnummer].value ^example.valueString = "810829DA1B"
+* identifier[Blekinge_local_reservnummer].value obeys Blekinge-local-reservnummer-invariant
+* identifier[Blekinge_local_reservnummer].value ^example.label = "General"
+* identifier[Blekinge_local_reservnummer].value ^example.valueString = "20200501-AA8A"
+* identifier[Vasternorrland_local_reservnummer].value obeys Vasternorrland-local-reservnummer-invariant
+* identifier[Vasternorrland_local_reservnummer].value ^example.label = "General"
+* identifier[Vasternorrland_local_reservnummer].value ^example.valueString = "20100101014R"
+* identifier[Sormland1_local_reservnummer].value obeys Sormland1-local-reservnummer-invariant
+* identifier[Sormland1_local_reservnummer].value ^example.label = "General"
+* identifier[Sormland1_local_reservnummer].value ^example.valueString = "19600606AA1G"
+* identifier[Sormland2_local_reservnummer].value obeys Sormland2-local-reservnummer-invariant
+* identifier[Sormland2_local_reservnummer].value ^example.label = "General"
+* identifier[Sormland2_local_reservnummer].value ^example.valueString = "18500101N123"
+
 //* name.extension contains 
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
