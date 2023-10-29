@@ -56,6 +56,13 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * identifier contains hsaid 0..1
 * identifier[hsaid].system = "urn:oid:1.2.752.29.4.19" (exactly)
 * identifier[hsaid].type = http://terminology.hl7.org/CodeSystem/v2-0203#PRN (exactly)
+* identifier contains personnummer 0..1
+* identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer" (exactly)
+* identifier[personnummer].type = http://terminology.hl7.org/CodeSystem/v2-0203#NI "National unique individual identifier" (exactly)
+* identifier contains samordningsnummer 0..1
+* identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer" (exactly)
+* identifier[samordningsnummer].type = http://terminology.hl7.org/CodeSystem/v2-0203#NI "National unique individual identifier" (exactly)
+
 
 * name only SEBaseHumanName
 * name 0..1
