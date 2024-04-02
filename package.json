@@ -7,6 +7,6 @@
     "start": "npm run serve"
   },
   "dependencies": {
-    "fsh-sushi": "^2.9.0"
+    "fsh-sushi": "^3.0.0"
   }
 }
