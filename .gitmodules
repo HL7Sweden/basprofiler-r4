@@ -1,6 +1,0 @@
-[submodule "ig-registry"]
-	path = ig-registry
-	url = git@github.com:FHIR/ig-registry.git
-[submodule "fhir-ig-history-template"]
-	path = fhir-ig-history-template
-	url = git@github.com:HL7/fhir-ig-history-template.git
