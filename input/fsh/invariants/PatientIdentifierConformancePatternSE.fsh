@@ -102,3 +102,11 @@ Severity: #error
 // Support dead patients who born in 19th century.
 Expression: "$this.toString().matches('^(18500101|18600101)[MNKP](0{2}[1-9]|[0-9][1-9][0-9]|[1-9][0-9][0-9])$')"
 XPath: "f:value"
+
+Invariant: Vasterbotten-local-reservnummer-invariant
+Description: "All identifiers that identifies as a Region Västerbotten local reservnummer SHALL comply with the specified regex: 
+^(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])(R|E|K|A)[0-9]{3}$"
+Severity: #error
+// Support dead patients who born in 19th century.
+Expression: "$this.toString().matches('^(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])(R|E|K|A)[0-9]{3}$')"
+XPath: "f:value"
