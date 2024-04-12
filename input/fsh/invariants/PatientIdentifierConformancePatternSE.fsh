@@ -32,11 +32,19 @@ Expression: "$this.toString().matches('99\\d{10}')"
 XPath: "f:value"
 
 Invariant: VGR-local-reservnummer-invariant
-Description: "All identifiers that identifies as a Västra Götalandsregionen local reservnummer SHALL comply with the specified regex: 
+Description: "All identifiers that identifies as a Västra Götalandsregionen local reservnummer LRID SHALL comply with the specified regex: 
 \\d{8}[K|M|X](0[6-9]|[1-8][0-9])[0-9]"
 Severity: #error
 // Support dead patients who born in 19th century.
 Expression: "$this.toString().matches('\\d{8}[K|M|X](0[6-9]|[1-8][0-9])[0-9]')"
+XPath: "f:value"
+
+Invariant: VGRGRID-local-reservnummer-invariant
+Description: "All identifiers that identifies as a Västra Götalandsregionen local reservnummer GRID SHALL comply with the specified regex: 
+^\d{8}[A|B|C|D|E|F|H|J|K|k|L|M|m|N|P|R|S|T|U|V|W|X|x|Y]\d{3}$"
+Severity: #error
+// Support dead patients who born in 19th century.
+Expression: "$this.toString().matches('^\d{8}[A|B|C|D|E|F|H|J|K|k|L|M|m|N|P|R|S|T|U|V|W|X|x|Y]\d{3}$')"
 XPath: "f:value"
 
 Invariant: LiV-local-reservnummer-invariant
@@ -105,8 +113,32 @@ XPath: "f:value"
 
 Invariant: Vasterbotten-local-reservnummer-invariant
 Description: "All identifiers that identifies as a Region Västerbotten local reservnummer SHALL comply with the specified regex: 
-^(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])(R|E|K|A)[0-9]{3}$"
+(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])(R|E|K|A)[0-9]{3}"
 Severity: #error
 // Support dead patients who born in 19th century.
-Expression: "$this.toString().matches('^(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])(R|E|K|A)[0-9]{3}$')"
+Expression: "$this.toString().matches('(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])(R|E|K|A)[0-9]{3}')"
+XPath: "f:value"
+
+Invariant: Halland-local-reservnummer-invariant
+Description: "All identifiers that identifies as a Region Halland local reservnummer SHALL comply with the specified regex: 
+(1[7-9]|20)\d{2}(0[1-9]|1[0-2])(3[2-9]|[4-5][0-9])\d{4}"
+Severity: #error
+// Support dead patients who born in 19th century.
+Expression: "$this.toString().matches('(1[7-9]|20)\d{2}(0[1-9]|1[0-2])(3[2-9]|[4-5][0-9])\d{4}')"
+XPath: "f:value"
+
+Invariant: Gavleborg-local-reservnummer-invariant
+Description: "All identifiers that identifies as a Region Gävleborg 2 local reservnummer SHALL comply with the specified regex: 
+^\d{8}-\d{2}[M|K|X]\d$"
+Severity: #error
+// Support dead patients who born in 19th century.
+Expression: "$this.toString().matches('^\d{8}-\d{2}[M|K|X]\d$')"
+XPath: "f:value"
+
+Invariant: Dalarna-local-reservnummer-invariant
+Description: "All identifiers that identifies as a Region Dalarna local reservnummer SHALL comply with the specified regex: 
+(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])[A-Z][0-9]{3}"
+Severity: #error
+// Support dead patients who born in 19th century.
+Expression: "$this.toString().matches('(1[8-9]|2[0-1])[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])[A-Z][0-9]{3}')"
 XPath: "f:value"
