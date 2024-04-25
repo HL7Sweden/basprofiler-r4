@@ -1,9 +1,4 @@
 
-ValueSet: SEBaseHSAVerksamhetVS
-* ^status = #active
-* ^experimental = false
-* insert SEStandardRuleSet
-* include codes from system urn:oid:1.2.752.129.2.2.1.3
 
 Profile: SEBaseOrganization
 Parent: http://hl7.org/fhir/StructureDefinition/Organization
@@ -24,8 +19,11 @@ Description: "This is the base Organization profile to be used when profiling on
 * identifier[organizationIdentifier].type = http://terminology.hl7.org/CodeSystem/v2-0203#XX (exactly)
 // * type from SEBaseHSAVerksamhetVS (extensible)
 
+
 Instance: OrganizationExample1
 InstanceOf: SEBaseOrganization
 Description: "Organization example"
 * id = "Organization1"
 * identifier[hsaid].value = "SE2321000131-P000000123457"
+
+
