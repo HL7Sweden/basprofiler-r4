@@ -25,7 +25,7 @@ Description: "Value set containing all codes from ÄGAR 2020 code system"
 * ^experimental = false
 * include codes from system SCBOwnershipCodeSystem
 
-CodeSystem: SCBLegalFormCodeSystem
+CodeSystem: SkatteverketLegalFormCodeSystem
 Title: "JURFORM 2020"
 Description: "Code system JURFORM 2020"
 * ^experimental = false
@@ -63,11 +63,11 @@ Description: "Code system JURFORM 2020"
 * #98	"Övr sv jur pers, enl särsk lag"
 * #99	"Juridisk form ej utredd"
 
-ValueSet: SCBLegalFormValueSet
+ValueSet: SkatteverketLegalFormValueSet
 Title: "JURFORM 2020 value set"
 Description: "Value set containing all codes from JURFORM 2020 code system"
 * ^experimental = false
-* include codes from system SCBLegalFormCodeSystem
+* include codes from system SkatteverketLegalFormCodeSystem
 
 Extension: SEBaseOrganizationActiveStatusExtension
 Title: "SE extension for organization status"
@@ -83,7 +83,7 @@ Context: Organization
 * ^status = #active
 * ^experimental = false
 * value[x] only Coding
-* valueCoding from SCBLegalFormValueSet (required)
+* valueCoding from SkatteverketLegalFormValueSet (required)
 
 Extension: SEBaseOrganizationOwnershipExtension
 Title: "SE extension for organization ownership type"
