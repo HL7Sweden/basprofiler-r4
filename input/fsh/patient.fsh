@@ -78,6 +78,7 @@ Description: "This is the base Patient profile to be used when profiling on Pati
     nationelltReservnummer 0..1 and
     SLL_local_reservnummer 0..1 and
     VGR_local_reservnummer 0..1 and
+    VGRGRID_local_reservnummer 0..1 and
     LiV_local_reservnummer 0..1 and
     IneraCareLink_local_reservnummer 0..1 and
     Orebro_local_reservnummer 0..1 and
@@ -85,13 +86,19 @@ Description: "This is the base Patient profile to be used when profiling on Pati
     Blekinge_local_reservnummer 0..1 and
     Vasternorrland_local_reservnummer 0..1 and
     Sormland1_local_reservnummer 0..1 and
-    Sormland2_local_reservnummer 0..1
+    Sormland2_local_reservnummer 0..1 and
+    Vasterbotten_local_reservnummer 0..1 and
+    Halland_local_reservnummer 0..1 and
+    Gavleborg_local_reservnummer 0..1 and
+    Dalarna_local_reservnummer 0..1
+
 
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer" (exactly)
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer" (exactly)
 * identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer" (exactly)
 * identifier[SLL_local_reservnummer].system = "urn:oid:1.2.752.97.3.1.3"
 * identifier[VGR_local_reservnummer].system = "urn:oid:1.2.752.113.11.0.2.1.1.1"
+* identifier[VGRGRID_local_reservnummer].system = "urn:oid:1.2.752.113.11.0.2.1.1.4"
 * identifier[LiV_local_reservnummer].system = "urn:oid:1.2.752.74.9.2"
 * identifier[IneraCareLink_local_reservnummer].system = "urn:oid:1.2.752.129.2.1.3.2"
 * identifier[Orebro_local_reservnummer].system = "urn:oid:1.2.752.74.9.3"
@@ -100,6 +107,10 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier[Vasternorrland_local_reservnummer].system = "urn:oid:1.2.752.269.1.1"
 * identifier[Sormland1_local_reservnummer].system = "urn:oid:1.2.752.266.1.1.1"
 * identifier[Sormland2_local_reservnummer].system = "urn:oid:1.2.752.266.1.1.2"
+* identifier[Vasterbotten_local_reservnummer].system = "urn:oid:1.2.752.74.9.7"
+* identifier[Halland_local_reservnummer].system = "urn:oid:1.2.752.74.9.6"
+* identifier[Gavleborg_local_reservnummer].system = "urn:oid:1.2.752.74.9.9"
+* identifier[Dalarna_local_reservnummer].system = "urn:oid:1.2.752.74.9.8"
 
 * identifier[personnummer].value obeys personnummer-invariant
 * identifier[personnummer].value ^example.label = "General"
@@ -116,6 +127,9 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier[VGR_local_reservnummer].value obeys VGR-local-reservnummer-invariant
 * identifier[VGR_local_reservnummer].value ^example.label = "General"
 * identifier[VGR_local_reservnummer].value ^example.valueString = "19810829M071"
+* identifier[VGRGRID_local_reservnummer].value obeys VGRGRID-local-reservnummer-invariant
+* identifier[VGRGRID_local_reservnummer].value ^example.label = "General"
+* identifier[VGRGRID_local_reservnummer].value ^example.valueString = "17001111A912"
 * identifier[LiV_local_reservnummer].value obeys LiV-local-reservnummer-invariant
 * identifier[LiV_local_reservnummer].value ^example.label = "General"
 * identifier[LiV_local_reservnummer].value ^example.valueString = "19810829SU3A"
@@ -140,6 +154,18 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier[Sormland2_local_reservnummer].value obeys Sormland2-local-reservnummer-invariant
 * identifier[Sormland2_local_reservnummer].value ^example.label = "General"
 * identifier[Sormland2_local_reservnummer].value ^example.valueString = "18500101N123"
+* identifier[Vasterbotten_local_reservnummer].value obeys Vasterbotten-local-reservnummer-invariant
+* identifier[Vasterbotten_local_reservnummer].value ^example.label = "General"
+* identifier[Vasterbotten_local_reservnummer].value ^example.valueString = "19890715R910"
+* identifier[Halland_local_reservnummer].value obeys Halland-local-reservnummer-invariant
+* identifier[Halland_local_reservnummer].value ^example.label = "General"
+* identifier[Halland_local_reservnummer].value ^example.valueString = "201905355622"
+* identifier[Gavleborg_local_reservnummer].value obeys Gavleborg-local-reservnummer-invariant
+* identifier[Gavleborg_local_reservnummer].value ^example.label = "General"
+* identifier[Gavleborg_local_reservnummer].value ^example.valueString = "19651207-01M1"
+* identifier[Dalarna_local_reservnummer].value obeys Dalarna-local-reservnummer-invariant
+* identifier[Dalarna_local_reservnummer].value ^example.label = "General"
+* identifier[Dalarna_local_reservnummer].value ^example.valueString = "19010105Y202"
 
 //* name.extension contains 
 //    SEBasisMiddleNameExtension named middleName 0..1 and
