@@ -41,10 +41,10 @@ XPath: "f:value"
 
 Invariant: VGRGRID-local-reservnummer-invariant
 Description: "All identifiers that identifies as a Västra Götalandsregionen local reservnummer GRID SHALL comply with the specified regex: 
-^\d{8}[A|B|C|D|E|F|H|J|K|k|L|M|m|N|P|R|S|T|U|V|W|X|x|Y]\d{3}$"
+^\\d{8}[A|B|C|D|E|F|H|J|K|k|L|M|m|N|P|R|S|T|U|V|W|X|x|Y]\\d{3}$"
 Severity: #error
 // Support dead patients who born in 19th century.
-Expression: "$this.toString().matches('^\d{8}[A|B|C|D|E|F|H|J|K|k|L|M|m|N|P|R|S|T|U|V|W|X|x|Y]\d{3}$')"
+Expression: "$this.toString().matches('^\\d{8}[A|B|C|D|E|F|H|J|K|k|L|M|m|N|P|R|S|T|U|V|W|X|x|Y]\\d{3}$')"
 XPath: "f:value"
 
 Invariant: LiV-local-reservnummer-invariant
@@ -121,18 +121,18 @@ XPath: "f:value"
 
 Invariant: Halland-local-reservnummer-invariant
 Description: "All identifiers that identifies as a Region Halland local reservnummer SHALL comply with the specified regex: 
-(1[7-9]|20)\d{2}(0[1-9]|1[0-2])(3[2-9]|[4-5][0-9])\d{4}"
+(1[7-9]|20)\\d{2}(0[1-9]|1[0-2])(3[2-9]|[4-5][0-9])\\d{4}"
 Severity: #error
 // Support dead patients who born in 19th century.
-Expression: "$this.toString().matches('(1[7-9]|20)\d{2}(0[1-9]|1[0-2])(3[2-9]|[4-5][0-9])\d{4}')"
+Expression: "$this.toString().matches('(1[7-9]|20)\\d{2}(0[1-9]|1[0-2])(3[2-9]|[4-5][0-9])\\d{4}')"
 XPath: "f:value"
 
 Invariant: Gavleborg-local-reservnummer-invariant
 Description: "All identifiers that identifies as a Region Gävleborg 2 local reservnummer SHALL comply with the specified regex: 
-^\d{8}-\d{2}[M|K|X]\d$"
+^\\d{8}-\\d{2}[M|K|X]\\d$"
 Severity: #error
 // Support dead patients who born in 19th century.
-Expression: "$this.toString().matches('^\d{8}-\d{2}[M|K|X]\d$')"
+Expression: "$this.toString().matches('^\\d{8}-\\d{2}[M|K|X]\\d$')"
 XPath: "f:value"
 
 Invariant: Dalarna-local-reservnummer-invariant
