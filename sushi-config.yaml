@@ -44,6 +44,9 @@ menu:
   Artifact Index: artifacts.html
   #Support:
 
+parameters:
+  path-expansion-params: Parameters-expansion.json
+
 # ╭────────────────────────────────────────────index.md────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/[pagecontent | pages]/index.[md | xml], delete the            │
 # │  "indexPageContent" property below.                                                            │
