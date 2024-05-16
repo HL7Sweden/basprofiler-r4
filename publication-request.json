@@ -1,5 +1,5 @@
 {
-  "package-id" : "hl7se.fhir.base",
+  "package-id" : "hl7.fhir.se.base",
   "version" : "1.0.0",
   "path" : "http://hl7.se/fhir/ig/base/1.0.0",
   "milestone" : false,
