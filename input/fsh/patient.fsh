@@ -1,4 +1,4 @@
-Alias:   $SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
+Alias:   $SCT-SE = http://snomed.info/sct|http://snomed.info/sct/45991000052106
 
 CodeSystem: SEBaseMaritalStatusCS
 Id: se-base-marital-status
@@ -37,10 +37,10 @@ Description: "This is the ValueSet for address type in accordance with the Swedi
 * ^experimental = false
 * insert SEStandardRuleSet
 * ^version = "0.1"
-* $SCT#63391000052104 "särskild postadress"
-* $SCT#63381000052101 "folkbokföringsadress"
-* $SCT#63401000052101 "utlandsadress"
-* $SCT#63411000052104 "uppgiven adress"
+* $SCT-SE#63391000052104 "särskild postadress"
+* $SCT-SE#63381000052101 "folkbokföringsadress"
+* $SCT-SE#63401000052101 "utlandsadress"
+* $SCT-SE#63411000052104 "uppgiven adress"
 // * SCT#64281000052109 "tillfällig postadress"
 // från 500201000057102 | urval adresstyp |
 // * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in SCT#64691000052109
@@ -108,4 +108,4 @@ Description: "Patient example"
 * address.city = "Chicago"
 * address.postalCode = "60616"
 * address.country = "US"
-* address.extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
+* address.extension[officialAddressType].valueCodeableConcept = $SCT-SE#63401000052101 "utlandsadress"
