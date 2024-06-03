@@ -1,4 +1,7 @@
 ### Use of identifiers
 There are currently different ways of representing the master source of the HSA identifier. HSA identifiers are used to identify a number of different kinds of objects, such as people, organisations and assigments. Each of these object types have their own OID, but that OID does not uniquely scope the identifier part, but the entire object. The OID chosen in the Swedish base profiles is the one referring to the identifiers as a whole, no matter what object class they represent. Unfortunately, this will lead to cases where the OID used here will differ from the OID used in other formal specifications.
-<br />
+
 This can be very important to keep in mind for implementors that get their HSA-ids from different sources and use them in different interactions.
+
+### Coded business category (sv. verksamhet) of an organization
+The business category of an organization is represented using a HealthcareService instance which makes a providedBy reference to the organization instance. The HealthcareService.category element provides a way to code the business category of the referenced organization. As these HealthcareService instances is only used in the context of an Organization, this HealthcareService instance would preferrably be inline.
