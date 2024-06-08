@@ -23,13 +23,14 @@ publisher:
   email: info@hl7.se
 jurisdiction:
   urn:iso:std:iso:3166#SE
+language: sv
 description: Implementation Guide for Swedish Base Profiles
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
-releaseLabel: release
+releaseLabel: ci-build
 
 dependencies:
   hl7.fhir.r4.sv: dev

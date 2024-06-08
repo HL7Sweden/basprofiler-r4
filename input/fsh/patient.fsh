@@ -22,13 +22,13 @@ Description: "This is a value set of marital status types that include both the 
 * ^status = #active
 * ^experimental = false
 * insert SEStandardRuleSet
-* http://hl7.org/fhir/ValueSet/marital-status#M "Married"
-* http://hl7.org/fhir/ValueSet/marital-status#D "Divorced"
-* http://hl7.org/fhir/ValueSet/marital-status#W "Widowed"
-* http://hl7.org/fhir/ValueSet/marital-status#U "unmarried"
-* SEBaseMaritalStatusCS#RP "Registrerad partner"
-* SEBaseMaritalStatusCS#SP "Skild partner"
-* SEBaseMaritalStatusCS#EP "Efterlevande partner"
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M 
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#D 
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#W 
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#U
+* SEBaseMaritalStatusCS#RP 
+* SEBaseMaritalStatusCS#SP 
+* SEBaseMaritalStatusCS#EP 
 
 ValueSet: SEBaseAddressPersonVS
 Title: "SE ValueSet for official address types"
