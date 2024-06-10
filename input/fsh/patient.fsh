@@ -126,7 +126,7 @@ Usage: #example
   * line = "Vänervägen 7"
   * city = "VÄSTRA FRÖLUNDA"
   * postalCode = "42140"
-* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#M "Married"
+* maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
 * communication.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: PatientExample189002029800
@@ -146,7 +146,7 @@ Usage: #example
   * line = "Haga Östergata"
   * city = "GÖTEBORG"
   * postalCode = "41301"
-* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#M "Married"
+* maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "Married"
 * communication.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: PatientExample200302022389
@@ -165,7 +165,7 @@ Usage: #example
   * line = "Södra vägen 5"
   * city = "Trollhättan"
   * postalCode = "46144"
-* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#U "unmarried"
+* maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#U "unmarried"
 * communication.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: PatientExample199002222397
@@ -185,7 +185,7 @@ Usage: #example
   * line[+] = "Van Kampenstraat"
   * line[+] = "7558 Hengelo"
   * country = "Nederländerna"
-* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#U "unmarried"
+* maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#U "unmarried"
 * communication.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: PatientExample196109732393
@@ -231,7 +231,6 @@ Usage: #example
   * use = #official
   * family = "Skyddad uppgift"
   * given = "Skyddad uppgift"
-  * middle = "Skyddad uppgift"
 * gender = #female
 * birthDate = "2000-01-25"
 * address
@@ -249,7 +248,6 @@ Usage: #example
   * use = #official
   * family = "Skyddad uppgift"
   * given = "Skyddad uppgift"
-  * middle = "Skyddad uppgift"
 * gender = #male
 * birthDate = "1896-02-02"
 * address
@@ -282,9 +280,11 @@ Usage: #example
   * postalCode = "54300"
 * contact
   * relationship = $SCT#72705000 "Mother"
-  * identifier
-    * system = "http://electronichealth.se/identifier/personnummer"
-    * value = "97990110AA24"
+   // TODO: find or create an extension to add identifier to contact,
+   // also need to satisfy pat-1: SHALL at least contain a contact's details or a reference to an organization
+  // * identifier
+   //   * system = "http://electronichealth.se/identifier/personnummer"
+   //   * value = "97990110AA24"
 
 Instance: PatientExample20210325K069
 InstanceOf: Patient
