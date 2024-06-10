@@ -6,6 +6,7 @@ Title: "SE CodeSystem for marital status"
 Description: "This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 * insert SEStandardRuleSet
 * #G "Gift" 
 * #OG "Ogift"

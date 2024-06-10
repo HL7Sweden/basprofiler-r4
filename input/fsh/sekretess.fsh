@@ -7,6 +7,7 @@ Title: "SE CodeSystem security labels"
 Description: "This is the CodeSystem for security labels in accordance with the swedish authorities"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = false
 * #sekretessmarkering "Sekretessmarkering"
 "Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)"
 * #skyddadFolkbokforing "Skyddad folkbokföring"
