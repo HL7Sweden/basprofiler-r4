@@ -7,7 +7,7 @@ Description: "This is the CodeSystem for marital status in accordance with the S
 * ^status = #active
 * ^experimental = false
 * insert SEStandardRuleSet
-* #G "Gift" 
+* #G "Gift"
 * #OG "Ogift"
 * #S "Skild"
 * #Ä "Änka/änkling"
@@ -72,14 +72,14 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for Swedish patient identifier types"
-* identifier contains 
-    personnummer 0..1 and 
-    samordningsnummer 0..1 and 
+* identifier contains
+    personnummer 0..1 and
+    samordningsnummer 0..1 and
     nationelltReservnummer 0..1
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer" (exactly)
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer" (exactly)
 * identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer" (exactly)
-//* name.extension contains 
+//* name.extension contains
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
 * name only SEBaseHumanName
@@ -109,3 +109,197 @@ Description: "Patient example"
 * address.postalCode = "60616"
 * address.country = "US"
 * address.extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
+
+Instance: PatientExample196101182803
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "196101182803"
+* name
+  * use = #official
+  * family = "Ljungberg"
+  * given = "Maria Birgitta"
+* gender = #female
+* birthDate = "1961-01-18"
+* address
+  * line = "Vänervägen 7"
+  * city = "VÄSTRA FRÖLUNDA"
+  * postalCode = "42140"
+* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#M "Married"
+* communication.language = urn:ietf:bcp:47#sv "Swedish"
+
+Instance: PatientExample189002029800
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "189002029800"
+* name
+  * use = #official
+  * family = "Hammar"
+  * given[0] = "Albertina"
+  * given[+] = "VGR"
+* gender = #female
+* birthDate = "1890-02-02"
+* address
+  * line = "Haga Östergata"
+  * city = "GÖTEBORG"
+  * postalCode = "41301"
+* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#M "Married"
+* communication.language = urn:ietf:bcp:47#sv "Swedish"
+
+Instance: PatientExample200302022389
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "200302022389"
+* name
+  * use = #official
+  * family = "Hennig"
+  * given = "Katja"
+* gender = #female
+* birthDate = "2003-02-02"
+* address
+  * line = "Södra vägen 5"
+  * city = "Trollhättan"
+  * postalCode = "46144"
+* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#U "unmarried"
+* communication.language = urn:ietf:bcp:47#sv "Swedish"
+
+Instance: PatientExample199002222397
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "199002222397"
+* name
+  * use = #official
+  * family = "Ebers"
+  * given = "Andreas"
+* gender = #male
+* birthDate = "1990-02-22"
+* address
+  * line[0] = "Rosenheimer"
+  * line[+] = "Van Kampenstraat"
+  * line[+] = "7558 Hengelo"
+  * country = "Nederländerna"
+* maritalStatus = http://hl7.org/fhir/ValueSet/marital-status#U "unmarried"
+* communication.language = urn:ietf:bcp:47#sv "Swedish"
+
+Instance: PatientExample196109732393
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "196109732393"
+* name
+  * use = #official
+  * family = "Smith"
+  * given = "Tom"
+* gender = #male
+* birthDate = "1961-09-13"
+* address
+  * line = "SANDÅSGATAN 2"
+  * city = "STOCKHOLM"
+  * postalCode = "11327"
+* contact
+  * relationship = $SCT#127850001 "wife"
+  * name
+    * family = "T"
+    * given[0] = "G"
+    * given[+] = "L"
+  * address
+    * line[0] = "C"
+    * line[+] = "B"
+    * city = "E"
+    * postalCode = "1"
+  * telecom
+    * system = #fax
+    * value = "värde"
+    * use = #mobile
+    * rank = 1
+
+Instance: PatientExample200001252386
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "200001252386"
+* name
+  * use = #official
+  * family = "Skyddad uppgift"
+  * given = "Skyddad uppgift"
+  * middle = "Skyddad uppgift"
+* gender = #female
+* birthDate = "2000-01-25"
+* address
+  * line = "Förmedlingsuppdrag Box 2820"
+  * city = "GÖTEBORG"
+  * postalCode = "40320"
+
+Instance: PatientExample189602029812
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "189602029812"
+* name
+  * use = #official
+  * family = "Skyddad uppgift"
+  * given = "Skyddad uppgift"
+  * middle = "Skyddad uppgift"
+* gender = #male
+* birthDate = "1896-02-02"
+* address
+  * line = "Förmedlingsuppdrag Box 2820"
+  * city = "GÖTEBORG"
+  * postalCode = "40320"
+
+Instance: PatientExample98240301AA06
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "98240301AA06"
+* name
+  * use = #official
+  * family = "Efternamn"
+  * given[0] = "Förnamn"
+  * given[+] = "Test mellannamn"
+* gender = #female
+* birthDate = "2024-03-01"
+* address[0]
+  * line[0] = "Adressrad 1"
+  * line[+] = "Adressrad 2"
+  * line[+] = "Adressrad 3"
+  * country = "DZ"
+* address[+]
+  * line[0] = "Adressrad 1 (Mer än 35 tecken)"
+  * line[+] = "Adressrad 2 (Färre än 35 tecken)"
+  * city = "Orten"
+  * postalCode = "54300"
+* contact
+  * relationship = $SCT#72705000 "Mother"
+  * identifier
+    * system = "http://electronichealth.se/identifier/personnummer"
+    * value = "97990110AA24"
+
+Instance: PatientExample20210325K069
+InstanceOf: Patient
+Usage: #example
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "20210325K069"
+* name
+  * use = #official
+  * family = "Efternamn"
+  * given[0] = "Förnamn"
+  * given[+] = "Mellannamn"
+* gender = #female
+* birthDate = "2021-03-25"
+* address
+  * line = "Tillfällig adressrad"
+  * city = "Trollhättan"
+  * postalCode = "46141"
