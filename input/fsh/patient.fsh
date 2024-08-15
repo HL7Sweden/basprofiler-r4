@@ -24,10 +24,10 @@ Description: "This is a value set of marital status types that include both the 
 * insert SEStandardRuleSet
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/valueset-supplement"
 * ^extension[=].valueUrl = Canonical(http://hl7.org/fhir/langs/CodeSystem/cs-sv-v3-MaritalStatus)
-* http://hl7.org/fhir/ValueSet/marital-status#M 
-* http://hl7.org/fhir/ValueSet/marital-status#D 
-* http://hl7.org/fhir/ValueSet/marital-status#W 
-* http://hl7.org/fhir/ValueSet/marital-status#U 
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M 
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#D 
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#W 
+* http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#U 
 * SEBaseMaritalStatusCS#RP "Registrerad partner"
 * SEBaseMaritalStatusCS#SP "Skild partner"
 * SEBaseMaritalStatusCS#EP "Efterlevande partner"
