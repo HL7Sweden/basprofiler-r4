@@ -2,7 +2,7 @@ name: Validate docs
 
 on:
   push:
-    branches: '*'
+    branches: '**'
   pull_request:
     types: [opened, synchronize] # This will trigger the workflow only when a PR is opened or updated with new commits
 
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install Sushi
         run: sudo npm install -g fsh-sushi
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install Jekyll
         run: sudo gem install jekyll
