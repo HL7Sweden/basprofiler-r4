@@ -2,7 +2,7 @@ name: Validate docs
 
 on:
   push:
-    branches: [ master ]
+    branches: '*'
   pull_request:
     types: [opened, synchronize] # This will trigger the workflow only when a PR is opened or updated with new commits
 
