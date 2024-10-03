@@ -10,8 +10,8 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# id: hl7.fhir.se.base
-id: hl7se.fhir.base
+id: hl7.fhir.se.base
+#id: hl7se.fhir.base
 canonical: http://hl7.se/fhir/ig/base
 version: 1.0.0
 name: SEBaseProfileImplementationGuide
