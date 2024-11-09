@@ -12,7 +12,7 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
-      <title>hl7se.fhir.base#1.0.0</title>
+      <title>hl7.fhir.se.base#1.0.0</title>
       <description>Implementation Guide for Swedish Base Profiles (built Wed, Mar 8, 2023 16:20+0100+01:00)</description>
       <link>http://hl7.se/fhir/ig/base/1.0.0/package.tgz</link>
       <guid isPermaLink="true">http://hl7.se/fhir/ig/base/1.0.0/package.tgz</guid>
