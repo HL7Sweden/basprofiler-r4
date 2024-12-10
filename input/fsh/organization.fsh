@@ -12,7 +12,6 @@ ValueSet: SEBaseHSAVerksamhetVS
 * insert SEStandardRuleSet
 * include codes from system urn:oid:1.2.752.129.2.2.1.3
 
-
 Profile: SEBaseOrganization
 Parent: http://hl7.org/fhir/StructureDefinition/Organization
 Title: "SE base profile for organization"
@@ -37,7 +36,6 @@ Description: "This is the base Organization profile to be used when profiling on
 * type.coding[orgTypeSct] from SEBaseOrganizationTypeVS (extensible)
 * type.coding[hsaType] from SEBaseHSAVerksamhetVS (required)
 
-
 Instance: OrganizationExample1
 InstanceOf: SEBaseOrganization
 Description: "Organization example"
@@ -45,5 +43,3 @@ Description: "Organization example"
 * identifier[hsaid].value = "SE2321000131-P000000123457"
 * type.coding[+] = $SCT-SE#143591000052106
 * type.coding[+] = http://local.org#code-for-care-provider
-
-
