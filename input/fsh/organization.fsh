@@ -3,8 +3,8 @@ ValueSet: SEBaseOrganizationTypeVS
 Id: SEBaseOrganizationTypeVS
 Title: "SE ValueSet for organization types"
 Description: "This value sets contains organization types relevant for Swedish healthcare"
-* $SCT-SE#43741000 "vårdenhet"
-* $SCT-SE#143591000052106 "vårdgivare"
+* $SCT#43741000 "vårdenhet"
+* $SCT#143591000052106 "vårdgivare"
 
 Profile: SEBaseOrganization
 Parent: http://hl7.org/fhir/StructureDefinition/Organization
@@ -31,7 +31,7 @@ InstanceOf: SEBaseOrganization
 Description: "Organization example"
 * id = "Organization1"
 * identifier[hsaid].value = "SE2321000131-P000000123457"
-* type.coding[+] = $SCT-SE#143591000052106
+* type.coding[+] = $SCT#143591000052106
 * type.coding[+] = http://local.org#code-for-care-provider
 
 
