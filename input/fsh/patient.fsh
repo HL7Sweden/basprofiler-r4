@@ -8,7 +8,6 @@ Description: "This is the CodeSystem for marital status in accordance with the S
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
-* insert SEStandardRuleSet
 * #G "Gift" 
 * #OG "Ogift"
 * #S "Skild"
@@ -23,7 +22,6 @@ Title: "SE ValueSet for marital status"
 Description: "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."
 * ^status = #active
 * ^experimental = false
-* insert SEStandardRuleSet
 * $HL7MS#M "Married"
 * $HL7MS#D "Divorced"
 * $HL7MS#W "Widowed"
@@ -37,8 +35,7 @@ Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the Swedish authorities"
 * ^status = #active
 * ^experimental = false
-* insert SEStandardRuleSet
-* ^version = "0.1"
+//* ^version = "0.1"
 * $SCT#63391000052104 "särskild postadress"
 * $SCT#63381000052101 "folkbokföringsadress"
 * $SCT#63401000052101 "utlandsadress"
@@ -52,7 +49,6 @@ Title: "SE extension for official address types"
 Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities"
 * ^status = #active
 * ^experimental = false
-* insert SEStandardRuleSet
 * ^context[0].type = #element
 * ^context[0].expression = "Address"
 * value[x] only CodeableConcept
@@ -65,9 +61,7 @@ Title: "SE base profil for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * ^status = #active
 * ^experimental = false
-* insert SEStandardRuleSet
-* ^experimental = false
-* ^version = "0.1"
+// * ^version = "0.1"
 * meta.security.code from SecurityLabelVS (extensible)
 * address.extension contains SEBaseAddressPersonExtension named officialAddressType 0..1
 * identifier ^slicing.discriminator.type = #value
@@ -78,9 +72,9 @@ Description: "This is the base Patient profile to be used when profiling on Pati
     personnummer 0..1 and 
     samordningsnummer 0..1 and 
     nationelltReservnummer 0..1
-* identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer" (exactly)
-* identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer" (exactly)
-* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer" (exactly)
+* identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
+* identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
+* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer"
 //* name.extension contains 
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1

@@ -21,9 +21,9 @@ publisher:
   name: HL7 Sweden
   url: http://hl7.se/
   email: info@hl7.se
-jurisdiction:
-  system: urn:iso:std:iso:3166
-  code: "SE"
+jurisdiction: urn:iso:std:iso:3166#SE
+#  system: urn:iso:std:iso:3166
+#  code: "SE"
 description: Implementation Guide for Swedish Base Profiles
 license: CC0-1.0
 fhirVersion: 4.0.1
