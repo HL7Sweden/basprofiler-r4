@@ -5,14 +5,32 @@ Description: "This is the base Medication profile to be used when profiling on M
 * insert SEStandardRuleSet
 * meta.security.code from SecurityLabelVS (extensible)
 
-// Proposal for identifiers:
-* identifier 1.. MS
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Slice for medication identifiers"
-* identifier contains
-        NplPackId 0..1 MS
-    and varunr 0..1 MS
-* identifier[NplPackId].system = "http://electronichealth.se/identifier/nplpackid" (exactly)
-* identifier[varunr].system = "http://electronichealth.se/identifier/varunr" (exactly)
+* code 1.. MS
+* code from SEBaseMedicationCodeSystemsVS (preferred)
+
+
+
+Profile: SEBaseMedicationPackage
+Parent: Medication
+Title: "SE base profil for medicationpackage"
+Description: "This is the base Medication profile to be used when profiling on Medication package in a Swedish context"
+* insert SEStandardRuleSet
+* meta.security.code from SecurityLabelVS (extensible)
+
+* code 1.. MS
+* code from SEBaseMedicationPackageCodeSystemsVS (preferred)
+
+* ingredient MS
+* ingredient.item[x] only Reference(SEBaseMedication)
+
+ValueSet: SEBaseMedicationCodeSystemsVS
+Title: "SE ValueSet for medication code systems"
+* ^status = #active
+* include codes from system $NPLID
+
+
+ValueSet: SEBaseMedicationPackageCodeSystemsVS
+Title: "SE ValueSet for medication package code systems"
+* ^status = #active
+* include codes from system $NPLPACKID
+* include codes from system $VARUNR
