@@ -20,8 +20,8 @@ Severity: #error
 // Support dead patients who born in 19th century.
 Expression: "$this.toString().matches('^([0-9]{8})-?([A-Z&&[^IOQVW]]{2}[0-9]{2}|[A-Z&&[^IOQVW]]{3}[0-9]{1})$')"
 
-Invariant: SLL-local-reservnummer-invariant
-Description: "All identifiers that identifies as a SLL local reservnummer SHALL comply with the specified regex: 
+Invariant: RegionStockholm-local-reservnummer-invariant
+Description: "All identifiers that identifies as a Region Stockholm local reservnummer SHALL comply with the specified regex: 
 99\\d{10}"
 Severity: #error
 // Support dead patients who born in 19th century.

@@ -76,7 +76,7 @@ Description: "This is the base Patient profile to be used when profiling on Pati
     personnummer 0..1 and 
     samordningsnummer 0..1 and 
     nationelltReservnummer 0..1 and
-    SLL_local_reservnummer 0..1 and
+    RegionStockholm_local_reservnummer 0..1 and
     VGR_local_reservnummer 0..1 and
     VGRGRID_local_reservnummer 0..1 and
     LiV_local_reservnummer 0..1 and
@@ -96,7 +96,7 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer" (exactly)
 * identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer" (exactly)
 * identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer" (exactly)
-* identifier[SLL_local_reservnummer].system = "urn:oid:1.2.752.97.3.1.3"
+* identifier[RegionStockholm_local_reservnummer].system = "https://uid.regionstockholm.se/reservnummer"
 * identifier[VGR_local_reservnummer].system = "urn:oid:1.2.752.113.11.0.2.1.1.1"
 * identifier[VGRGRID_local_reservnummer].system = "urn:oid:1.2.752.113.11.0.2.1.1.4"
 * identifier[LiV_local_reservnummer].system = "urn:oid:1.2.752.74.9.2"
@@ -121,9 +121,9 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier[nationelltReservnummer].value obeys nationelltReservnummer-invariant
 * identifier[nationelltReservnummer].value ^example.label = "General"
 * identifier[nationelltReservnummer].value ^example.valueString = "22950606-FH20"
-* identifier[SLL_local_reservnummer].value obeys SLL-local-reservnummer-invariant
-* identifier[SLL_local_reservnummer].value ^example.label = "General"
-* identifier[SLL_local_reservnummer].value ^example.valueString = "991981000010"
+* identifier[RegionStockholm_local_reservnummer].value obeys RegionStockholm-local-reservnummer-invariant
+* identifier[RegionStockholm_local_reservnummer].value ^example.label = "General"
+* identifier[RegionStockholm_local_reservnummer].value ^example.valueString = "991981000010"
 * identifier[VGR_local_reservnummer].value obeys VGR-local-reservnummer-invariant
 * identifier[VGR_local_reservnummer].value ^example.label = "General"
 * identifier[VGR_local_reservnummer].value ^example.valueString = "19810829M071"
