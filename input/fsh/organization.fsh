@@ -43,3 +43,5 @@ Description: "Organization example"
 * identifier[hsaid].value = "SE2321000131-P000000123457"
 * type.coding[+] = $SCT#143591000052106
 * type.coding[+] = http://local.org#code-for-care-provider
+* type.coding[+] = $SCT#43741000
+* type.coding[+] = http://local.org#code-for-care-unit
