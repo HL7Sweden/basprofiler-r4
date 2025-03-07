@@ -12,4 +12,3 @@ publisher.jar
 node_modules
 .index.json
 package-lock.json
-.index.db
