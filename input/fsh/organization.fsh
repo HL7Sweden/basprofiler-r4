@@ -32,9 +32,9 @@ Description: "This is the base Organization profile to be used when profiling on
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
 * type.coding ^slicing.rules = #open
-* type.coding contains orgTypeSct 0..* and hsaType 0..*
-* type.coding[orgTypeSct].system = "http://snomed.info/sct"
-* type.coding[orgTypeSct] from SEBaseOrganizationTypeVS (extensible)
+* type.coding contains baseOrgType 0..* and hsaType 0..*
+* type.coding[baseOrgType].system = "http://snomed.info/sct"
+* type.coding[baseOrgType] from SEBaseOrganizationTypeVS (extensible)
 * type.coding[hsaType].system = "urn:oid:1.2.752.129.2.2.1.3"
 * type.coding[hsaType] from SEBaseHSAVerksamhetVS (required)
 
