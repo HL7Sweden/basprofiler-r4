@@ -13,7 +13,7 @@
 # id: hl7.fhir.se.base
 id: hl7se.fhir.base
 canonical: http://hl7.se/fhir/ig/base
-version: 1.0.0
+version: 1.1.0
 name: SEBaseProfileImplementationGuide
 title: Swedish Base Profiles Implementation Guide
 status: active
