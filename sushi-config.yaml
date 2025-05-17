@@ -38,11 +38,11 @@ releaseLabel: release
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  FAQ: faq.html
-  Profiles: profiles.html
-  Value Sets: valuesets.html
-  Table of Contents: toc.html
+  # FAQ: faq.html
+  Profiles: 2_profiles.html
+  Value Sets: 3_valuesets.html
   Artifact Index: artifacts.html
+  Table of Contents: toc.html
   #Support:
 
 # ╭────────────────────────────────────────────index.md────────────────────────────────────────────╮
