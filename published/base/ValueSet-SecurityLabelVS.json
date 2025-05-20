@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SecurityLabelVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SecurityLabelVS</b></p><a name=\"SecurityLabelVS\"> </a><a name=\"hcSecurityLabelVS\"> </a><a name=\"SecurityLabelVS-sv-SE\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-ActCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-DEMO\">DEMO</a></td><td style=\"color: #cccccc\">all demographic information sensitivity</td><td>Policy for handling all demographic information about an information subject, which will be afforded heightened confidentiality. Policies may govern sensitivity of information related to all demographic about an information subject, the disclosure of which could impact the privacy, well-being, or safety of that subject.<br/><br/>*Usage Note:* If there is a jurisdictional mandate, then use the applicable ActPrivacyLaw code system, and specify the law rather than or in addition to this more generic code.</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-SecurityLabel.html\"><code>http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-SecurityLabel.html#SecurityLabel-sekretessmarkering\">sekretessmarkering</a></td><td style=\"color: #cccccc\">Sekretessmarkering</td><td>Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)</td></tr><tr><td><a href=\"CodeSystem-SecurityLabel.html#SecurityLabel-skyddadFolkbokforing\">skyddadFolkbokforing</a></td><td style=\"color: #cccccc\">Skyddad folkbokföring</td><td>Protected demographic information according to Skatteverket</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://hl7.se/fhir/ig/base/ValueSet/SecurityLabelVS",
+  "version" : "1.1.0",
+  "name" : "SecurityLabelVS",
+  "title" : "SE ValueSet security labels",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-20T13:02:08+02:00",
+  "publisher" : "HL7 Sweden",
+  "contact" : [{
+    "name" : "HL7 Sweden",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.se/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.se"
+    }]
+  }],
+  "description" : "This is the ValueSet for security labels in accordance with the swedish authorities",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "SE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "concept" : [{
+        "code" : "DEMO"
+      }]
+    },
+    {
+      "system" : "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+      "concept" : [{
+        "code" : "sekretessmarkering"
+      },
+      {
+        "code" : "skyddadFolkbokforing"
+      }]
+    }]
+  }
+}

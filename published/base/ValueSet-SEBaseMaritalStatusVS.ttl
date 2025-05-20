@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/ValueSet/SEBaseMaritalStatusVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SEBaseMaritalStatusVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SEBaseMaritalStatusVS</b></p><a name=\"SEBaseMaritalStatusVS\"> </a><a name=\"hcSEBaseMaritalStatusVS\"> </a><a name=\"SEBaseMaritalStatusVS-sv-SE\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M\">M</a></td><td>Married</td><td>A current marriage contract is active</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D\">D</a></td><td>Divorced</td><td>Marriage contract has been declared dissolved and inactive</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W\">W</a></td><td>Widowed</td><td>The spouse has died</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U\">U</a></td><td>Unmarried</td><td>Currently not in a marriage contract.</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-se-base-marital-status.html\"><code>http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-se-base-marital-status.html#se-base-marital-status-RP\">RP</a></td><td>Registrerad partner</td></tr><tr><td><a href=\"CodeSystem-se-base-marital-status.html#se-base-marital-status-SP\">SP</a></td><td>Skild partner</td></tr><tr><td><a href=\"CodeSystem-se-base-marital-status.html#se-base-marital-status-EP\">EP</a></td><td>Efterlevande partner</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/ValueSet/SEBaseMaritalStatusVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "SEBaseMaritalStatusVS"] ; # 
+  fhir:title [ fhir:v "SE ValueSet for marital status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-20T13:02:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Sweden"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Sweden" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.se/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.se" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SE" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "M" ] ;
+         fhir:display [ fhir:v "Married" ]
+       ] [
+         fhir:code [ fhir:v "D" ] ;
+         fhir:display [ fhir:v "Divorced" ]
+       ] [
+         fhir:code [ fhir:v "W" ] ;
+         fhir:display [ fhir:v "Widowed" ]
+       ] [
+         fhir:code [ fhir:v "U" ] ;
+         fhir:display [ fhir:v "Unmarried" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "RP" ] ;
+         fhir:display [ fhir:v "Registrerad partner" ]
+       ] [
+         fhir:code [ fhir:v "SP" ] ;
+         fhir:display [ fhir:v "Skild partner" ]
+       ] [
+         fhir:code [ fhir:v "EP" ] ;
+         fhir:display [ fhir:v "Efterlevande partner" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

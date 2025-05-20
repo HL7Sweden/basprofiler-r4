@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SecurityLabel"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem SecurityLabel</b></p><a name="SecurityLabel"> </a><a name="hcSecurityLabel"> </a><a name="SecurityLabel-sv-SE"> </a><p>This case-sensitive code system <code>http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">sekretessmarkering<a name="SecurityLabel-sekretessmarkering"> </a></td><td>Sekretessmarkering</td><td>Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)</td></tr><tr><td style="white-space:nowrap">skyddadFolkbokforing<a name="SecurityLabel-skyddadFolkbokforing"> </a></td><td>Skyddad folkbokföring</td><td>Protected demographic information according to Skatteverket</td></tr></table></div>
+  </text>
+  <url value="http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel"/>
+  <version value="1.1.0"/>
+  <name value="SecurityLabelCS"/>
+  <title value="SE CodeSystem security labels"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-20T13:02:08+02:00"/>
+  <publisher value="HL7 Sweden"/>
+  <contact>
+    <name value="HL7 Sweden"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.se/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.se"/>
+    </telecom>
+  </contact>
+  <description value="This is the CodeSystem for security labels in accordance with the swedish authorities"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="SE"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="sekretessmarkering"/>
+    <display value="Sekretessmarkering"/>
+    <definition value="Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)"/>
+  </concept>
+  <concept>
+    <code value="skyddadFolkbokforing"/>
+    <display value="Skyddad folkbokföring"/>
+    <definition value="Protected demographic information according to Skatteverket"/>
+  </concept>
+</CodeSystem>

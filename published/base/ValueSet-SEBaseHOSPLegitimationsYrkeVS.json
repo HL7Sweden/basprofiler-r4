@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SEBaseHOSPLegitimationsYrkeVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SEBaseHOSPLegitimationsYrkeVS</b></p><a name=\"SEBaseHOSPLegitimationsYrkeVS\"> </a><a name=\"hcSEBaseHOSPLegitimationsYrkeVS\"> </a><a name=\"SEBaseHOSPLegitimationsYrkeVS-sv-SE\"> </a><ul><li>Include all codes defined in <code>urn:oid:1.2.752.116.3.1.3</code></li></ul></div>"
+  },
+  "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHOSPLegitimationsYrkeVS",
+  "version" : "1.1.0",
+  "name" : "SEBaseHOSPLegitimationsYrkeVS",
+  "title" : "ValueSet for certification occupation from HOSP",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-20T13:02:08+02:00",
+  "publisher" : "HL7 Sweden",
+  "contact" : [{
+    "name" : "HL7 Sweden",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.se/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.se"
+    }]
+  }],
+  "description" : "Certified occupations as listed in the Register of Authorised Healthcare Professionals (HOSP)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "SE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.752.116.3.1.3"
+    }]
+  }
+}

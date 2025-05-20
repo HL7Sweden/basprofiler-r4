@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientExample1"/>
+  <meta>
+    <profile value="http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="DEMO"/>
+    </security>
+    <security>
+      <system value="http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel"/>
+      <code value="sekretessmarkering"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient PatientExample1</b></p><a name="PatientExample1"> </a><a name="hcPatientExample1"> </a><a name="PatientExample1-sv-SE"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SEBasePatient.html">SE base profil for patient</a></p><p style="margin-bottom: 0px">Security Labels: all demographic information sensitivity (Details: ActCode code DEMO = 'all demographic information sensitivity'), Sekretessmarkering (Details: SE CodeSystem security labels code sekretessmarkering = 'Sekretessmarkering')</p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">John Bob Goode Johansson(official) Male, DoB: 1950-09-07 ( http://electronichealth.se/identifier/personnummer#195009072553)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes:{http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status RP}">Registrerad partner</span></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">2120 S Michigan Ave Chicago 60616 US </td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://electronichealth.se/identifier/personnummer"/>
+    <value value="195009072553"/>
+  </identifier>
+  <name>
+    <extension url="http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension">
+      <valueString value="Johansson"/>
+    </extension>
+    <extension url="http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension">
+      <valueString value="Goode"/>
+    </extension>
+    <use value="official"/>
+    <text value="John Bob Goode Johansson"/>
+    <family value="Goode Johansson"/>
+    <given value="John">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="CL"/>
+      </extension>
+    </given>
+    <given value="Bob"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1950-09-07"/>
+  <address>
+    <extension url="http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/45991000052106"/>
+          <code value="63401000052101"/>
+          <display value="utlandsadress"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <line value="2120 S Michigan Ave"/>
+    <city value="Chicago"/>
+    <postalCode value="60616"/>
+    <country value="US"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status"/>
+      <code value="RP"/>
+      <display value="Registrerad partner"/>
+    </coding>
+  </maritalStatus>
+</Patient>

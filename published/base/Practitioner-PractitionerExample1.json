@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "PractitionerExample1",
+  "meta" : {
+    "profile" : ["http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePractitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner PractitionerExample1</b></p><a name=\"PractitionerExample1\"> </a><a name=\"hcPractitionerExample1\"> </a><a name=\"PractitionerExample1-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePractitioner.html\">SE base profile for practitioner</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.752.29.4.19</code>/SE2321000131-P000000123456</p><p><b>name</b>: John Bob Goode Johansson(Official)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><code>urn:oid:1.2.752.116.3.1.2</code>/12345678</td><td><span title=\"Codes:{http://snomed.info/sct 309453006}\">barnmorska</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.752.29.4.19",
+    "value" : "SE2321000131-P000000123456"
+  }],
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension",
+      "valueString" : "Johansson"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension",
+      "valueString" : "Goode"
+    }],
+    "use" : "official",
+    "text" : "John Bob Goode Johansson",
+    "family" : "Goode Johansson",
+    "given" : ["John",
+    "Bob"],
+    "_given" : [null,
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "CL"
+      }]
+    }]
+  }],
+  "qualification" : [{
+    "identifier" : [{
+      "system" : "urn:oid:1.2.752.116.3.1.2",
+      "value" : "12345678"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/45991000052106",
+        "code" : "309453006",
+        "display" : "barnmorska"
+      }]
+    }
+  }]
+}

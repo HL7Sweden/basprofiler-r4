@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Organization",
+  "id" : "Organization1",
+  "meta" : {
+    "profile" : ["http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOrganization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organization1</b></p><a name=\"Organization1\"> </a><a name=\"hcOrganization1\"> </a><a name=\"Organization1-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBaseOrganization.html\">SE base profile for organization</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.752.29.4.19</code>/SE2321000131-P000000123457</p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.752.29.4.19",
+    "value" : "SE2321000131-P000000123457"
+  }]
+}

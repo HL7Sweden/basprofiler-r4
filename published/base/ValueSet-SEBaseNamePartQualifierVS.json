@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SEBaseNamePartQualifierVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SEBaseNamePartQualifierVS</b></p><a name=\"SEBaseNamePartQualifierVS\"> </a><a name=\"hcSEBaseNamePartQualifierVS\"> </a><a name=\"SEBaseNamePartQualifierVS-sv-SE\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html\"><code>http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html#v3-EntityNamePartQualifierR2-CL\">CL</a></td><td>Call me</td><td>**Description:**Used to indicate which of the various name parts is used when interacting with the person.</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS",
+  "version" : "1.1.0",
+  "name" : "SEBaseNamePartQualifierVS",
+  "title" : "SE ValueSet for preferred name",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-20T13:02:08+02:00",
+  "publisher" : "HL7 Sweden",
+  "contact" : [{
+    "name" : "HL7 Sweden",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.se/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.se"
+    }]
+  }],
+  "description" : "This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "SE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2",
+      "concept" : [{
+        "code" : "CL",
+        "display" : "Call me"
+      }]
+    }]
+  }
+}

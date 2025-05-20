@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SEBaseSKRYrkeVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SEBaseSKRYrkeVS</b></p><a name=\"SEBaseSKRYrkeVS\"> </a><a name=\"hcSEBaseSKRYrkeVS\"> </a><a name=\"SEBaseSKRYrkeVS-sv-SE\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  in 67031000052107 (urval legitimerade yrken)</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  in 68591000052102 (urval ej legitimerade yrken)</li></ul></div>"
+  },
+  "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS",
+  "version" : "1.1.0",
+  "name" : "SEBaseSKRYrkeVS",
+  "title" : "SKR ValueSet for occupations",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-20T13:02:08+02:00",
+  "publisher" : "HL7 Sweden",
+  "contact" : [{
+    "name" : "HL7 Sweden",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.se/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.se"
+    }]
+  }],
+  "description" : "SKR ValueSet for occupations",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "SE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/45991000052106",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "in",
+        "value" : "67031000052107"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/45991000052106",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "in",
+        "value" : "68591000052102"
+      }]
+    }]
+  }
+}

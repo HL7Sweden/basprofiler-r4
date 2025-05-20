@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatientExample189602029812",
+  "meta" : {
+    "profile" : ["http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "DEMO"
+    },
+    {
+      "system" : "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+      "code" : "skyddadFolkbokforing"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample189602029812</b></p><a name=\"PatientExample189602029812\"> </a><a name=\"hcPatientExample189602029812\"> </a><a name=\"PatientExample189602029812-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePatient.html\">SE base profil for patient</a></p><p style=\"margin-bottom: 0px\">Security Labels: all demographic information sensitivity (Details: ActCode code DEMO = 'all demographic information sensitivity'), Skyddad folkbokföring (Details: SE CodeSystem security labels code skyddadFolkbokforing = 'Skyddad folkbokföring')</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Skyddad uppgift(official) Male, DoB: 2000-01-25 ( http://electronichealth.se/identifier/personnummer#189602029812)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Förmedlingsuppdrag Box 2820 GÖTEBORG 40320 </td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://electronichealth.se/identifier/personnummer",
+    "value" : "189602029812"
+  }],
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension",
+      "valueString" : "Skyddad uppgift"
+    }],
+    "use" : "official",
+    "text" : "Skyddad uppgift",
+    "family" : "Skyddad uppgift",
+    "given" : ["Skyddad uppgift"]
+  }],
+  "gender" : "male",
+  "birthDate" : "2000-01-25",
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/45991000052106",
+          "code" : "63391000052104",
+          "display" : "särskild postadress"
+        }]
+      }
+    }],
+    "line" : ["Förmedlingsuppdrag",
+    "Box 2820"],
+    "city" : "GÖTEBORG",
+    "postalCode" : "40320"
+  }]
+}

@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SEBaseHSABefattningVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SEBaseHSABefattningVS</b></p><a name=\"SEBaseHSABefattningVS\"> </a><a name=\"hcSEBaseHSABefattningVS\"> </a><a name=\"SEBaseHSABefattningVS-sv-SE\"> </a><ul><li>Include all codes defined in <code>urn:oid:1.2.759.129.2.2.1.4</code></li></ul></div>"
+  },
+  "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSABefattningVS",
+  "version" : "1.1.0",
+  "name" : "SEBaseHSABefattningVS",
+  "title" : "Valueset for HSA occupational positions in healthcare",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-20T13:02:08+02:00",
+  "publisher" : "HL7 Sweden",
+  "contact" : [{
+    "name" : "HL7 Sweden",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.se/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.se"
+    }]
+  }],
+  "description" : "The code system is used in the data element 'paTitleCode' in the HSA catalogue",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "SE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.759.129.2.2.1.4"
+    }]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PatientExample98240301AA06",
+  "meta" : {
+    "profile" : ["http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample98240301AA06</b></p><a name=\"PatientExample98240301AA06\"> </a><a name=\"hcPatientExample98240301AA06\"> </a><a name=\"PatientExample98240301AA06-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePatient.html\">SE base profil for patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Förnamn Mellannamn Efternamn(official) Female, DoB: 2024-03-01 ( http://electronichealth.se/identifier/nationelltReservnummer#98240301AA06)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>C/O Adressrad 1 (Mer än 35 tecken) Adressrad 2 (Fler än 35 tecken) Orten 54300 </li><li>Adressrad 1 Adressrad 2 Adressrad 3 DZ </li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://electronichealth.se/identifier/nationelltReservnummer",
+    "value" : "98240301AA06"
+  }],
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension",
+      "valueString" : "Mellannamn"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension",
+      "valueString" : "Efternamn"
+    }],
+    "use" : "official",
+    "text" : "Förnamn Mellannamn Efternamn",
+    "family" : "Mellannamn Efternamn",
+    "given" : ["Förnamn"]
+  }],
+  "gender" : "female",
+  "birthDate" : "2024-03-01",
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/45991000052106",
+          "code" : "63411000052104",
+          "display" : "uppgiven adress"
+        }]
+      }
+    }],
+    "line" : ["C/O",
+    "Adressrad 1 (Mer än 35 tecken)",
+    "Adressrad 2 (Fler än 35 tecken)"],
+    "city" : "Orten",
+    "postalCode" : "54300"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/45991000052106",
+          "code" : "63401000052101",
+          "display" : "utlandsadress"
+        }]
+      }
+    }],
+    "line" : ["Adressrad 1",
+    "Adressrad 2",
+    "Adressrad 3"],
+    "country" : "DZ"
+  }]
+}

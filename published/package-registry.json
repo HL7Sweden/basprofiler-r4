@@ -1,0 +1,23 @@
+{
+  "packages" : [
+    {
+      "path" : "base/package-list.json",
+      "package-id" : "hl7se.fhir.base",
+      "title" : "HL7 Sweden base profiles",
+      "canonical" : "http://hl7.se/fhir/ig/base",
+      "category" : "National Base",
+      "ci-build" : "http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/",
+      "version-count" : 2,
+      "latest" : {
+        "version" : "1.1.0",
+        "date" : "2025-05-20",
+        "path" : "http://hl7.se/fhir/ig/base/1.1.0"
+      },
+      "milestone" : {
+        "version" : "1.1.0",
+        "date" : "2025-05-20",
+        "path" : "http://hl7.se/fhir/ig/base/1.1.0"
+      }
+    }
+  ]
+}

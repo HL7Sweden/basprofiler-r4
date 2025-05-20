@@ -1,12 +1,14 @@
 {
   "scripts": {
     "build": "./_genonce.sh",
-    "_publish": "java -jar input-cache/publisher.jar -go-publish -source . -destination $(pwd)/published -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)/fhir-ig-history-template -temp $(pwd)/temp",
+    "_publish": "java -jar input-cache/publisher.jar -go-publish -source $(pwd) -web $(pwd)/published -history $(pwd)/../fhir-ig-history-template -temp $(pwd)/temp -templates $(pwd)/published/templates -registry $(pwd)/../ig-registry/fhir-ig-list.json",
     "publish": "npm run build && npm run _publish",
     "serve": "npx http-server published/base",
     "start": "npm run serve"
   },
   "dependencies": {
-    "fsh-sushi": "^3.0.0"
-  }
+    "antlr4": "^4.13.2",
+    "fsh-sushi": "^3.15.1"
+  },
+  "packageManager": "yarn@4.9.1"
 }

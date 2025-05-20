@@ -1,0 +1,380 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBaseOrganization.html" : "SE base profile for organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient",
+      "StructureDefinition-SEBaseLMANummer.html" : "Profile for LMA number",
+      "StructureDefinition-SEBaseOrganization.html" : "SE base profile for organization",
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient",
+      "StructureDefinition-SEBaseLMANummer.html" : "Profile for LMA number",
+      "StructureDefinition-SEBaseOrganization.html" : "SE base profile for organization",
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient",
+      "StructureDefinition-SEBaseOrganization.html" : "SE base profile for organization",
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBaseHumanName.html" : "SEBaseHumanName"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseAddressPersonVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseAddressPersonVS",
+      "title" : "SE ValueSet for official address types",
+      "description" : "This is the ValueSet for address type in accordance with the Swedish authorities",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBaseAddressPersonExtension.html" : "SE extension for official address types"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHOSPLegitimationsYrkeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseHOSPLegitimationsYrkeVS",
+      "title" : "ValueSet for certification occupation from HOSP",
+      "description" : "Certified occupations as listed in the Register of Authorised Healthcare Professionals (HOSP)",
+      "systems" : ["urn:oid:1.2.752.116.3.1.3"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSABefattningVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseHSABefattningVS",
+      "title" : "Valueset for HSA occupational positions in healthcare",
+      "description" : "The code system is used in the data element 'paTitleCode' in the HSA catalogue",
+      "systems" : ["urn:oid:1.2.759.129.2.2.1.4"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSAVerksamhetVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseHSAVerksamhetVS",
+      "title" : "HSA valueset for business classification codes",
+      "description" : "Codes used to describe the type of care activities an entity can provide.",
+      "systems" : ["urn:oid:1.2.752.129.2.2.1.3"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBaseOrganization.html" : "SE base profile for organization"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseMaritalStatusVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseMaritalStatusVS",
+      "title" : "SE ValueSet for marital status",
+      "description" : "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities.",
+      "systems" : [
+        "http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status",
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseNamePartQualifierVS",
+      "title" : "SE ValueSet for preferred name",
+      "description" : "This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SEBaseHumanName.html" : "SEBaseHumanName"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeSpecialtyVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseSKRYrkeSpecialtyVS",
+      "title" : "SKR ValueSet for clinical specialties",
+      "description" : "SKR ValueSet for clinical specialties",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseSKRYrkeVS",
+      "title" : "SKR ValueSet for occupations",
+      "description" : "SKR ValueSet for occupations",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSOSNYKVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseSOSNYKVS",
+      "title" : "ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)",
+      "description" : "The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc.",
+      "systems" : ["urn:oid:1.2.752.116.1.3.6"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitionerRole.html" : "SE base profil for practitioner role",
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SecurityLabelVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SecurityLabelVS",
+      "title" : "SE ValueSet security labels",
+      "description" : "This is the ValueSet for security labels in accordance with the swedish authorities",
+      "systems" : [
+        "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePatient.html" : "SE base profil for patient"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-SEBasePractitioner.html" : "SE base profile for practitioner"
+    }
+  ]
+}

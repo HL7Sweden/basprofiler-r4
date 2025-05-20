@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SEBaseSKRYrkeSpecialtyVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SEBaseSKRYrkeSpecialtyVS</b></p><a name="SEBaseSKRYrkeSpecialtyVS"> </a><a name="hcSEBaseSKRYrkeSpecialtyVS"> </a><a name="SEBaseSKRYrkeSpecialtyVS-sv-SE"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  in 67051000052103 (urval specialistyrken sjuksköterska)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  in 67081000052106 (urval specialistyrken läkare)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  in 67071000052109 (urval specialistyrken tandläkare)</li></ul></div>
+  </text>
+  <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeSpecialtyVS"/>
+  <version value="1.1.0"/>
+  <name value="SEBaseSKRYrkeSpecialtyVS"/>
+  <title value="SKR ValueSet for clinical specialties"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-20T13:02:08+02:00"/>
+  <publisher value="HL7 Sweden"/>
+  <contact>
+    <name value="HL7 Sweden"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.se/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.se"/>
+    </telecom>
+  </contact>
+  <description value="SKR ValueSet for clinical specialties"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="SE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/45991000052106"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="67051000052103"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/45991000052106"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="67081000052106"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/45991000052106"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="67071000052109"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

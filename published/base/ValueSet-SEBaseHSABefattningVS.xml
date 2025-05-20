@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SEBaseHSABefattningVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SEBaseHSABefattningVS</b></p><a name="SEBaseHSABefattningVS"> </a><a name="hcSEBaseHSABefattningVS"> </a><a name="SEBaseHSABefattningVS-sv-SE"> </a><ul><li>Include all codes defined in <code>urn:oid:1.2.759.129.2.2.1.4</code></li></ul></div>
+  </text>
+  <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSABefattningVS"/>
+  <version value="1.1.0"/>
+  <name value="SEBaseHSABefattningVS"/>
+  <title value="Valueset for HSA occupational positions in healthcare"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-20T13:02:08+02:00"/>
+  <publisher value="HL7 Sweden"/>
+  <contact>
+    <name value="HL7 Sweden"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.se/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.se"/>
+    </telecom>
+  </contact>
+  <description value="The code system is used in the data element 'paTitleCode' in the HSA catalogue"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="SE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.759.129.2.2.1.4"/>
+    </include>
+  </compose>
+</ValueSet>

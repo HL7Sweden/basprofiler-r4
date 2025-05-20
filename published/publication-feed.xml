@@ -1,16 +1,25 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--suppress XmlUnusedNamespaceDeclaration -->
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:fhir="http://hl7.org/fhir/feed" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="UTF-8"?><!--suppress XmlUnusedNamespaceDeclaration --><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">
   <channel>
     <title>HL7 Sweden FHIR Publications</title>
-    <description>New publications by HL7 Sweden></description>
+    <description>New publications by HL7 Sweden&gt;</description>
     <link>http://hl7.se/fhir/ig/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Wed, 08 Mar 2023 04:21:58 +0100 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 May 2025 12:57:48 +0200</lastBuildDate>
     <atom:link href="http://hl7.se/fhir/ig/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Mar 2023 04:21:58 +0100</pubDate>
+    <pubDate>Tue, 20 May 2025 12:57:48 +0200</pubDate>
     <language>en</language>
     <ttl>600</ttl>
+    <item>
+      <title>HL7 Sweden base profiles version 1.1.0</title>
+      <description>Swedish Base Profiles Implementation Guide</description>
+      <link>http://hl7.se/fhir/ig/base/1.1.0/index.html</link>
+      <guid isPermaLink="true">http://hl7.se/fhir/ig/base/1.1.0/index.html</guid>
+      <dc:creator>HL7 Sweden</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 20 May 2025 12:57:48 +0200</pubDate>
+      <fhir:details>Publication run at 20/05/2025 by petur using Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (12 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>HL7 Sweden base profiles</title>
       <description>Swedish Base Profiles Implementation Guide</description>

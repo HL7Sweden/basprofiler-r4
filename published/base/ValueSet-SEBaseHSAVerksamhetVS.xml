@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SEBaseHSAVerksamhetVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SEBaseHSAVerksamhetVS</b></p><a name="SEBaseHSAVerksamhetVS"> </a><a name="hcSEBaseHSAVerksamhetVS"> </a><a name="SEBaseHSAVerksamhetVS-sv-SE"> </a><ul><li>Include all codes defined in <code>urn:oid:1.2.752.129.2.2.1.3</code></li></ul></div>
+  </text>
+  <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSAVerksamhetVS"/>
+  <version value="1.1.0"/>
+  <name value="SEBaseHSAVerksamhetVS"/>
+  <title value="HSA valueset for business classification codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-20T13:02:08+02:00"/>
+  <publisher value="HL7 Sweden"/>
+  <contact>
+    <name value="HL7 Sweden"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.se/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.se"/>
+    </telecom>
+  </contact>
+  <description value="Codes used to describe the type of care activities an entity can provide."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="SE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.752.129.2.2.1.3"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -15,7 +15,7 @@ Framtagandet av dessa basprofiler och utökningar genomförs av en arbetsgrupp u
 
 ### Contact information
 To reach the working group for the Swedish base profiles: 
-[Arvid Thunholm](mailto:arvid.thunholm@gmail.com) - Chairman HL7 WG base profiles
+[HL7 Sweden](https://hl7.se)
 
 <!---
 För att komma i kontakt med gruppen som arbetar med FHIR basprofiler:

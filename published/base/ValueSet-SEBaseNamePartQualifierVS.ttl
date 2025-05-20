@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SEBaseNamePartQualifierVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SEBaseNamePartQualifierVS</b></p><a name=\"SEBaseNamePartQualifierVS\"> </a><a name=\"hcSEBaseNamePartQualifierVS\"> </a><a name=\"SEBaseNamePartQualifierVS-sv-SE\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html\"><code>http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html#v3-EntityNamePartQualifierR2-CL\">CL</a></td><td>Call me</td><td>**Description:**Used to indicate which of the various name parts is used when interacting with the person.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "SEBaseNamePartQualifierVS"] ; # 
+  fhir:title [ fhir:v "SE ValueSet for preferred name"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-20T13:02:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Sweden"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Sweden" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.se/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.se" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SE" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "CL" ] ;
+         fhir:display [ fhir:v "Call me" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

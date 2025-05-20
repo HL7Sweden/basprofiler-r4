@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/Patient/PatientExample1> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DEMO" ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "sekretessmarkering" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample1</b></p><a name=\"PatientExample1\"> </a><a name=\"hcPatientExample1\"> </a><a name=\"PatientExample1-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePatient.html\">SE base profil for patient</a></p><p style=\"margin-bottom: 0px\">Security Labels: all demographic information sensitivity (Details: ActCode code DEMO = 'all demographic information sensitivity'), Sekretessmarkering (Details: SE CodeSystem security labels code sekretessmarkering = 'Sekretessmarkering')</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">John Bob Goode Johansson(official) Male, DoB: 1950-09-07 ( http://electronichealth.se/identifier/personnummer#195009072553)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status RP}\">Registrerad partner</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">2120 S Michigan Ave Chicago 60616 US </td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://electronichealth.se/identifier/personnummer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "195009072553" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Johansson"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Goode"
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "John Bob Goode Johansson" ] ;
+     fhir:family [ fhir:v "Goode Johansson" ] ;
+     fhir:given ( [
+       fhir:v "John" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "CL"
+         ]
+       ] )
+     ] [ fhir:v "Bob" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1950-09-07"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:63401000052101 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "http://snomed.info/sct/45991000052106" ] ;
+           fhir:code [ fhir:v "63401000052101" ] ;
+           fhir:display [ fhir:v "utlandsadress" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "2120 S Michigan Ave" ] ) ;
+     fhir:city [ fhir:v "Chicago" ] ;
+     fhir:postalCode [ fhir:v "60616" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RP" ] ;
+       fhir:display [ fhir:v "Registrerad partner" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

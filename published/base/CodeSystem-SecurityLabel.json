@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SecurityLabel",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SecurityLabel</b></p><a name=\"SecurityLabel\"> </a><a name=\"hcSecurityLabel\"> </a><a name=\"SecurityLabel-sv-SE\"> </a><p>This case-sensitive code system <code>http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sekretessmarkering<a name=\"SecurityLabel-sekretessmarkering\"> </a></td><td>Sekretessmarkering</td><td>Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)</td></tr><tr><td style=\"white-space:nowrap\">skyddadFolkbokforing<a name=\"SecurityLabel-skyddadFolkbokforing\"> </a></td><td>Skyddad folkbokföring</td><td>Protected demographic information according to Skatteverket</td></tr></table></div>"
+  },
+  "url" : "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+  "version" : "1.1.0",
+  "name" : "SecurityLabelCS",
+  "title" : "SE CodeSystem security labels",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-20T13:02:08+02:00",
+  "publisher" : "HL7 Sweden",
+  "contact" : [{
+    "name" : "HL7 Sweden",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.se/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.se"
+    }]
+  }],
+  "description" : "This is the CodeSystem for security labels in accordance with the swedish authorities",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "SE"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "sekretessmarkering",
+    "display" : "Sekretessmarkering",
+    "definition" : "Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)"
+  },
+  {
+    "code" : "skyddadFolkbokforing",
+    "display" : "Skyddad folkbokföring",
+    "definition" : "Protected demographic information according to Skatteverket"
+  }]
+}

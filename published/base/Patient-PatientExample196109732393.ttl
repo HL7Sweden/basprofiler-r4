@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/Patient/PatientExample196109732393> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientExample196109732393"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample196109732393</b></p><a name=\"PatientExample196109732393\"> </a><a name=\"hcPatientExample196109732393\"> </a><a name=\"PatientExample196109732393-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePatient.html\">SE base profil for patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Tom Smith(official) Male, DoB: 1961-09-13 ( http://electronichealth.se/identifier/samordningsnummer#196109732393)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">SANDÅSGATAN 2 STOCKHOLM 11327 </td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://electronichealth.se/identifier/samordningsnummer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "196109732393" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Tom Smith" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Tom" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1961-09-13"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:63391000052104 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "http://snomed.info/sct/45991000052106" ] ;
+           fhir:code [ fhir:v "63391000052104" ] ;
+           fhir:display [ fhir:v "särskild postadress" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "SANDÅSGATAN 2" ] ) ;
+     fhir:city [ fhir:v "STOCKHOLM" ] ;
+     fhir:postalCode [ fhir:v "11327" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

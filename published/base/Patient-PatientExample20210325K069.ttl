@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/Patient/PatientExample20210325K069> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientExample20210325K069"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample20210325K069</b></p><a name=\"PatientExample20210325K069\"> </a><a name=\"hcPatientExample20210325K069\"> </a><a name=\"PatientExample20210325K069-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePatient.html\">SE base profil for patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Förnamn Mellannamn Efternamn(official) Female, DoB: 2021-03-25 ( http://electronichealth.se/identifier/nationelltReservnummer#20210325K069)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>Careof Tillfällig adressrad Orten 54300 </li><li>Adressrad 1 Adressrad 2 Adressrad 3 DZ </li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://electronichealth.se/identifier/nationelltReservnummer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "20210325K069" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Mellannamn"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Efternamn"
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Förnamn Mellannamn Efternamn" ] ;
+     fhir:family [ fhir:v "Mellannamn Efternamn" ] ;
+     fhir:given ( [ fhir:v "Förnamn" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2021-03-25"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:63411000052104 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "http://snomed.info/sct/45991000052106" ] ;
+           fhir:code [ fhir:v "63411000052104" ] ;
+           fhir:display [ fhir:v "uppgiven adress" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "Careof" ] [ fhir:v "Tillfällig adressrad" ] ) ;
+     fhir:city [ fhir:v "Orten" ] ;
+     fhir:postalCode [ fhir:v "54300" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:63401000052101 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "http://snomed.info/sct/45991000052106" ] ;
+           fhir:code [ fhir:v "63401000052101" ] ;
+           fhir:display [ fhir:v "utlandsadress" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "Adressrad 1" ] [ fhir:v "Adressrad 2" ] [ fhir:v "Adressrad 3" ] ) ;
+     fhir:country [ fhir:v "DZ" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

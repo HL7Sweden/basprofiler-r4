@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Swedish Base Profiles Implementation Guide v1.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <link href="assets/css/hl7.se.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div id="hl7-se-nav">
+    <a no-external="true" href="http://hl7.se">
+        <img height="56" alt="Visit HL7 Sweden website" src="assets/images/HS_HL7_0.png"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Swedish Base Profiles Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - release
+
+
+
+  <img alt="Sweden flag" src="assets/images/swe.svg" height="16" title="Sweden"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="2_profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="3_valuesets.html">Value Sets</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 Sweden base profiles (v1.1.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.se/fhir/ig/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#7">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBasePatient.html"
+                  title="StructureDefinition/SEBasePatient">SE base profil for patient</a>
+            </td>
+            <td>
+<p>This is the base Patient profile to be used when profiling on Patient in a Swedish context</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBasePractitionerRole.html"
+                  title="StructureDefinition/SEBasePractitionerRole">SE base profil for practitioner role</a>
+            </td>
+            <td>
+<p>This is the base Practitioner Role profile to be used when profiling on Practitioner Role in a Swedish context</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBaseOrganization.html"
+                  title="StructureDefinition/SEBaseOrganization">SE base profile for organization</a>
+            </td>
+            <td>
+<p>This is the base Organization profile to be used when profiling on Organization in a Swedish context</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBasePractitioner.html"
+                  title="StructureDefinition/SEBasePractitioner">SE base profile for practitioner</a>
+            </td>
+            <td>
+<p>This is the base Practitioner profile to be used when profiling on Practitioner in a Swedish context</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBaseLMANummer.html"
+                  title="StructureDefinition/SEBaseLMANummer">Profile for LMA number</a>
+            </td>
+            <td>
+<p>This profile is to be used specifically for expressing an LMA number as an identifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBaseHumanName.html"
+                  title="StructureDefinition/SEBaseHumanName">SEBaseHumanName</a>
+            </td>
+            <td>
+<p>This profile provides the use of Swedish middlename and own family name as extensions and is used in the base Patient profile</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBaseAddressPersonExtension.html"
+                  title="StructureDefinition/SEBaseAddressPersonExtension">SE extension for official address types</a>
+            </td>
+            <td>
+<p>This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBaseOwnFamilyExtension.html"
+                  title="StructureDefinition/SEBaseOwnFamilyExtension">SE extension för explicit efternamn</a>
+            </td>
+            <td>
+<p>The extension is used in the base profile for Swedish Patient to explicity express which part of the name is used as the family name.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SEBaseMiddleNameExtension.html"
+                  title="StructureDefinition/SEBaseMiddleNameExtension">SE extension för mellannamn</a>
+            </td>
+            <td>
+<p>The extension is used in the base profile for Swedish Patient to express the middle name that a person born before 2017 can have</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseHSAVerksamhetVS.html"
+                  title="ValueSet/SEBaseHSAVerksamhetVS">HSA valueset for business classification codes</a>
+            </td>
+            <td>
+<p>Codes used to describe the type of care activities an entity can provide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseMaritalStatusVS.html"
+                  title="ValueSet/SEBaseMaritalStatusVS">SE ValueSet for marital status</a>
+            </td>
+            <td>
+<p>This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseAddressPersonVS.html"
+                  title="ValueSet/SEBaseAddressPersonVS">SE ValueSet for official address types</a>
+            </td>
+            <td>
+<p>This is the ValueSet for address type in accordance with the Swedish authorities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseNamePartQualifierVS.html"
+                  title="ValueSet/SEBaseNamePartQualifierVS">SE ValueSet for preferred name</a>
+            </td>
+            <td>
+<p>This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SecurityLabelVS.html" title="ValueSet/SecurityLabelVS">SE ValueSet security labels</a>
+            </td>
+            <td>
+<p>This is the ValueSet for security labels in accordance with the swedish authorities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseSKRYrkeSpecialtyVS.html"
+                  title="ValueSet/SEBaseSKRYrkeSpecialtyVS">SKR ValueSet for clinical specialties</a>
+            </td>
+            <td>
+<p>SKR ValueSet for clinical specialties</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseSKRYrkeVS.html" title="ValueSet/SEBaseSKRYrkeVS">SKR ValueSet for occupations</a>
+            </td>
+            <td>
+<p>SKR ValueSet for occupations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseHOSPLegitimationsYrkeVS.html"
+                  title="ValueSet/SEBaseHOSPLegitimationsYrkeVS">ValueSet for certification occupation from HOSP</a>
+            </td>
+            <td>
+<p>Certified occupations as listed in the Register of Authorised Healthcare Professionals (HOSP)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseSOSNYKVS.html" title="ValueSet/SEBaseSOSNYKVS">ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)</a>
+            </td>
+            <td>
+<p>The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SEBaseHSABefattningVS.html"
+                  title="ValueSet/SEBaseHSABefattningVS">Valueset for HSA occupational positions in healthcare</a>
+            </td>
+            <td>
+<p>The code system is used in the data element 'paTitleCode' in the HSA catalogue</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-se-base-marital-status.html"
+                  title="CodeSystem/se-base-marital-status">SE CodeSystem for marital status</a>
+            </td>
+            <td>
+<p>This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-SecurityLabel.html" title="CodeSystem/SecurityLabel">SE CodeSystem security labels</a>
+            </td>
+            <td>
+<p>This is the CodeSystem for security labels in accordance with the swedish authorities</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Organization1.html"
+                  title="Organization/Organization1">OrganizationExample1</a>
+            </td>
+            <td>
+<p>Organization example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample1.html" title="Patient/PatientExample1">PatientExample1</a>
+            </td>
+            <td>
+<p>Patient example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample189002029800.html"
+                  title="Patient/PatientExample189002029800">PatientExample189002029800</a>
+            </td>
+            <td>
+<p>Example patient identified by personnummer 189002029800.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample189602029812.html"
+                  title="Patient/PatientExample189602029812">PatientExample189602029812</a>
+            </td>
+            <td>
+<p>Example patient identified by personnummer 189602029812.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample196101182803.html"
+                  title="Patient/PatientExample196101182803">PatientExample196101182803</a>
+            </td>
+            <td>
+<p>Example patient identified by personnummer 196101182803.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample196109732393.html"
+                  title="Patient/PatientExample196109732393">PatientExample196109732393</a>
+            </td>
+            <td>
+<p>Example patient identified by samordningsnummer 196109732393.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample199002222397.html"
+                  title="Patient/PatientExample199002222397">PatientExample199002222397</a>
+            </td>
+            <td>
+<p>Example patient identified by personnummer 199002222397.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample200001252386.html"
+                  title="Patient/PatientExample200001252386">PatientExample200001252386</a>
+            </td>
+            <td>
+<p>Example patient identified by personnummer 200001252386.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample200302022389.html"
+                  title="Patient/PatientExample200302022389">PatientExample200302022389</a>
+            </td>
+            <td>
+<p>Example patient identified by personnummer 200302022389.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample20210325K069.html"
+                  title="Patient/PatientExample20210325K069">PatientExample20210325K069</a>
+            </td>
+            <td>
+<p>Example patient identified by nationellt reservnummer 20210325K069.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientExample98240301AA06.html"
+                  title="Patient/PatientExample98240301AA06">PatientExample98240301AA06</a>
+            </td>
+            <td>
+<p>Example patient identified by nationellt reservnummer 98240301AA06.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-PractitionerExample1.html"
+                  title="Practitioner/PractitionerExample1">PractitionerExample1</a>
+            </td>
+            <td>
+<p>Practitioner example</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-exp-params.html" title="Parameters/exp-params">Parameters for Terminology selection of SNOMED CT-SE</a>
+            </td>
+            <td>
+<p>This parameter resource is used to specify the system version of SNOMED CT-SE to be used in the terminology service.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.se/">HL7 Sweden</a>.  Package hl7se.fhir.base#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:02+0200">2025-05-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,102 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseAddressPersonVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseAddressPersonVS",
+      "title" : "SE ValueSet for official address types",
+      "description" : "This is the ValueSet for address type in accordance with the Swedish authorities",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHOSPLegitimationsYrkeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseHOSPLegitimationsYrkeVS",
+      "title" : "ValueSet for certification occupation from HOSP",
+      "description" : "Certified occupations as listed in the Register of Authorised Healthcare Professionals (HOSP)",
+      "systems" : ["urn:oid:1.2.752.116.3.1.3"]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSABefattningVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseHSABefattningVS",
+      "title" : "Valueset for HSA occupational positions in healthcare",
+      "description" : "The code system is used in the data element 'paTitleCode' in the HSA catalogue",
+      "systems" : ["urn:oid:1.2.759.129.2.2.1.4"]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSAVerksamhetVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseHSAVerksamhetVS",
+      "title" : "HSA valueset for business classification codes",
+      "description" : "Codes used to describe the type of care activities an entity can provide.",
+      "systems" : ["urn:oid:1.2.752.129.2.2.1.3"]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseMaritalStatusVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseMaritalStatusVS",
+      "title" : "SE ValueSet for marital status",
+      "description" : "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities.",
+      "systems" : [
+        "http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status",
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+      ]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseNamePartQualifierVS",
+      "title" : "SE ValueSet for preferred name",
+      "description" : "This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"
+      ]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeSpecialtyVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseSKRYrkeSpecialtyVS",
+      "title" : "SKR ValueSet for clinical specialties",
+      "description" : "SKR ValueSet for clinical specialties",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseSKRYrkeVS",
+      "title" : "SKR ValueSet for occupations",
+      "description" : "SKR ValueSet for occupations",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSOSNYKVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseSOSNYKVS",
+      "title" : "ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)",
+      "description" : "The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc.",
+      "systems" : ["urn:oid:1.2.752.116.1.3.6"]
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/ValueSet/SecurityLabelVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SecurityLabelVS",
+      "title" : "SE ValueSet security labels",
+      "description" : "This is the ValueSet for security labels in accordance with the swedish authorities",
+      "systems" : [
+        "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+      ]
+    }
+  ]
+}

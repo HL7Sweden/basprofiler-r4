@@ -1,0 +1,111 @@
+SEBaseProfileImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 26, info = 6
+$--
+Generated $--. FHIR version $-- for hl7se.fhir.base#$-- (canonical = http://hl7.se/fhir/ig/base)
+ Build Errors : 0 / 0 / 0
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/CodeSystem-SecurityLabel : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/CodeSystem-se-base-marital-status : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ImplementationGuide-hl7se.fhir.base : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Organization-Organization1 : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Parameters-exp-params : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample1 : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample189002029800 : 0 / 1 / 2
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample189602029812 : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample196101182803 : 0 / 1 / 2
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample196109732393 : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample199002222397 : 0 / 1 / 2
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample200001252386 : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample200302022389 : 0 / 1 / 2
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample20210325K069 : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Patient-PatientExample98240301AA06 : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/Practitioner-PractitionerExample1 : 0 / 2 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBaseAddressPersonExtension : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBaseHumanName : 0 / 2 / 2
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBaseLMANummer : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBaseMiddleNameExtension : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBaseOrganization : 0 / 0 / 2
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBaseOwnFamilyExtension : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBasePatient : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBasePractitioner : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/StructureDefinition-SEBasePractitionerRole : 0 / 1 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseAddressPersonVS : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseHOSPLegitimationsYrkeVS : 0 / 2 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseHSABefattningVS : 0 / 2 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseHSAVerksamhetVS : 0 / 2 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseMaritalStatusVS : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseNamePartQualifierVS : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseSKRYrkeSpecialtyVS : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseSKRYrkeVS : 0 / 0 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SEBaseSOSNYKVS : 0 / 2 / 1
+ /Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/fsh-generated/resources/ValueSet-SecurityLabelVS : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/CodeSystem-SecurityLabel.json ==
+== fsh-generated/resources/CodeSystem-se-base-marital-status.json ==
+WARNING: CodeSystem/se-base-marital-status: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/ImplementationGuide-hl7se.fhir.base.json ==
+== fsh-generated/resources/Organization-Organization1.json ==
+WARNING: Organization/Organization1: Organization.identifier[0].system: URL value 'urn:oid:1.2.752.29.4.19' does not resolve
+== fsh-generated/resources/Parameters-exp-params.json ==
+== fsh-generated/resources/Patient-PatientExample1.json ==
+WARNING: Patient/PatientExample1: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/personnummer' does not resolve
+== fsh-generated/resources/Patient-PatientExample189002029800.json ==
+WARNING: Patient/PatientExample189002029800: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/personnummer' does not resolve
+INFORMATION: Patient/PatientExample189002029800: Patient.maritalStatus.coding[0].display: 'Married' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus has no Display Names for the language sv-SE
+== fsh-generated/resources/Patient-PatientExample189602029812.json ==
+WARNING: Patient/PatientExample189602029812: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/personnummer' does not resolve
+== fsh-generated/resources/Patient-PatientExample196101182803.json ==
+WARNING: Patient/PatientExample196101182803: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/personnummer' does not resolve
+INFORMATION: Patient/PatientExample196101182803: Patient.maritalStatus.coding[0].display: 'Married' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus has no Display Names for the language sv-SE
+== fsh-generated/resources/Patient-PatientExample196109732393.json ==
+WARNING: Patient/PatientExample196109732393: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/samordningsnummer' does not resolve
+== fsh-generated/resources/Patient-PatientExample199002222397.json ==
+WARNING: Patient/PatientExample199002222397: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/personnummer' does not resolve
+INFORMATION: Patient/PatientExample199002222397: Patient.maritalStatus.coding[0].display: 'Unmarried' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus has no Display Names for the language sv-SE
+== fsh-generated/resources/Patient-PatientExample200001252386.json ==
+WARNING: Patient/PatientExample200001252386: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/personnummer' does not resolve
+== fsh-generated/resources/Patient-PatientExample200302022389.json ==
+WARNING: Patient/PatientExample200302022389: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/personnummer' does not resolve
+INFORMATION: Patient/PatientExample200302022389: Patient.maritalStatus.coding[0].display: 'Unmarried' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus has no Display Names for the language sv-SE
+== fsh-generated/resources/Patient-PatientExample20210325K069.json ==
+WARNING: Patient/PatientExample20210325K069: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/nationelltReservnummer' does not resolve
+== fsh-generated/resources/Patient-PatientExample98240301AA06.json ==
+WARNING: Patient/PatientExample98240301AA06: Patient.identifier[0].system: URL value 'http://electronichealth.se/identifier/nationelltReservnummer' does not resolve
+== fsh-generated/resources/Practitioner-PractitionerExample1.json ==
+WARNING: Practitioner/PractitionerExample1: Practitioner.identifier[0].system: URL value 'urn:oid:1.2.752.29.4.19' does not resolve
+WARNING: Practitioner/PractitionerExample1: Practitioner.qualification[0].identifier[0].system: URL value 'urn:oid:1.2.752.116.3.1.2' does not resolve
+== fsh-generated/resources/StructureDefinition-SEBaseAddressPersonExtension.json ==
+== fsh-generated/resources/StructureDefinition-SEBaseHumanName.json ==
+WARNING: StructureDefinition/SEBaseHumanName: StructureDefinition.snapshot.element[11].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier' to 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier|5.2.0'
+INFORMATION: StructureDefinition/SEBaseHumanName: StructureDefinition.snapshot.element[16].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+WARNING: StructureDefinition/SEBaseHumanName: StructureDefinition.differential.element[4].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier' to 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier|5.2.0'
+== fsh-generated/resources/StructureDefinition-SEBaseLMANummer.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseLMANummer'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-SEBaseMiddleNameExtension.json ==
+== fsh-generated/resources/StructureDefinition-SEBaseOrganization.json ==
+INFORMATION: StructureDefinition/SEBaseOrganization: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-SEBaseOwnFamilyExtension.json ==
+== fsh-generated/resources/StructureDefinition-SEBasePatient.json ==
+== fsh-generated/resources/StructureDefinition-SEBasePractitioner.json ==
+== fsh-generated/resources/StructureDefinition-SEBasePractitionerRole.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePractitionerRole'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-SEBaseAddressPersonVS.json ==
+== fsh-generated/resources/ValueSet-SEBaseHOSPLegitimationsYrkeVS.json ==
+WARNING: ValueSet/SEBaseHOSPLegitimationsYrkeVS: ValueSet.compose.include[0].system: URL value 'urn:oid:1.2.752.116.3.1.3' does not resolve
+WARNING: ValueSet.where(id = 'SEBaseHOSPLegitimationsYrkeVS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.752.116.3.1.3
+== fsh-generated/resources/ValueSet-SEBaseHSABefattningVS.json ==
+WARNING: ValueSet/SEBaseHSABefattningVS: ValueSet.compose.include[0].system: URL value 'urn:oid:1.2.759.129.2.2.1.4' does not resolve
+WARNING: ValueSet.where(id = 'SEBaseHSABefattningVS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.759.129.2.2.1.4
+== fsh-generated/resources/ValueSet-SEBaseHSAVerksamhetVS.json ==
+WARNING: ValueSet/SEBaseHSAVerksamhetVS: ValueSet.compose.include[0].system: URL value 'urn:oid:1.2.752.129.2.2.1.3' does not resolve
+WARNING: ValueSet.where(id = 'SEBaseHSAVerksamhetVS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.752.129.2.2.1.3
+== fsh-generated/resources/ValueSet-SEBaseMaritalStatusVS.json ==
+== fsh-generated/resources/ValueSet-SEBaseNamePartQualifierVS.json ==
+== fsh-generated/resources/ValueSet-SEBaseSKRYrkeSpecialtyVS.json ==
+== fsh-generated/resources/ValueSet-SEBaseSKRYrkeVS.json ==
+== fsh-generated/resources/ValueSet-SEBaseSOSNYKVS.json ==
+WARNING: ValueSet/SEBaseSOSNYKVS: ValueSet.compose.include[0].system: URL value 'urn:oid:1.2.752.116.1.3.6' does not resolve
+WARNING: ValueSet.where(id = 'SEBaseSOSNYKVS'): Error from https://tx.fhir.org/r4: Unable to provide support for code system urn:oid:1.2.752.116.1.3.6
+== fsh-generated/resources/ValueSet-SecurityLabelVS.json ==

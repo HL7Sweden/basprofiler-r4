@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SEBaseSOSNYKVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SEBaseSOSNYKVS</b></p><a name=\"SEBaseSOSNYKVS\"> </a><a name=\"hcSEBaseSOSNYKVS\"> </a><a name=\"SEBaseSOSNYKVS-sv-SE\"> </a><ul><li>Include all codes defined in <code>urn:oid:1.2.752.116.1.3.6</code></li></ul></div>"
+  },
+  "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSOSNYKVS",
+  "version" : "1.1.0",
+  "name" : "SEBaseSOSNYKVS",
+  "title" : "ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-20T13:02:08+02:00",
+  "publisher" : "HL7 Sweden",
+  "contact" : [{
+    "name" : "HL7 Sweden",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.se/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.se"
+    }]
+  }],
+  "description" : "The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "SE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.752.116.1.3.6"
+    }]
+  }
+}

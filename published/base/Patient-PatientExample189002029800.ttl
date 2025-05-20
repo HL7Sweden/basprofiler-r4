@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/Patient/PatientExample189002029800> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientExample189002029800"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample189002029800</b></p><a name=\"PatientExample189002029800\"> </a><a name=\"hcPatientExample189002029800\"> </a><a name=\"PatientExample189002029800-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePatient.html\">SE base profil for patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Albertina VGR Hammar(official) Female, DoB: 1890-02-02 ( http://electronichealth.se/identifier/personnummer#189002029800)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Haga Östergata GÖTEBORG 41301 </td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://electronichealth.se/identifier/personnummer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "189002029800" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "VGR"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Hammar"
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Albertina VGR Hammar" ] ;
+     fhir:family [ fhir:v "VGR Hammar" ] ;
+     fhir:given ( [ fhir:v "Albertina" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1890-02-02"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:63381000052101 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "http://snomed.info/sct/45991000052106" ] ;
+           fhir:code [ fhir:v "63381000052101" ] ;
+           fhir:display [ fhir:v "folkbokföringsadress" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "Haga Östergata" ] ) ;
+     fhir:city [ fhir:v "GÖTEBORG" ] ;
+     fhir:postalCode [ fhir:v "41301" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ] ;
+       fhir:display [ fhir:v "Married" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

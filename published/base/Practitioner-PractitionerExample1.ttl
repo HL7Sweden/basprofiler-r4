@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/Practitioner/PractitionerExample1> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PractitionerExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePractitioner"^^xsd:anyURI ;
+       fhir:link <http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner PractitionerExample1</b></p><a name=\"PractitionerExample1\"> </a><a name=\"hcPractitionerExample1\"> </a><a name=\"PractitionerExample1-sv-SE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SEBasePractitioner.html\">SE base profile for practitioner</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.752.29.4.19</code>/SE2321000131-P000000123456</p><p><b>name</b>: John Bob Goode Johansson(Official)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><code>urn:oid:1.2.752.116.3.1.2</code>/12345678</td><td><span title=\"Codes:{http://snomed.info/sct 309453006}\">barnmorska</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.2.752.29.4.19"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "SE2321000131-P000000123456" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Johansson"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Goode"
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "John Bob Goode Johansson" ] ;
+     fhir:family [ fhir:v "Goode Johansson" ] ;
+     fhir:given ( [ fhir:v "John" ] [
+       fhir:v "Bob" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "CL"
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:1.2.752.116.3.1.2"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "12345678" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:309453006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/45991000052106" ] ;
+         fhir:code [ fhir:v "309453006" ] ;
+         fhir:display [ fhir:v "barnmorska" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

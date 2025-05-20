@@ -1,0 +1,3097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="a58a656c-d37b-4926-a48d-87f1f4277b5b"/>
+  <meta>
+    <lastUpdated value="2025-05-20T13:02:57.125+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseAddressPersonVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT Swedish edition 30-Nov 2023</p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (sv-SE)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-63391000052104"> </a>  
+                  <a href="http://snomed.info/id/63391000052104">63391000052104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>särskild postadress</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-63381000052101"> </a>  
+                  <a href="http://snomed.info/id/63381000052101">63381000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>folkbokföringsadress</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-63401000052101"> </a>  
+                  <a href="http://snomed.info/id/63401000052101">63401000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>utlandsadress</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-63411000052104"> </a>  
+                  <a href="http://snomed.info/id/63411000052104">63411000052104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>uppgiven adress</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseAddressPersonVS"/>
+        <version value="1.1.0"/>
+        <name value="SEBaseAddressPersonVS"/>
+        <title value="SE ValueSet for official address types"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-20T13:02:08+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="SE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c341d538-1384-4bd1-bce7-1ab7b43d7244"/>
+          <timestamp value="2025-05-20T13:03:16+02:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="sv-SE"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/45991000052106/version/20231130"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/45991000052106/version/20231130"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="63391000052104"/>
+            <display value="särskild postadress"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="63381000052101"/>
+            <display value="folkbokföringsadress"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="63401000052101"/>
+            <display value="utlandsadress"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="63411000052104"/>
+            <display value="uppgiven adress"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseMaritalStatusVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-se-base-marital-status.html">codesystem SE CodeSystem for marital status v1.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html">codesystem MaritalStatus v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (sv-SE)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-M"> </a>  
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>A current marriage contract is active</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-D"> </a>  
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Marriage contract has been declared dissolved and inactive</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-W"> </a>  
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>The spouse has died</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-U"> </a>  
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Currently not in a marriage contract.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status-RP"> </a>  
+                  <a href="CodeSystem-se-base-marital-status.html#se-base-marital-status-RP">RP</a>
+                </td>
+                <td>http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status-SP"> </a>  
+                  <a href="CodeSystem-se-base-marital-status.html#se-base-marital-status-SP">SP</a>
+                </td>
+                <td>http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status-EP"> </a>  
+                  <a href="CodeSystem-se-base-marital-status.html#se-base-marital-status-EP">EP</a>
+                </td>
+                <td>http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseMaritalStatusVS"/>
+        <version value="1.1.0"/>
+        <name value="SEBaseMaritalStatusVS"/>
+        <title value="SE ValueSet for marital status"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-20T13:02:08+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="SE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2d0fa37a-298c-43a5-a8f6-70a65736d59d"/>
+          <timestamp value="2025-05-20T13:03:16+02:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="sv-SE"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status|1.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="D"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="W"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="U"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status"/>
+            <code value="RP"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status"/>
+            <code value="SP"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status"/>
+            <code value="EP"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html">codesystem EntityNamePartQualifierR2 v3.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (sv-SE)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2-CL"> </a>  
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html#v3-EntityNamePartQualifierR2-CL">CL</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>**Description:**Used to indicate which of the various name parts is used when interacting with the person.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS"/>
+        <version value="1.1.0"/>
+        <name value="SEBaseNamePartQualifierVS"/>
+        <title value="SE ValueSet for preferred name"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-20T13:02:08+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="SE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d5f757d4-ea9f-4675-af0e-e790a6a148cf"/>
+          <timestamp value="2025-05-20T13:03:16+02:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="sv-SE"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+            <code value="CL"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeSpecialtyVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT Swedish edition 30-Nov 2023</p>
+            <p>This value set expansion contains 98 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (sv-SE)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-43702002"> </a>  
+                  <a href="http://snomed.info/id/43702002">43702002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>företagssjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-158997000"> </a>  
+                  <a href="http://snomed.info/id/158997000">158997000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>distriktssköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159003003"> </a>  
+                  <a href="http://snomed.info/id/159003003">159003003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>skolsköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224537001"> </a>  
+                  <a href="http://snomed.info/id/224537001">224537001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>akutsjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224542009"> </a>  
+                  <a href="http://snomed.info/id/224542009">224542009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hjärtsjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224543004"> </a>  
+                  <a href="http://snomed.info/id/224543004">224543004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>diabetessjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224545006"> </a>  
+                  <a href="http://snomed.info/id/224545006">224545006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>geriatriksjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224547003"> </a>  
+                  <a href="http://snomed.info/id/224547003">224547003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>intensivvårdssjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224552008"> </a>  
+                  <a href="http://snomed.info/id/224552008">224552008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>onkologisjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224556006"> </a>  
+                  <a href="http://snomed.info/id/224556006">224556006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>sjuksköterska inom palliativ vård</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224562001"> </a>  
+                  <a href="http://snomed.info/id/224562001">224562001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>barnsjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224563006"> </a>  
+                  <a href="http://snomed.info/id/224563006">224563006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>psykiatrisjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309445003"> </a>  
+                  <a href="http://snomed.info/id/309445003">309445003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>anestesisjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-415075003"> </a>  
+                  <a href="http://snomed.info/id/415075003">415075003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>operationssjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68441000052105"> </a>  
+                  <a href="http://snomed.info/id/68441000052105">68441000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ambulanssjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68451000052108"> </a>  
+                  <a href="http://snomed.info/id/68451000052108">68451000052108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>kirurgsjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68461000052106"> </a>  
+                  <a href="http://snomed.info/id/68461000052106">68461000052106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>medicinsjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68471000052102"> </a>  
+                  <a href="http://snomed.info/id/68471000052102">68471000052102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>demenssjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68481000052100"> </a>  
+                  <a href="http://snomed.info/id/68481000052100">68481000052100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>infektionssjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68491000052103"> </a>  
+                  <a href="http://snomed.info/id/68491000052103">68491000052103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>neurosjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68501000052106"> </a>  
+                  <a href="http://snomed.info/id/68501000052106">68501000052106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ögonsjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68511000052108"> </a>  
+                  <a href="http://snomed.info/id/68511000052108">68511000052108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ortoptist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-8724009"> </a>  
+                  <a href="http://snomed.info/id/8724009">8724009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>plastikkirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-11911009"> </a>  
+                  <a href="http://snomed.info/id/11911009">11911009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>njurläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-11935004"> </a>  
+                  <a href="http://snomed.info/id/11935004">11935004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>förlossningsläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-14698002"> </a>  
+                  <a href="http://snomed.info/id/14698002">14698002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>klinisk mikrobiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-17561000"> </a>  
+                  <a href="http://snomed.info/id/17561000">17561000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>kardiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-18803008"> </a>  
+                  <a href="http://snomed.info/id/18803008">18803008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>dermatolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-22731001"> </a>  
+                  <a href="http://snomed.info/id/22731001">22731001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ortoped</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-22983004"> </a>  
+                  <a href="http://snomed.info/id/22983004">22983004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>toraxkirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-24590004"> </a>  
+                  <a href="http://snomed.info/id/24590004">24590004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>urolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-28411006"> </a>  
+                  <a href="http://snomed.info/id/28411006">28411006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>neonatolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-28544002"> </a>  
+                  <a href="http://snomed.info/id/28544002">28544002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>klinisk kemist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-39677007"> </a>  
+                  <a href="http://snomed.info/id/39677007">39677007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist i invärtesmedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-41672002"> </a>  
+                  <a href="http://snomed.info/id/41672002">41672002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>lungläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-45440000"> </a>  
+                  <a href="http://snomed.info/id/45440000">45440000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>reumatolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-45544007"> </a>  
+                  <a href="http://snomed.info/id/45544007">45544007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>neurokirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-56397003"> </a>  
+                  <a href="http://snomed.info/id/56397003">56397003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>neurolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-61207006"> </a>  
+                  <a href="http://snomed.info/id/61207006">61207006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>patolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-61894003"> </a>  
+                  <a href="http://snomed.info/id/61894003">61894003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>endokrinolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-62247001"> </a>  
+                  <a href="http://snomed.info/id/62247001">62247001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom allmänmedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-66862007"> </a>  
+                  <a href="http://snomed.info/id/66862007">66862007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>radiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-71838004"> </a>  
+                  <a href="http://snomed.info/id/71838004">71838004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>gastroenterolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-76899008"> </a>  
+                  <a href="http://snomed.info/id/76899008">76899008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom infektionssjukdomar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-78703002"> </a>  
+                  <a href="http://snomed.info/id/78703002">78703002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>allmänkirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-80584001"> </a>  
+                  <a href="http://snomed.info/id/80584001">80584001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>psykiatriker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-80933006"> </a>  
+                  <a href="http://snomed.info/id/80933006">80933006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom nuklearmedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-82296001"> </a>  
+                  <a href="http://snomed.info/id/82296001">82296001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>barnläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-83685006"> </a>  
+                  <a href="http://snomed.info/id/83685006">83685006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>gynekolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-88189002"> </a>  
+                  <a href="http://snomed.info/id/88189002">88189002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>anestesiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90655003"> </a>  
+                  <a href="http://snomed.info/id/90655003">90655003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom geriatrik</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309295000"> </a>  
+                  <a href="http://snomed.info/id/309295000">309295000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom onkologi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309337009"> </a>  
+                  <a href="http://snomed.info/id/309337009">309337009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom smärtlindring</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309338004"> </a>  
+                  <a href="http://snomed.info/id/309338004">309338004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare i intensivvård</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309347007"> </a>  
+                  <a href="http://snomed.info/id/309347007">309347007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom hematologi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309348002"> </a>  
+                  <a href="http://snomed.info/id/309348002">309348002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>klinisk neurofysiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309349005"> </a>  
+                  <a href="http://snomed.info/id/309349005">309349005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>klinisk fysiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309350005"> </a>  
+                  <a href="http://snomed.info/id/309350005">309350005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>diabetolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309355000"> </a>  
+                  <a href="http://snomed.info/id/309355000">309355000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>klinisk genetiker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309359006"> </a>  
+                  <a href="http://snomed.info/id/309359006">309359006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>läkare inom palliativ vård</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309360001"> </a>  
+                  <a href="http://snomed.info/id/309360001">309360001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>rehabiliteringsläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309361002"> </a>  
+                  <a href="http://snomed.info/id/309361002">309361002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>barn- och ungdomspsykiatriker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309362009"> </a>  
+                  <a href="http://snomed.info/id/309362009">309362009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>rättspsykiatriker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309364005"> </a>  
+                  <a href="http://snomed.info/id/309364005">309364005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>äldrepsykiatriker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309372007"> </a>  
+                  <a href="http://snomed.info/id/309372007">309372007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>öron-, näs- och halskirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309380000"> </a>  
+                  <a href="http://snomed.info/id/309380000">309380000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>handkirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309383003"> </a>  
+                  <a href="http://snomed.info/id/309383003">309383003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>barnkirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309388007"> </a>  
+                  <a href="http://snomed.info/id/309388007">309388007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>kärlkirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-310173006"> </a>  
+                  <a href="http://snomed.info/id/310173006">310173006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>klinisk farmakolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-422234006"> </a>  
+                  <a href="http://snomed.info/id/422234006">422234006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ögonläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1251548000"> </a>  
+                  <a href="http://snomed.info/id/1251548000">1251548000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom neuroradiologi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67801000052105"> </a>  
+                  <a href="http://snomed.info/id/67801000052105">67801000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>barn- och ungdomsallergolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67811000052107"> </a>  
+                  <a href="http://snomed.info/id/67811000052107">67811000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom barn- och ungdomshematologi och -onkologi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67831000052102"> </a>  
+                  <a href="http://snomed.info/id/67831000052102">67831000052102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom barn- och ungdomsneurologi med habilitering</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67851000052106"> </a>  
+                  <a href="http://snomed.info/id/67851000052106">67851000052106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>akutläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67861000052109"> </a>  
+                  <a href="http://snomed.info/id/67861000052109">67861000052109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom arbets- och miljömedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67881000052103"> </a>  
+                  <a href="http://snomed.info/id/67881000052103">67881000052103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom hud- och könssjukdomar med inriktning på könssjukdomar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67891000052101"> </a>  
+                  <a href="http://snomed.info/id/67891000052101">67891000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom rättsmedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67901000052100"> </a>  
+                  <a href="http://snomed.info/id/67901000052100">67901000052100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom socialmedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67911000052103"> </a>  
+                  <a href="http://snomed.info/id/67911000052103">67911000052103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom medicinsk gastroenterologi och hepatologi med inriktning på hepatologi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67921000052106"> </a>  
+                  <a href="http://snomed.info/id/67921000052106">67921000052106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom röst- och talrubbningar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67931000052108"> </a>  
+                  <a href="http://snomed.info/id/67931000052108">67931000052108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom hörsel- och balansrubbningar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67941000052102"> </a>  
+                  <a href="http://snomed.info/id/67941000052102">67941000052102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom klinisk immunologi och transfusionsmedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67981000052107"> </a>  
+                  <a href="http://snomed.info/id/67981000052107">67981000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>allergolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68011000052101"> </a>  
+                  <a href="http://snomed.info/id/68011000052101">68011000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom arbetsmedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68021000052109"> </a>  
+                  <a href="http://snomed.info/id/68021000052109">68021000052109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialistläkare inom beroendemedicin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68041000052100"> </a>  
+                  <a href="http://snomed.info/id/68041000052100">68041000052100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom gynekologisk onkologi</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68051000052102"> </a>  
+                  <a href="http://snomed.info/id/68051000052102">68051000052102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist inom skolhälsovård</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68061000052104"> </a>  
+                  <a href="http://snomed.info/id/68061000052104">68061000052104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>vårdhygieniker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-37154003"> </a>  
+                  <a href="http://snomed.info/id/37154003">37154003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>parodontolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-37504001"> </a>  
+                  <a href="http://snomed.info/id/37504001">37504001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ortodontist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-49993003"> </a>  
+                  <a href="http://snomed.info/id/49993003">49993003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>käkkirurg</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-50149000"> </a>  
+                  <a href="http://snomed.info/id/50149000">50149000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>endodontist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68950000"> </a>  
+                  <a href="http://snomed.info/id/68950000">68950000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>protetiker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90201008"> </a>  
+                  <a href="http://snomed.info/id/90201008">90201008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>pedodontist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68141000052104"> </a>  
+                  <a href="http://snomed.info/id/68141000052104">68141000052104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>bettfysiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68151000052101"> </a>  
+                  <a href="http://snomed.info/id/68151000052101">68151000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>odontologisk radiolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68161000052103"> </a>  
+                  <a href="http://snomed.info/id/68161000052103">68161000052103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>specialist i orofacial medicin</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeSpecialtyVS"/>
+        <version value="1.1.0"/>
+        <name value="SEBaseSKRYrkeSpecialtyVS"/>
+        <title value="SKR ValueSet for clinical specialties"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-20T13:02:08+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="SE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:707db8d0-d150-478a-924f-d78e77723073"/>
+          <timestamp value="2025-05-20T13:03:16+02:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="sv-SE"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/45991000052106/version/20231130"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/45991000052106/version/20231130"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="43702002"/>
+            <display value="företagssjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="158997000"/>
+            <display value="distriktssköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159003003"/>
+            <display value="skolsköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224537001"/>
+            <display value="akutsjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224542009"/>
+            <display value="hjärtsjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224543004"/>
+            <display value="diabetessjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224545006"/>
+            <display value="geriatriksjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224547003"/>
+            <display value="intensivvårdssjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224552008"/>
+            <display value="onkologisjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224556006"/>
+            <display value="sjuksköterska inom palliativ vård"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224562001"/>
+            <display value="barnsjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224563006"/>
+            <display value="psykiatrisjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309445003"/>
+            <display value="anestesisjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="415075003"/>
+            <display value="operationssjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68441000052105"/>
+            <display value="ambulanssjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68451000052108"/>
+            <display value="kirurgsjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68461000052106"/>
+            <display value="medicinsjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68471000052102"/>
+            <display value="demenssjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68481000052100"/>
+            <display value="infektionssjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68491000052103"/>
+            <display value="neurosjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68501000052106"/>
+            <display value="ögonsjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68511000052108"/>
+            <display value="ortoptist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8724009"/>
+            <display value="plastikkirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11911009"/>
+            <display value="njurläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11935004"/>
+            <display value="förlossningsläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="14698002"/>
+            <display value="klinisk mikrobiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17561000"/>
+            <display value="kardiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="18803008"/>
+            <display value="dermatolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22731001"/>
+            <display value="ortoped"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22983004"/>
+            <display value="toraxkirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24590004"/>
+            <display value="urolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28411006"/>
+            <display value="neonatolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28544002"/>
+            <display value="klinisk kemist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="39677007"/>
+            <display value="specialist i invärtesmedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="41672002"/>
+            <display value="lungläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="45440000"/>
+            <display value="reumatolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="45544007"/>
+            <display value="neurokirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="56397003"/>
+            <display value="neurolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61207006"/>
+            <display value="patolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61894003"/>
+            <display value="endokrinolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62247001"/>
+            <display value="specialistläkare inom allmänmedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="66862007"/>
+            <display value="radiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="71838004"/>
+            <display value="gastroenterolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76899008"/>
+            <display value="specialistläkare inom infektionssjukdomar"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="78703002"/>
+            <display value="allmänkirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80584001"/>
+            <display value="psykiatriker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80933006"/>
+            <display value="specialist inom nuklearmedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="82296001"/>
+            <display value="barnläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="83685006"/>
+            <display value="gynekolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="88189002"/>
+            <display value="anestesiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90655003"/>
+            <display value="specialist inom geriatrik"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309295000"/>
+            <display value="specialistläkare inom onkologi"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309337009"/>
+            <display value="specialistläkare inom smärtlindring"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309338004"/>
+            <display value="specialistläkare i intensivvård"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309347007"/>
+            <display value="specialistläkare inom hematologi"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309348002"/>
+            <display value="klinisk neurofysiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309349005"/>
+            <display value="klinisk fysiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309350005"/>
+            <display value="diabetolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309355000"/>
+            <display value="klinisk genetiker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309359006"/>
+            <display value="läkare inom palliativ vård"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309360001"/>
+            <display value="rehabiliteringsläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309361002"/>
+            <display value="barn- och ungdomspsykiatriker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309362009"/>
+            <display value="rättspsykiatriker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309364005"/>
+            <display value="äldrepsykiatriker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309372007"/>
+            <display value="öron-, näs- och halskirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309380000"/>
+            <display value="handkirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309383003"/>
+            <display value="barnkirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309388007"/>
+            <display value="kärlkirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="310173006"/>
+            <display value="klinisk farmakolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422234006"/>
+            <display value="ögonläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1251548000"/>
+            <display value="specialistläkare inom neuroradiologi"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67801000052105"/>
+            <display value="barn- och ungdomsallergolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67811000052107"/>
+            <display value="specialist inom barn- och ungdomshematologi och -onkologi"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67831000052102"/>
+            <display value="specialistläkare inom barn- och ungdomsneurologi med habilitering"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67851000052106"/>
+            <display value="akutläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67861000052109"/>
+            <display value="specialist inom arbets- och miljömedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67881000052103"/>
+            <display value="specialistläkare inom hud- och könssjukdomar med inriktning på könssjukdomar"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67891000052101"/>
+            <display value="specialistläkare inom rättsmedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67901000052100"/>
+            <display value="specialist inom socialmedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67911000052103"/>
+            <display value="specialist inom medicinsk gastroenterologi och hepatologi med inriktning på hepatologi"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67921000052106"/>
+            <display value="specialistläkare inom röst- och talrubbningar"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67931000052108"/>
+            <display value="specialistläkare inom hörsel- och balansrubbningar"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67941000052102"/>
+            <display value="specialist inom klinisk immunologi och transfusionsmedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67981000052107"/>
+            <display value="allergolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68011000052101"/>
+            <display value="specialist inom arbetsmedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68021000052109"/>
+            <display value="specialistläkare inom beroendemedicin"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68041000052100"/>
+            <display value="specialist inom gynekologisk onkologi"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68051000052102"/>
+            <display value="specialist inom skolhälsovård"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68061000052104"/>
+            <display value="vårdhygieniker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="37154003"/>
+            <display value="parodontolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="37504001"/>
+            <display value="ortodontist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49993003"/>
+            <display value="käkkirurg"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="50149000"/>
+            <display value="endodontist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68950000"/>
+            <display value="protetiker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90201008"/>
+            <display value="pedodontist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68141000052104"/>
+            <display value="bettfysiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68151000052101"/>
+            <display value="odontologisk radiolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68161000052103"/>
+            <display value="specialist i orofacial medicin"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT Swedish edition 30-Nov 2023</p>
+            <p>This value set expansion contains 83 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (sv-SE)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-3842006"> </a>  
+                  <a href="http://snomed.info/id/3842006">3842006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>kiropraktor</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-26042002"> </a>  
+                  <a href="http://snomed.info/id/26042002">26042002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>tandhygienist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-28229004"> </a>  
+                  <a href="http://snomed.info/id/28229004">28229004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>optiker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-36682004"> </a>  
+                  <a href="http://snomed.info/id/36682004">36682004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>sjukgymnast</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-46255001"> </a>  
+                  <a href="http://snomed.info/id/46255001">46255001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>apotekare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-59944000"> </a>  
+                  <a href="http://snomed.info/id/59944000">59944000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>psykolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-80546007"> </a>  
+                  <a href="http://snomed.info/id/80546007">80546007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>arbetsterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-106289002"> </a>  
+                  <a href="http://snomed.info/id/106289002">106289002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>tandläkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-106292003"> </a>  
+                  <a href="http://snomed.info/id/106292003">106292003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>sjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-158950001"> </a>  
+                  <a href="http://snomed.info/id/158950001">158950001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hälso- och sjukvårdskurator</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159017007"> </a>  
+                  <a href="http://snomed.info/id/159017007">159017007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>röntgensjuksköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159026005"> </a>  
+                  <a href="http://snomed.info/id/159026005">159026005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>logoped</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159033005"> </a>  
+                  <a href="http://snomed.info/id/159033005">159033005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>dietist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224588003"> </a>  
+                  <a href="http://snomed.info/id/224588003">224588003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>psykoterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309418004"> </a>  
+                  <a href="http://snomed.info/id/309418004">309418004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>audionom</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309428008"> </a>  
+                  <a href="http://snomed.info/id/309428008">309428008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ortopedingenjör</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309453006"> </a>  
+                  <a href="http://snomed.info/id/309453006">309453006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>legitimerad barnmorska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-386626000"> </a>  
+                  <a href="http://snomed.info/id/386626000">386626000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>biomedicinsk analytiker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1254952007"> </a>  
+                  <a href="http://snomed.info/id/1254952007">1254952007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>sjukhusfysiker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68081000052105"> </a>  
+                  <a href="http://snomed.info/id/68081000052105">68081000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>legitimerad läkare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68171000052107"> </a>  
+                  <a href="http://snomed.info/id/68171000052107">68171000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>naprapat</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68201000052108"> </a>  
+                  <a href="http://snomed.info/id/68201000052108">68201000052108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>receptarie</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-4162009"> </a>  
+                  <a href="http://snomed.info/id/4162009">4162009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>tandsköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-40570005"> </a>  
+                  <a href="http://snomed.info/id/40570005">40570005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>tolk</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-59169001"> </a>  
+                  <a href="http://snomed.info/id/59169001">59169001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ortopedtekniker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-106308006"> </a>  
+                  <a href="http://snomed.info/id/106308006">106308006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>förskollärare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-106309003"> </a>  
+                  <a href="http://snomed.info/id/106309003">106309003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>speciallärare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159005005"> </a>  
+                  <a href="http://snomed.info/id/159005005">159005005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>sjuksköterskestuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159034004"> </a>  
+                  <a href="http://snomed.info/id/159034004">159034004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>fotvårdsspecialist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159039009"> </a>  
+                  <a href="http://snomed.info/id/159039009">159039009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>audiologtekniker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159282002"> </a>  
+                  <a href="http://snomed.info/id/159282002">159282002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>laboratorietekniker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-160008000"> </a>  
+                  <a href="http://snomed.info/id/160008000">160008000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>tandtekniker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-184152007"> </a>  
+                  <a href="http://snomed.info/id/184152007">184152007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>vårdbiträde</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224577009"> </a>  
+                  <a href="http://snomed.info/id/224577009">224577009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>undersköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224587008"> </a>  
+                  <a href="http://snomed.info/id/224587008">224587008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>arbetsterapibiträde</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224590002"> </a>  
+                  <a href="http://snomed.info/id/224590002">224590002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>lekterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-307984008"> </a>  
+                  <a href="http://snomed.info/id/307984008">307984008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>behandlingsassistent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309404006"> </a>  
+                  <a href="http://snomed.info/id/309404006">309404006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>sjukgymnastassistent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309411005"> </a>  
+                  <a href="http://snomed.info/id/309411005">309411005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>dansterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309412003"> </a>  
+                  <a href="http://snomed.info/id/309412003">309412003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>musikterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-309454000"> </a>  
+                  <a href="http://snomed.info/id/309454000">309454000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>barnmorskestuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-310194009"> </a>  
+                  <a href="http://snomed.info/id/310194009">310194009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hjälpmedelskonsulent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-394572006"> </a>  
+                  <a href="http://snomed.info/id/394572006">394572006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>läkarsekreterare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-397897005"> </a>  
+                  <a href="http://snomed.info/id/397897005">397897005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ambulansjukvårdare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-398130009"> </a>  
+                  <a href="http://snomed.info/id/398130009">398130009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>läkarstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-409974004"> </a>  
+                  <a href="http://snomed.info/id/409974004">409974004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hälsopedagog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-721942007"> </a>  
+                  <a href="http://snomed.info/id/721942007">721942007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hjärt-kärlperfusionist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-768822006"> </a>  
+                  <a href="http://snomed.info/id/768822006">768822006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>rehabiliteringssamordnare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67951000052104"> </a>  
+                  <a href="http://snomed.info/id/67951000052104">67951000052104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>arbetsterapeutstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67961000052101"> </a>  
+                  <a href="http://snomed.info/id/67961000052101">67961000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>audionomstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67971000052105"> </a>  
+                  <a href="http://snomed.info/id/67971000052105">67971000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>dietiststuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-67991000052109"> </a>  
+                  <a href="http://snomed.info/id/67991000052109">67991000052109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>farmaceutstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68001000052103"> </a>  
+                  <a href="http://snomed.info/id/68001000052103">68001000052103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>fysioterapeutstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68031000052106"> </a>  
+                  <a href="http://snomed.info/id/68031000052106">68031000052106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>medicinsk kuratorstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68091000052107"> </a>  
+                  <a href="http://snomed.info/id/68091000052107">68091000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>logopedstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68101000052102"> </a>  
+                  <a href="http://snomed.info/id/68101000052102">68101000052102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>psykologstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68111000052100"> </a>  
+                  <a href="http://snomed.info/id/68111000052100">68111000052100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>skötarstuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68131000052105"> </a>  
+                  <a href="http://snomed.info/id/68131000052105">68131000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>undersköterskestuderande</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68181000052109"> </a>  
+                  <a href="http://snomed.info/id/68181000052109">68181000052109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>PTP-psykolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68211000052105"> </a>  
+                  <a href="http://snomed.info/id/68211000052105">68211000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>farmaceut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68221000052102"> </a>  
+                  <a href="http://snomed.info/id/68221000052102">68221000052102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>uroterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68231000052100"> </a>  
+                  <a href="http://snomed.info/id/68231000052100">68231000052100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>barnsköterska</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68241000052106"> </a>  
+                  <a href="http://snomed.info/id/68241000052106">68241000052106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>skötare (inom psykiatrisk vård)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68251000052109"> </a>  
+                  <a href="http://snomed.info/id/68251000052109">68251000052109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>brukarspecialist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68261000052107"> </a>  
+                  <a href="http://snomed.info/id/68261000052107">68261000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>bildterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68271000052103"> </a>  
+                  <a href="http://snomed.info/id/68271000052103">68271000052103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>rehabiliteringsassistent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68301000052100"> </a>  
+                  <a href="http://snomed.info/id/68301000052100">68301000052100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>habiliteringsassistent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68311000052103"> </a>  
+                  <a href="http://snomed.info/id/68311000052103">68311000052103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>kurator</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68321000052106"> </a>  
+                  <a href="http://snomed.info/id/68321000052106">68321000052106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>teckenspråkslärare</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68331000052108"> </a>  
+                  <a href="http://snomed.info/id/68331000052108">68331000052108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>lärare i tecken som stöd</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68341000052102"> </a>  
+                  <a href="http://snomed.info/id/68341000052102">68341000052102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>fritidspedagog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68351000052104"> </a>  
+                  <a href="http://snomed.info/id/68351000052104">68351000052104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>fritidskonsulent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68361000052101"> </a>  
+                  <a href="http://snomed.info/id/68361000052101">68361000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>gipstekniker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68371000052105"> </a>  
+                  <a href="http://snomed.info/id/68371000052105">68371000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>sjukhusfotograf</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68381000052107"> </a>  
+                  <a href="http://snomed.info/id/68381000052107">68381000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>medicinteknisk ingenjör</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68391000052109"> </a>  
+                  <a href="http://snomed.info/id/68391000052109">68391000052109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hjälpmedelstekniker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68401000052107"> </a>  
+                  <a href="http://snomed.info/id/68401000052107">68401000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>anaplastolog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68411000052109"> </a>  
+                  <a href="http://snomed.info/id/68411000052109">68411000052109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>ergonom</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68521000052100"> </a>  
+                  <a href="http://snomed.info/id/68521000052100">68521000052100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>stomiterapeut</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68551000052107"> </a>  
+                  <a href="http://snomed.info/id/68551000052107">68551000052107</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>röntgenbiträde</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68561000052105"> </a>  
+                  <a href="http://snomed.info/id/68561000052105">68561000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>synpedagog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68571000052101"> </a>  
+                  <a href="http://snomed.info/id/68571000052101">68571000052101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>hörselpedagog</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-68601000052105"> </a>  
+                  <a href="http://snomed.info/id/68601000052105">68601000052105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>yrkeshygieniker</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS"/>
+        <version value="1.1.0"/>
+        <name value="SEBaseSKRYrkeVS"/>
+        <title value="SKR ValueSet for occupations"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-20T13:02:08+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="SE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:f6bac544-50bf-4afc-b714-5f369e6449ba"/>
+          <timestamp value="2025-05-20T13:03:16+02:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="sv-SE"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/45991000052106/version/20231130"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/45991000052106/version/20231130"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="3842006"/>
+            <display value="kiropraktor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="26042002"/>
+            <display value="tandhygienist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="28229004"/>
+            <display value="optiker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="36682004"/>
+            <display value="sjukgymnast"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46255001"/>
+            <display value="apotekare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59944000"/>
+            <display value="psykolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80546007"/>
+            <display value="arbetsterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106289002"/>
+            <display value="tandläkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106292003"/>
+            <display value="sjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="158950001"/>
+            <display value="hälso- och sjukvårdskurator"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159017007"/>
+            <display value="röntgensjuksköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159026005"/>
+            <display value="logoped"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159033005"/>
+            <display value="dietist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224588003"/>
+            <display value="psykoterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309418004"/>
+            <display value="audionom"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309428008"/>
+            <display value="ortopedingenjör"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309453006"/>
+            <display value="legitimerad barnmorska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386626000"/>
+            <display value="biomedicinsk analytiker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254952007"/>
+            <display value="sjukhusfysiker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68081000052105"/>
+            <display value="legitimerad läkare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68171000052107"/>
+            <display value="naprapat"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68201000052108"/>
+            <display value="receptarie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4162009"/>
+            <display value="tandsköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="40570005"/>
+            <display value="tolk"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59169001"/>
+            <display value="ortopedtekniker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106308006"/>
+            <display value="förskollärare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="106309003"/>
+            <display value="speciallärare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159005005"/>
+            <display value="sjuksköterskestuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159034004"/>
+            <display value="fotvårdsspecialist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159039009"/>
+            <display value="audiologtekniker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159282002"/>
+            <display value="laboratorietekniker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="160008000"/>
+            <display value="tandtekniker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="184152007"/>
+            <display value="vårdbiträde"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224577009"/>
+            <display value="undersköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224587008"/>
+            <display value="arbetsterapibiträde"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224590002"/>
+            <display value="lekterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="307984008"/>
+            <display value="behandlingsassistent"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309404006"/>
+            <display value="sjukgymnastassistent"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309411005"/>
+            <display value="dansterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309412003"/>
+            <display value="musikterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="309454000"/>
+            <display value="barnmorskestuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="310194009"/>
+            <display value="hjälpmedelskonsulent"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="394572006"/>
+            <display value="läkarsekreterare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="397897005"/>
+            <display value="ambulansjukvårdare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="398130009"/>
+            <display value="läkarstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="409974004"/>
+            <display value="hälsopedagog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="721942007"/>
+            <display value="hjärt-kärlperfusionist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="768822006"/>
+            <display value="rehabiliteringssamordnare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67951000052104"/>
+            <display value="arbetsterapeutstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67961000052101"/>
+            <display value="audionomstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67971000052105"/>
+            <display value="dietiststuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67991000052109"/>
+            <display value="farmaceutstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68001000052103"/>
+            <display value="fysioterapeutstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68031000052106"/>
+            <display value="medicinsk kuratorstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68091000052107"/>
+            <display value="logopedstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68101000052102"/>
+            <display value="psykologstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68111000052100"/>
+            <display value="skötarstuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68131000052105"/>
+            <display value="undersköterskestuderande"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68181000052109"/>
+            <display value="PTP-psykolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68211000052105"/>
+            <display value="farmaceut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68221000052102"/>
+            <display value="uroterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68231000052100"/>
+            <display value="barnsköterska"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68241000052106"/>
+            <display value="skötare (inom psykiatrisk vård)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68251000052109"/>
+            <display value="brukarspecialist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68261000052107"/>
+            <display value="bildterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68271000052103"/>
+            <display value="rehabiliteringsassistent"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68301000052100"/>
+            <display value="habiliteringsassistent"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68311000052103"/>
+            <display value="kurator"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68321000052106"/>
+            <display value="teckenspråkslärare"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68331000052108"/>
+            <display value="lärare i tecken som stöd"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68341000052102"/>
+            <display value="fritidspedagog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68351000052104"/>
+            <display value="fritidskonsulent"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68361000052101"/>
+            <display value="gipstekniker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68371000052105"/>
+            <display value="sjukhusfotograf"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68381000052107"/>
+            <display value="medicinteknisk ingenjör"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68391000052109"/>
+            <display value="hjälpmedelstekniker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68401000052107"/>
+            <display value="anaplastolog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68411000052109"/>
+            <display value="ergonom"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68521000052100"/>
+            <display value="stomiterapeut"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68551000052107"/>
+            <display value="röntgenbiträde"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68561000052105"/>
+            <display value="synpedagog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68571000052101"/>
+            <display value="hörselpedagog"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68601000052105"/>
+            <display value="yrkeshygieniker"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.se/fhir/ig/base/ValueSet/SecurityLabelVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-SecurityLabel.html">codesystem SE CodeSystem security labels v1.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (sv-SE)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v3-ActCode-DEMO"> </a>  
+                  <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-DEMO">DEMO</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+                <td>all demographic information sensitivity</td>
+                <td>
+                  <div>
+                    <p>Policy for handling all demographic information about an information subject, which will be afforded heightened confidentiality. Policies may govern sensitivity of information related to all demographic about an information subject, the disclosure of which could impact the privacy, well-being, or safety of that subject.</p>
+
+                    <p>
+                      <em>Usage Note:</em> If there is a jurisdictional mandate, then use the applicable ActPrivacyLaw code system, and specify the law rather than or in addition to this more generic code.
+                    </p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel-sekretessmarkering"> </a>  
+                  <a href="CodeSystem-SecurityLabel.html#SecurityLabel-sekretessmarkering">sekretessmarkering</a>
+                </td>
+                <td>http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel-skyddadFolkbokforing"> </a>  
+                  <a href="CodeSystem-SecurityLabel.html#SecurityLabel-skyddadFolkbokforing">skyddadFolkbokforing</a>
+                </td>
+                <td>http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Protected demographic information according to Skatteverket</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.se/fhir/ig/base/ValueSet/SecurityLabelVS"/>
+        <version value="1.1.0"/>
+        <name value="SecurityLabelVS"/>
+        <title value="SE ValueSet security labels"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-20T13:02:08+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="SE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:eeedf503-f57d-423a-ab2d-ecf0022b3e1e"/>
+          <timestamp value="2025-05-20T13:03:16+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="sv-SE"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel|1.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="DEMO"/>
+            <display value="all demographic information sensitivity"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel"/>
+            <code value="sekretessmarkering"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel"/>
+            <code value="skyddadFolkbokforing"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

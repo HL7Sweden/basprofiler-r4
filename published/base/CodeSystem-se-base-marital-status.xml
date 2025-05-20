@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="se-base-marital-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem se-base-marital-status</b></p><a name="se-base-marital-status"> </a><a name="hcse-base-marital-status"> </a><a name="se-base-marital-status-sv-SE"> </a><p>This case-sensitive code system <code>http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">G<a name="se-base-marital-status-G"> </a></td><td>Gift</td></tr><tr><td style="white-space:nowrap">OG<a name="se-base-marital-status-OG"> </a></td><td>Ogift</td></tr><tr><td style="white-space:nowrap">S<a name="se-base-marital-status-S"> </a></td><td>Skild</td></tr><tr><td style="white-space:nowrap">Ä<a name="se-base-marital-status-.196"> </a></td><td>Änka/änkling</td></tr><tr><td style="white-space:nowrap">RP<a name="se-base-marital-status-RP"> </a></td><td>Registrerad partner</td></tr><tr><td style="white-space:nowrap">SP<a name="se-base-marital-status-SP"> </a></td><td>Skild partner</td></tr><tr><td style="white-space:nowrap">EP<a name="se-base-marital-status-EP"> </a></td><td>Efterlevande partner</td></tr></table></div>
+  </text>
+  <url value="http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status"/>
+  <version value="1.1.0"/>
+  <name value="SEBaseMaritalStatusCS"/>
+  <title value="SE CodeSystem for marital status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-20T13:02:08+02:00"/>
+  <publisher value="HL7 Sweden"/>
+  <contact>
+    <name value="HL7 Sweden"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.se/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.se"/>
+    </telecom>
+  </contact>
+  <description value="This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="SE"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="G"/>
+    <display value="Gift"/>
+  </concept>
+  <concept>
+    <code value="OG"/>
+    <display value="Ogift"/>
+  </concept>
+  <concept>
+    <code value="S"/>
+    <display value="Skild"/>
+  </concept>
+  <concept>
+    <code value="Ä"/>
+    <display value="Änka/änkling"/>
+  </concept>
+  <concept>
+    <code value="RP"/>
+    <display value="Registrerad partner"/>
+  </concept>
+  <concept>
+    <code value="SP"/>
+    <display value="Skild partner"/>
+  </concept>
+  <concept>
+    <code value="EP"/>
+    <display value="Efterlevande partner"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SecurityLabelCS",
+      "title" : "SE CodeSystem security labels",
+      "description" : "This is the CodeSystem for security labels in accordance with the swedish authorities"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseMaritalStatusCS",
+      "title" : "SE CodeSystem for marital status",
+      "description" : "This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)"
+    }
+  ]
+}

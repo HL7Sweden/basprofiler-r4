@@ -1,143 +1,330 @@
-﻿<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-   <meta charset="UTF-8"/>
-  <title>HL7 Sweden base profiles (FHIR IG)</title>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Swedish Base Profiles Implementation Guide v1.1.0</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Point-of-care Device Implementation Guide" />
-<meta name="author" content="http://www.hl7.org"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
 
-  <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-
-     <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="dist-hist/css/bootstrap.css"/>
-  <link rel="stylesheet" href="assets-hist/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
-  <link rel="stylesheet" href="assets-hist/css/project.css"/>
-  <link rel="stylesheet" href="assets-hist/css/pygments-manni.css"/>
-	<link rel="stylesheet" href="jquery-ui.css"/>
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <link href="assets/css/hl7.se.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 
     <!-- Favicons -->
-  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-144-precomposed.png"/>
-  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-114-precomposed.png"/>
-  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-72-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-57-precomposed.png"/>
-  <link rel="shortcut icon" href="assets-hist/ico/favicon.png"/>
-  <link rel="stylesheet" href="assets/css/hl7.se.css"/>
-</head>
-<body>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
 
- <div id="segment-header" class="segment">    <!-- segment-header -->
-  <div class="container">    <!-- container -->
-      <div id="hl7-se-nav">
-          <a no-external="true" href="http://hl7.se">
-              <img height="56" alt="Visit HL7 Sweden website" src="assets/images/HS_HL7_0.png"/>
-          </a>
-      </div>
-   <div style="font-size:24px;padding-top: 20px;" id="ig-status">
-<b>HL7 Sweden base profiles (FHIR IG)</b>
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div id="hl7-se-nav">
+    <a no-external="true" href="http://hl7.se">
+        <img height="56" alt="Visit HL7 Sweden website" src="assets/images/HS_HL7_0.png"/>
+    </a>
 </div>
- </div>
-  <div class="container">    <!-- container -->
- </div></div>    <!-- /segment-header -->
 
- <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
-  <div id="stripe"> </div>
-  <div class="container">    <!-- container -->
-     <!-- HEADER CONTENT -->
-
-   <nav class="navbar navbar-inverse">
-    <div class="container">
-     <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-     </button>
-     <a href="http://hl7.org/fhir/index.html" class="navbar-brand hidden">FHIR</a>
-     </div>    <!-- /.nav-collapse -->
-    </div>    <!-- /.container -->
-   </nav>    <!-- /.navbar -->
-
-    <!-- /HEADER CONTENT -->
-  </div>    <!-- /container -->
- </div>    <!-- /segment-navbar -->
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Swedish Base Profiles Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - release
 
 
 
-    <!-- ============BreadCrumb=============== -->
-
-      <!-- /container -->
-     <!-- /segment-breadcrumb -->
-
- <div id="segment-content" class="segment">    <!-- segment-content -->
- <div class="container">    <!-- container -->
-            <div class="row">
-             <div class="inner-wrapper">
+  <img alt="Sweden flag" src="assets/images/swe.svg" height="16" title="Sweden"/>
 
 
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="2_profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="3_valuesets.html">Value Sets</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
 <div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 Sweden base profiles (v1.1.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.se/fhir/ig/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
 
 
-    <!-- ============CONTENT CONTENT=============== -->
-
-<h2 id="us-core-implementation-guide" class="no_toc">HL7 Sweden base profiles (FHIR IG)</h2>
-<p>
-See the <a href="history.html">directory of released versions</a>.
-<p/>
- </div>
-
-    </div>    <!-- /inner-wrapper -->
-            </div>    <!-- /row -->
-        </div>    <!-- /container -->
-
-    </div>    <!-- /segment-content -->
 
 
-    
 
 
-        <!-- /inner-wrapper -->
-                <!-- /row -->
-            <!-- /container -->
+  <table class="colsi">
 
-        <!-- /segment-content -->
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.se/fhir/ig/base/ImplementationGuide/hl7se.fhir.base<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.se/fhir/ig/base/ImplementationGuide/hl7se.fhir.base"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.se/fhir/ig/base/ImplementationGuide/hl7se.fhir.base|1.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
 
 
-<div id="segment-footer" class="segment">    <!-- segment-footer -->
-  <div class="container">    <!-- container -->
-   <div class="inner-wrapper">
-    <p>
-            <span id="ig-footer">hl7se.fhir.base: HL7 Sweden base profiles</span>
-            <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhirlicense.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-05-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SEBaseProfileImplementationGuide</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#hl7-fhir-version-r4-base-profiles-for-sweden" id="markdown-toc-hl7-fhir-version-r4-base-profiles-for-sweden">HL7 FHIR version R4 base profiles for Sweden</a></li>
+  <li><a href="#the-working-group" id="markdown-toc-the-working-group">The working group</a></li>
+  <li><a href="#contact-information" id="markdown-toc-contact-information">Contact information</a></li>
+  <li><a href="#ip-statements" id="markdown-toc-ip-statements">IP Statements</a></li>
+  <li><a href="#cross-version-analysis" id="markdown-toc-cross-version-analysis">Cross Version Analysis</a></li>
+  <li><a href="#dependency-table" id="markdown-toc-dependency-table">Dependency Table</a></li>
+  <li><a href="#globals-table" id="markdown-toc-globals-table">Globals Table</a></li>
+</ul>
+
+</div>
+<h3 id="hl7-fhir-version-r4-base-profiles-for-sweden">HL7 FHIR version R4 base profiles for Sweden</h3>
+<p>This FHIR implementation guide is published by HL7 Sweden and expresses the base profiles and extensions of FHIR resourses that are widely used in Sweden. The implementations guide is a description of the lowerst common denominator in adjustesments that needs to be made on the FHIR standard for applying it in a Swedish context. The profiles in this IG can be used without an further altering, but in most cases it is probably neccesary (and recommended) to make further adjustments in accordance with your applicable use case.
+The extenstions on the other hand will often be useful without further alteration.</p>
+
+<!---
+Denna implementationsguide publiceras av HL7 Sverige och samlar de grundläggande profileringar och utökningar av FHIR resurser som har bred användning i Sverige. I guiden beskrivs minsta gemensamma nämnare i förändingar som behöver göras på FHIR standarden för tillämpning i ett svenskt sammanhang. Profilerna kan användas utan vidare förändingar men det är antagligen nödvändigt (och rekommenderat) att anpassa dessa genom ytterligare profilering för att bättre passa tänkt användning.
+Utökningarna (extensions) kan däremot ofta vara lämpliga att nyttja utan vidare förädling.
+-->
+<h3 id="the-working-group">The working group</h3>
+<p>The development of this implementation guide is carried out by a work group under the management of HL7 Sweden <a href="http://hl7.se">http://hl7.se</a>. The group is composed of representatives from regions, state authorities, system vendors and other experts within the FHIR standard, informatics, architecture and terminology.</p>
+
+<!---
+Framtagandet av dessa basprofiler och utökningar genomförs av en arbetsgrupp under HL7 Sverige <http://hl7.se>. Gruppen består av representanter från regioner, myndigheter, systemleverantörer samt andra experter inom FHIR, informatik, arkitektur, terminologi etc.
+-->
+
+<h3 id="contact-information">Contact information</h3>
+<p>To reach the working group for the Swedish base profiles: 
+<a href="https://hl7.se">HL7 Sweden</a></p>
+
+<!---
+För att komma i kontakt med gruppen som arbetar med FHIR basprofiler:
+[Arvid Thunholm](mailto:arvid.thunholm@gmail.com) - Ordförande HL7 basprofiler
+-->
+
+<h3 id="ip-statements">IP Statements</h3>
+
+<p>This document is licensed under Creative Commons "No Rights Reserved" (<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>).</p>
+
+<p>HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR <img src="icon-fhir-16.png" style="float: none; margin: 0px; padding: 0px; vertical-align: bottom" />® are trademarks owned by Health Level Seven International, registered with the United States Patent and Trademark Office.</p>
+
+<p>This implementation guide contains and references intellectual property owned by third parties ("Third Party IP"). Acceptance of these License Terms does not grant any rights with respect to Third Party IP. The licensee alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize Third Party IP in connection with the specification or otherwise.</p>
+
+<p>This publication includes IP covered under the following statements.</p>
+<ul>
+<li>ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="StructureDefinition-SEBaseAddressPersonExtension.html">SEBaseAddressPersonExtension</a>, <a href="ValueSet-SEBaseAddressPersonVS.html">SEBaseAddressPersonVS</a><span id="ips_1" onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 20 more</span></span><span id="ips2_1" style="display: none">, <a href="ValueSet-SEBaseHOSPLegitimationsYrkeVS.html">SEBaseHOSPLegitimationsYrkeVS</a>, <a href="ValueSet-SEBaseHSABefattningVS.html">SEBaseHSABefattningVS</a>, <a href="ValueSet-SEBaseHSAVerksamhetVS.html">SEBaseHSAVerksamhetVS</a>, <a href="StructureDefinition-SEBaseHumanName.html">SEBaseHumanName</a>, <a href="StructureDefinition-SEBaseLMANummer.html">SEBaseLMANummer</a>, <a href="CodeSystem-se-base-marital-status.html">SEBaseMaritalStatusCS</a>, <a href="ValueSet-SEBaseMaritalStatusVS.html">SEBaseMaritalStatusVS</a>, <a href="StructureDefinition-SEBaseMiddleNameExtension.html">SEBaseMiddleNameExtension</a>, <a href="ValueSet-SEBaseNamePartQualifierVS.html">SEBaseNamePartQualifierVS</a>, <a href="StructureDefinition-SEBaseOrganization.html">SEBaseOrganization</a>, <a href="StructureDefinition-SEBaseOwnFamilyExtension.html">SEBaseOwnFamilyExtension</a>, <a href="StructureDefinition-SEBasePatient.html">SEBasePatient</a>, <a href="StructureDefinition-SEBasePractitioner.html">SEBasePractitioner</a>, <a href="StructureDefinition-SEBasePractitionerRole.html">SEBasePractitionerRole</a>, <a href="index.html">SEBaseProfileImplementationGuide</a>, <a href="ValueSet-SEBaseSKRYrkeSpecialtyVS.html">SEBaseSKRYrkeSpecialtyVS</a>, <a href="ValueSet-SEBaseSKRYrkeVS.html">SEBaseSKRYrkeVS</a>, <a href="ValueSet-SEBaseSOSNYKVS.html">SEBaseSOSNYKVS</a>, <a href="CodeSystem-SecurityLabel.html">SecurityLabelCS</a> and <a href="ValueSet-SecurityLabelVS.html">SecurityLabelVS</a></span></li>
+</ul>
+</div></li>
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<ul>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="Patient-PatientExample1.html">Patient/PatientExample1</a>, <a href="Patient-PatientExample189002029800.html">Patient/PatientExample189002029800</a><span id="ips_2" onclick="document.getElementById('ips_2').innerHTML = document.getElementById('ips2_2').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 15 more</span></span><span id="ips2_2" style="display: none">, <a href="Patient-PatientExample189602029812.html">Patient/PatientExample189602029812</a>, <a href="Patient-PatientExample196101182803.html">Patient/PatientExample196101182803</a>, <a href="Patient-PatientExample196109732393.html">Patient/PatientExample196109732393</a>, <a href="Patient-PatientExample199002222397.html">Patient/PatientExample199002222397</a>, <a href="Patient-PatientExample200001252386.html">Patient/PatientExample200001252386</a>, <a href="Patient-PatientExample200302022389.html">Patient/PatientExample200302022389</a>, <a href="Patient-PatientExample20210325K069.html">Patient/PatientExample20210325K069</a>, <a href="Patient-PatientExample98240301AA06.html">Patient/PatientExample98240301AA06</a>, <a href="Practitioner-PractitionerExample1.html">Practitioner/PractitionerExample1</a>, <a href="StructureDefinition-SEBaseAddressPersonExtension.html">SEBaseAddressPersonExtension</a>, <a href="ValueSet-SEBaseAddressPersonVS.html">SEBaseAddressPersonVS</a>, <a href="StructureDefinition-SEBasePractitioner.html">SEBasePractitioner</a>, <a href="StructureDefinition-SEBasePractitionerRole.html">SEBasePractitionerRole</a>, <a href="ValueSet-SEBaseSKRYrkeSpecialtyVS.html">SEBaseSKRYrkeSpecialtyVS</a> and <a href="ValueSet-SEBaseSKRYrkeVS.html">SEBaseSKRYrkeVS</a></span></li>
+</ul>
+</div></li>
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div id="ipp_3" onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-v2-0203.html">identifierType</a>: <a href="StructureDefinition-SEBaseOrganization.html">SEBaseOrganization</a>, <a href="StructureDefinition-SEBasePractitioner.html">SEBasePractitioner</a> and <a href="StructureDefinition-SEBasePractitionerRole.html">SEBasePractitionerRole</a></li>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-ActCode.html">ActCode</a>: <a href="Patient-PatientExample1.html">Patient/PatientExample1</a>, <a href="Patient-PatientExample189602029812.html">Patient/PatientExample189602029812</a>, <a href="Patient-PatientExample200001252386.html">Patient/PatientExample200001252386</a>, <a href="StructureDefinition-SEBasePatient.html">SEBasePatient</a> and <a href="ValueSet-SecurityLabelVS.html">SecurityLabelVS</a></li>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html">EntityNamePartQualifierR2</a>: <a href="StructureDefinition-SEBaseHumanName.html">SEBaseHumanName</a> and <a href="ValueSet-SEBaseNamePartQualifierVS.html">SEBaseNamePartQualifierVS</a></li>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus</a>: <a href="Patient-PatientExample189002029800.html">Patient/PatientExample189002029800</a>, <a href="Patient-PatientExample196101182803.html">Patient/PatientExample196101182803</a><span id="ips_6" onclick="document.getElementById('ips_6').innerHTML = document.getElementById('ips2_6').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span></span><span id="ips2_6" style="display: none">, <a href="Patient-PatientExample199002222397.html">Patient/PatientExample199002222397</a>, <a href="Patient-PatientExample200302022389.html">Patient/PatientExample200302022389</a>, <a href="ValueSet-SEBaseMaritalStatusVS.html">SEBaseMaritalStatusVS</a> and <a href="StructureDefinition-SEBasePatient.html">SEBasePatient</a></span></li>
+</ul>
+</div></li>
+</ul>
+<!--$$1$$-->
+
+<h3 id="cross-version-analysis">Cross Version Analysis</h3>
+
+<p>This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both <a href="package.r4.tgz">R4 (hl7se.fhir.base.r4)</a> and <a href="package.r4b.tgz">R4B (hl7se.fhir.base.r4b)</a> are available.</p>
+<!--$$2$$-->
+
+<h3 id="dependency-table">Dependency Table</h3>
+
+<div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <span title="Canonical: http://hl7.se/fhir/ig/base">Swedish Base Profiles Implementation Guide</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7se.fhir.base/1.1.0">hl7se.fhir.base#1.1.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img onclick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACfSURBVDhP7ZJBD4IwDIVbrvqft/1kEw8egNKHrRKyjiXG4MEvWVtYebwuYxGhCGZsC9tjlaZAD4PlKnBgZcgPOSildFtJKb0PFgJYOWdNz3rDxfKLbR9Wc4RE9LAypCmguAO3fEXws0GOBNAghehm9YyXyh1Bra+CyJEAGlhHwB/X2mfeczTCiFD70GkK6AiTlSEf34PvXuUe/gLnCxAtVClV++yUSjoAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/6.3.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/6.3.0">hl7.terminology.r4#6.3.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/petur/development/hl7se/basprofiler-r4/temp/ig-builds/hl7se.fhir.base#1.1.0-milestone/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://hl7.org/fhir/extensions/5.2.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r4/5.2.0">hl7.fhir.uv.extensions.r4#5.2.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table></div>
+<table class="grid"><tr><td><p><b>Package hl7.fhir.uv.extensions.r4#5.2.0</b></p>
+<p>This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used (built Mon, Feb 10, 2025 21:45+1100+11:00)</p>
+</td></tr></table>
+<!--$$3$$-->
+
+<h3 id="globals-table">Globals Table</h3>
+
+<p><i>There are no Global profiles defined</i></p>
+<!--$$4$$-->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.se/">HL7 Sweden</a>.  Package hl7se.fhir.base#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:02+0200">2025-05-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
         </p>
-   </div>    <!-- /inner-wrapper -->
-  </div>    <!-- /container -->
- </div>    <!-- /segment-footer -->
-    <!-- disqus thread -->
-    <!-- disqus -->
-    <!-- end disqus -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
- <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-  <div class="container">    <!-- container -->
-  </div>    <!-- /container -->
- </div>    <!-- /segment-post-footer -->
-
-   <!-- JS and analytics only. -->
+  <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
-================================================== -->
+  ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets-hist/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script src="./dist-hist/js/bootstrap.min.js"> </script>
-<script src="./assets-hist/js/respond.min.js"> </script>
-
-<script src="./assets-hist/js/fhir.js"> </script>
-
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
-================================================== -->
-
-
-</body>
+  ================================================== -->
+  </body>
 </html>
+

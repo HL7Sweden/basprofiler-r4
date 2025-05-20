@@ -1,0 +1,156 @@
+[
+  {
+    "id" : "SecurityLabel",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+    "version" : "1.1.0",
+    "name" : "SecurityLabelCS"
+  },
+  {
+    "id" : "se-base-marital-status",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status",
+    "version" : "1.1.0",
+    "name" : "SEBaseMaritalStatusCS"
+  },
+  {
+    "id" : "hl7se.fhir.base",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.se/fhir/ig/base/ImplementationGuide/hl7se.fhir.base",
+    "version" : "1.1.0",
+    "name" : "SEBaseProfileImplementationGuide"
+  },
+  {
+    "id" : "SEBaseAddressPersonExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseAddressPersonExtension",
+    "version" : "1.1.0",
+    "name" : "SEBaseAddressPersonExtension"
+  },
+  {
+    "id" : "SEBaseHumanName",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseHumanName",
+    "version" : "1.1.0",
+    "name" : "SEBaseHumanName"
+  },
+  {
+    "id" : "SEBaseLMANummer",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseLMANummer",
+    "version" : "1.1.0",
+    "name" : "SEBaseLMANummer"
+  },
+  {
+    "id" : "SEBaseMiddleNameExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseMiddleNameExtension",
+    "version" : "1.1.0",
+    "name" : "SEBaseMiddleNameExtension"
+  },
+  {
+    "id" : "SEBaseOrganization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOrganization",
+    "version" : "1.1.0",
+    "name" : "SEBaseOrganization"
+  },
+  {
+    "id" : "SEBaseOwnFamilyExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBaseOwnFamilyExtension",
+    "version" : "1.1.0",
+    "name" : "SEBaseOwnFamilyExtension"
+  },
+  {
+    "id" : "SEBasePatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePatient",
+    "version" : "1.1.0",
+    "name" : "SEBasePatient"
+  },
+  {
+    "id" : "SEBasePractitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePractitioner",
+    "version" : "1.1.0",
+    "name" : "SEBasePractitioner"
+  },
+  {
+    "id" : "SEBasePractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.se/fhir/ig/base/StructureDefinition/SEBasePractitionerRole",
+    "version" : "1.1.0",
+    "name" : "SEBasePractitionerRole"
+  },
+  {
+    "id" : "SEBaseAddressPersonVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseAddressPersonVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseAddressPersonVS"
+  },
+  {
+    "id" : "SEBaseHOSPLegitimationsYrkeVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHOSPLegitimationsYrkeVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseHOSPLegitimationsYrkeVS"
+  },
+  {
+    "id" : "SEBaseHSABefattningVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSABefattningVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseHSABefattningVS"
+  },
+  {
+    "id" : "SEBaseHSAVerksamhetVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseHSAVerksamhetVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseHSAVerksamhetVS"
+  },
+  {
+    "id" : "SEBaseMaritalStatusVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseMaritalStatusVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseMaritalStatusVS"
+  },
+  {
+    "id" : "SEBaseNamePartQualifierVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseNamePartQualifierVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseNamePartQualifierVS"
+  },
+  {
+    "id" : "SEBaseSKRYrkeSpecialtyVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeSpecialtyVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseSKRYrkeSpecialtyVS"
+  },
+  {
+    "id" : "SEBaseSKRYrkeVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseSKRYrkeVS"
+  },
+  {
+    "id" : "SEBaseSOSNYKVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SEBaseSOSNYKVS",
+    "version" : "1.1.0",
+    "name" : "SEBaseSOSNYKVS"
+  },
+  {
+    "id" : "SecurityLabelVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.se/fhir/ig/base/ValueSet/SecurityLabelVS",
+    "version" : "1.1.0",
+    "name" : "SecurityLabelVS"
+  }
+]

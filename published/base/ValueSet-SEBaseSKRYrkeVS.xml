@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SEBaseSKRYrkeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SEBaseSKRYrkeVS</b></p><a name="SEBaseSKRYrkeVS"> </a><a name="hcSEBaseSKRYrkeVS"> </a><a name="SEBaseSKRYrkeVS-sv-SE"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  in 67031000052107 (urval legitimerade yrken)</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  in 68591000052102 (urval ej legitimerade yrken)</li></ul></div>
+  </text>
+  <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS"/>
+  <version value="1.1.0"/>
+  <name value="SEBaseSKRYrkeVS"/>
+  <title value="SKR ValueSet for occupations"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-20T13:02:08+02:00"/>
+  <publisher value="HL7 Sweden"/>
+  <contact>
+    <name value="HL7 Sweden"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.se/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.se"/>
+    </telecom>
+  </contact>
+  <description value="SKR ValueSet for occupations"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="SE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/45991000052106"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="67031000052107"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/45991000052106"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="68591000052102"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

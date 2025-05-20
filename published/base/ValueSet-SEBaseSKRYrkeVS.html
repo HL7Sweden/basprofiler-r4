@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SKR ValueSet for occupations - Swedish Base Profiles Implementation Guide v1.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <link href="assets/css/hl7.se.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.16"}
+    h3,h4,h5,h6{--heading-prefix:"5.16"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div id="hl7-se-nav">
+    <a no-external="true" href="http://hl7.se">
+        <img height="56" alt="Visit HL7 Sweden website" src="assets/images/HS_HL7_0.png"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Swedish Base Profiles Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - release
+
+
+
+  <img alt="Sweden flag" src="assets/images/swe.svg" height="16" title="Sweden"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="2_profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="3_valuesets.html">Value Sets</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SKR ValueSet for occupations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 Sweden base profiles (v1.1.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.se/fhir/ig/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-SEBaseSKRYrkeVS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-SEBaseSKRYrkeVS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-SEBaseSKRYrkeVS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: SKR ValueSet for occupations
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.se/fhir/ig/base/ValueSet/SEBaseSKRYrkeVS|1.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-05-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SEBaseSKRYrkeVS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>SKR ValueSet for occupations</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-SEBasePractitioner.html">SE base profile for practitioner</a></li>
+ <li><a href="StructureDefinition-SEBasePractitionerRole.html">SE base profil for practitioner role</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SEBaseSKRYrkeVS</b></p><a name="SEBaseSKRYrkeVS"> </a><a name="hcSEBaseSKRYrkeVS"> </a><a name="SEBaseSKRYrkeVS-sv-SE"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  in 67031000052107 (urval legitimerade yrken)</li>
+<li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  in 68591000052102 (urval ej legitimerade yrken)</li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT Swedish edition 30-Nov 2023</p><p>This value set expansion contains 83 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (sv-SE)</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-3842006"> </a>  <a href="http://snomed.info/id/3842006">3842006</a></td><td>http://snomed.info/sct</td><td>kiropraktor</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-26042002"> </a>  <a href="http://snomed.info/id/26042002">26042002</a></td><td>http://snomed.info/sct</td><td>tandhygienist</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-28229004"> </a>  <a href="http://snomed.info/id/28229004">28229004</a></td><td>http://snomed.info/sct</td><td>optiker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-36682004"> </a>  <a href="http://snomed.info/id/36682004">36682004</a></td><td>http://snomed.info/sct</td><td>sjukgymnast</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-46255001"> </a>  <a href="http://snomed.info/id/46255001">46255001</a></td><td>http://snomed.info/sct</td><td>apotekare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-59944000"> </a>  <a href="http://snomed.info/id/59944000">59944000</a></td><td>http://snomed.info/sct</td><td>psykolog</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-80546007"> </a>  <a href="http://snomed.info/id/80546007">80546007</a></td><td>http://snomed.info/sct</td><td>arbetsterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-106289002"> </a>  <a href="http://snomed.info/id/106289002">106289002</a></td><td>http://snomed.info/sct</td><td>tandläkare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-106292003"> </a>  <a href="http://snomed.info/id/106292003">106292003</a></td><td>http://snomed.info/sct</td><td>sjuksköterska</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-158950001"> </a>  <a href="http://snomed.info/id/158950001">158950001</a></td><td>http://snomed.info/sct</td><td>hälso- och sjukvårdskurator</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-159017007"> </a>  <a href="http://snomed.info/id/159017007">159017007</a></td><td>http://snomed.info/sct</td><td>röntgensjuksköterska</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-159026005"> </a>  <a href="http://snomed.info/id/159026005">159026005</a></td><td>http://snomed.info/sct</td><td>logoped</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-159033005"> </a>  <a href="http://snomed.info/id/159033005">159033005</a></td><td>http://snomed.info/sct</td><td>dietist</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-224588003"> </a>  <a href="http://snomed.info/id/224588003">224588003</a></td><td>http://snomed.info/sct</td><td>psykoterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-309418004"> </a>  <a href="http://snomed.info/id/309418004">309418004</a></td><td>http://snomed.info/sct</td><td>audionom</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-309428008"> </a>  <a href="http://snomed.info/id/309428008">309428008</a></td><td>http://snomed.info/sct</td><td>ortopedingenjör</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-309453006"> </a>  <a href="http://snomed.info/id/309453006">309453006</a></td><td>http://snomed.info/sct</td><td>legitimerad barnmorska</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-386626000"> </a>  <a href="http://snomed.info/id/386626000">386626000</a></td><td>http://snomed.info/sct</td><td>biomedicinsk analytiker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1254952007"> </a>  <a href="http://snomed.info/id/1254952007">1254952007</a></td><td>http://snomed.info/sct</td><td>sjukhusfysiker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68081000052105"> </a>  <a href="http://snomed.info/id/68081000052105">68081000052105</a></td><td>http://snomed.info/sct</td><td>legitimerad läkare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68171000052107"> </a>  <a href="http://snomed.info/id/68171000052107">68171000052107</a></td><td>http://snomed.info/sct</td><td>naprapat</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68201000052108"> </a>  <a href="http://snomed.info/id/68201000052108">68201000052108</a></td><td>http://snomed.info/sct</td><td>receptarie</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-4162009"> </a>  <a href="http://snomed.info/id/4162009">4162009</a></td><td>http://snomed.info/sct</td><td>tandsköterska</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-40570005"> </a>  <a href="http://snomed.info/id/40570005">40570005</a></td><td>http://snomed.info/sct</td><td>tolk</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-59169001"> </a>  <a href="http://snomed.info/id/59169001">59169001</a></td><td>http://snomed.info/sct</td><td>ortopedtekniker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-106308006"> </a>  <a href="http://snomed.info/id/106308006">106308006</a></td><td>http://snomed.info/sct</td><td>förskollärare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-106309003"> </a>  <a href="http://snomed.info/id/106309003">106309003</a></td><td>http://snomed.info/sct</td><td>speciallärare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-159005005"> </a>  <a href="http://snomed.info/id/159005005">159005005</a></td><td>http://snomed.info/sct</td><td>sjuksköterskestuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-159034004"> </a>  <a href="http://snomed.info/id/159034004">159034004</a></td><td>http://snomed.info/sct</td><td>fotvårdsspecialist</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-159039009"> </a>  <a href="http://snomed.info/id/159039009">159039009</a></td><td>http://snomed.info/sct</td><td>audiologtekniker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-159282002"> </a>  <a href="http://snomed.info/id/159282002">159282002</a></td><td>http://snomed.info/sct</td><td>laboratorietekniker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160008000"> </a>  <a href="http://snomed.info/id/160008000">160008000</a></td><td>http://snomed.info/sct</td><td>tandtekniker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-184152007"> </a>  <a href="http://snomed.info/id/184152007">184152007</a></td><td>http://snomed.info/sct</td><td>vårdbiträde</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-224577009"> </a>  <a href="http://snomed.info/id/224577009">224577009</a></td><td>http://snomed.info/sct</td><td>undersköterska</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-224587008"> </a>  <a href="http://snomed.info/id/224587008">224587008</a></td><td>http://snomed.info/sct</td><td>arbetsterapibiträde</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-224590002"> </a>  <a href="http://snomed.info/id/224590002">224590002</a></td><td>http://snomed.info/sct</td><td>lekterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-307984008"> </a>  <a href="http://snomed.info/id/307984008">307984008</a></td><td>http://snomed.info/sct</td><td>behandlingsassistent</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-309404006"> </a>  <a href="http://snomed.info/id/309404006">309404006</a></td><td>http://snomed.info/sct</td><td>sjukgymnastassistent</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-309411005"> </a>  <a href="http://snomed.info/id/309411005">309411005</a></td><td>http://snomed.info/sct</td><td>dansterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-309412003"> </a>  <a href="http://snomed.info/id/309412003">309412003</a></td><td>http://snomed.info/sct</td><td>musikterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-309454000"> </a>  <a href="http://snomed.info/id/309454000">309454000</a></td><td>http://snomed.info/sct</td><td>barnmorskestuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-310194009"> </a>  <a href="http://snomed.info/id/310194009">310194009</a></td><td>http://snomed.info/sct</td><td>hjälpmedelskonsulent</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-394572006"> </a>  <a href="http://snomed.info/id/394572006">394572006</a></td><td>http://snomed.info/sct</td><td>läkarsekreterare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-397897005"> </a>  <a href="http://snomed.info/id/397897005">397897005</a></td><td>http://snomed.info/sct</td><td>ambulansjukvårdare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-398130009"> </a>  <a href="http://snomed.info/id/398130009">398130009</a></td><td>http://snomed.info/sct</td><td>läkarstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-409974004"> </a>  <a href="http://snomed.info/id/409974004">409974004</a></td><td>http://snomed.info/sct</td><td>hälsopedagog</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-721942007"> </a>  <a href="http://snomed.info/id/721942007">721942007</a></td><td>http://snomed.info/sct</td><td>hjärt-kärlperfusionist</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-768822006"> </a>  <a href="http://snomed.info/id/768822006">768822006</a></td><td>http://snomed.info/sct</td><td>rehabiliteringssamordnare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-67951000052104"> </a>  <a href="http://snomed.info/id/67951000052104">67951000052104</a></td><td>http://snomed.info/sct</td><td>arbetsterapeutstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-67961000052101"> </a>  <a href="http://snomed.info/id/67961000052101">67961000052101</a></td><td>http://snomed.info/sct</td><td>audionomstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-67971000052105"> </a>  <a href="http://snomed.info/id/67971000052105">67971000052105</a></td><td>http://snomed.info/sct</td><td>dietiststuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-67991000052109"> </a>  <a href="http://snomed.info/id/67991000052109">67991000052109</a></td><td>http://snomed.info/sct</td><td>farmaceutstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68001000052103"> </a>  <a href="http://snomed.info/id/68001000052103">68001000052103</a></td><td>http://snomed.info/sct</td><td>fysioterapeutstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68031000052106"> </a>  <a href="http://snomed.info/id/68031000052106">68031000052106</a></td><td>http://snomed.info/sct</td><td>medicinsk kuratorstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68091000052107"> </a>  <a href="http://snomed.info/id/68091000052107">68091000052107</a></td><td>http://snomed.info/sct</td><td>logopedstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68101000052102"> </a>  <a href="http://snomed.info/id/68101000052102">68101000052102</a></td><td>http://snomed.info/sct</td><td>psykologstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68111000052100"> </a>  <a href="http://snomed.info/id/68111000052100">68111000052100</a></td><td>http://snomed.info/sct</td><td>skötarstuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68131000052105"> </a>  <a href="http://snomed.info/id/68131000052105">68131000052105</a></td><td>http://snomed.info/sct</td><td>undersköterskestuderande</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68181000052109"> </a>  <a href="http://snomed.info/id/68181000052109">68181000052109</a></td><td>http://snomed.info/sct</td><td>PTP-psykolog</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68211000052105"> </a>  <a href="http://snomed.info/id/68211000052105">68211000052105</a></td><td>http://snomed.info/sct</td><td>farmaceut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68221000052102"> </a>  <a href="http://snomed.info/id/68221000052102">68221000052102</a></td><td>http://snomed.info/sct</td><td>uroterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68231000052100"> </a>  <a href="http://snomed.info/id/68231000052100">68231000052100</a></td><td>http://snomed.info/sct</td><td>barnsköterska</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68241000052106"> </a>  <a href="http://snomed.info/id/68241000052106">68241000052106</a></td><td>http://snomed.info/sct</td><td>skötare (inom psykiatrisk vård)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68251000052109"> </a>  <a href="http://snomed.info/id/68251000052109">68251000052109</a></td><td>http://snomed.info/sct</td><td>brukarspecialist</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68261000052107"> </a>  <a href="http://snomed.info/id/68261000052107">68261000052107</a></td><td>http://snomed.info/sct</td><td>bildterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68271000052103"> </a>  <a href="http://snomed.info/id/68271000052103">68271000052103</a></td><td>http://snomed.info/sct</td><td>rehabiliteringsassistent</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68301000052100"> </a>  <a href="http://snomed.info/id/68301000052100">68301000052100</a></td><td>http://snomed.info/sct</td><td>habiliteringsassistent</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68311000052103"> </a>  <a href="http://snomed.info/id/68311000052103">68311000052103</a></td><td>http://snomed.info/sct</td><td>kurator</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68321000052106"> </a>  <a href="http://snomed.info/id/68321000052106">68321000052106</a></td><td>http://snomed.info/sct</td><td>teckenspråkslärare</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68331000052108"> </a>  <a href="http://snomed.info/id/68331000052108">68331000052108</a></td><td>http://snomed.info/sct</td><td>lärare i tecken som stöd</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68341000052102"> </a>  <a href="http://snomed.info/id/68341000052102">68341000052102</a></td><td>http://snomed.info/sct</td><td>fritidspedagog</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68351000052104"> </a>  <a href="http://snomed.info/id/68351000052104">68351000052104</a></td><td>http://snomed.info/sct</td><td>fritidskonsulent</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68361000052101"> </a>  <a href="http://snomed.info/id/68361000052101">68361000052101</a></td><td>http://snomed.info/sct</td><td>gipstekniker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68371000052105"> </a>  <a href="http://snomed.info/id/68371000052105">68371000052105</a></td><td>http://snomed.info/sct</td><td>sjukhusfotograf</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68381000052107"> </a>  <a href="http://snomed.info/id/68381000052107">68381000052107</a></td><td>http://snomed.info/sct</td><td>medicinteknisk ingenjör</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68391000052109"> </a>  <a href="http://snomed.info/id/68391000052109">68391000052109</a></td><td>http://snomed.info/sct</td><td>hjälpmedelstekniker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68401000052107"> </a>  <a href="http://snomed.info/id/68401000052107">68401000052107</a></td><td>http://snomed.info/sct</td><td>anaplastolog</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68411000052109"> </a>  <a href="http://snomed.info/id/68411000052109">68411000052109</a></td><td>http://snomed.info/sct</td><td>ergonom</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68521000052100"> </a>  <a href="http://snomed.info/id/68521000052100">68521000052100</a></td><td>http://snomed.info/sct</td><td>stomiterapeut</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68551000052107"> </a>  <a href="http://snomed.info/id/68551000052107">68551000052107</a></td><td>http://snomed.info/sct</td><td>röntgenbiträde</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68561000052105"> </a>  <a href="http://snomed.info/id/68561000052105">68561000052105</a></td><td>http://snomed.info/sct</td><td>synpedagog</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68571000052101"> </a>  <a href="http://snomed.info/id/68571000052101">68571000052101</a></td><td>http://snomed.info/sct</td><td>hörselpedagog</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68601000052105"> </a>  <a href="http://snomed.info/id/68601000052105">68601000052105</a></td><td>http://snomed.info/sct</td><td>yrkeshygieniker</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.se/">HL7 Sweden</a>.  Package hl7se.fhir.base#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 13:02+0200">2025-05-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

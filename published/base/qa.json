@@ -1,0 +1,19 @@
+{
+  "url" : "http://hl7.se/fhir/ig/base/ImplementationGuide/hl7se.fhir.base",
+  "name" : "SEBaseProfileImplementationGuide",
+  "title" : "Swedish Base Profiles Implementation Guide",
+  "description" : "Implementation Guide for Swedish Base Profiles",
+  "status" : "active",
+  "package-id" : "hl7se.fhir.base",
+  "ig-ver" : "1.1.0",
+  "date" : "Tue, 20 May, 2025 13:02:57 +0200",
+  "dateISO8601" : "2025-05-20T13:02:57+02:00",
+  "errs" : 0,
+  "warnings" : 26,
+  "hints" : 6,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1751245920
+}

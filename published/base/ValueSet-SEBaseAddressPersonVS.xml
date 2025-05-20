@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SEBaseAddressPersonVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SEBaseAddressPersonVS</b></p><a name="SEBaseAddressPersonVS"> </a><a name="hcSEBaseAddressPersonVS"> </a><a name="SEBaseAddressPersonVS-sv-SE"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/45991000052106</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/63391000052104">63391000052104</a></td><td>särskild postadress</td></tr><tr><td><a href="http://snomed.info/id/63381000052101">63381000052101</a></td><td>folkbokföringsadress</td></tr><tr><td><a href="http://snomed.info/id/63401000052101">63401000052101</a></td><td>utlandsadress</td></tr><tr><td><a href="http://snomed.info/id/63411000052104">63411000052104</a></td><td>uppgiven adress</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.se/fhir/ig/base/ValueSet/SEBaseAddressPersonVS"/>
+  <version value="1.1.0"/>
+  <name value="SEBaseAddressPersonVS"/>
+  <title value="SE ValueSet for official address types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-20T13:02:08+02:00"/>
+  <publisher value="HL7 Sweden"/>
+  <contact>
+    <name value="HL7 Sweden"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.se/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.se"/>
+    </telecom>
+  </contact>
+  <description value="This is the ValueSet for address type in accordance with the Swedish authorities"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="SE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/45991000052106"/>
+      <concept>
+        <code value="63391000052104"/>
+        <display value="särskild postadress"/>
+      </concept>
+      <concept>
+        <code value="63381000052101"/>
+        <display value="folkbokföringsadress"/>
+      </concept>
+      <concept>
+        <code value="63401000052101"/>
+        <display value="utlandsadress"/>
+      </concept>
+      <concept>
+        <code value="63411000052104"/>
+        <display value="uppgiven adress"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

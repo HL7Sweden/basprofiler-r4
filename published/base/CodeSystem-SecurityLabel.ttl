@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SecurityLabel"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SecurityLabel</b></p><a name=\"SecurityLabel\"> </a><a name=\"hcSecurityLabel\"> </a><a name=\"SecurityLabel-sv-SE\"> </a><p>This case-sensitive code system <code>http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sekretessmarkering<a name=\"SecurityLabel-sekretessmarkering\"> </a></td><td>Sekretessmarkering</td><td>Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)</td></tr><tr><td style=\"white-space:nowrap\">skyddadFolkbokforing<a name=\"SecurityLabel-skyddadFolkbokforing\"> </a></td><td>Skyddad folkbokföring</td><td>Protected demographic information according to Skatteverket</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "SecurityLabelCS"] ; # 
+  fhir:title [ fhir:v "SE CodeSystem security labels"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-20T13:02:08+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Sweden"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Sweden" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.se/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.se" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is the CodeSystem for security labels in accordance with the swedish authorities"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SE" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "sekretessmarkering" ] ;
+     fhir:display [ fhir:v "Sekretessmarkering" ] ;
+     fhir:definition [ fhir:v "Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)" ]
+  ] [
+     fhir:code [ fhir:v "skyddadFolkbokforing" ] ;
+     fhir:display [ fhir:v "Skyddad folkbokföring" ] ;
+     fhir:definition [ fhir:v "Protected demographic information according to Skatteverket" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,76 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SecurityLabelCS",
+      "title" : "SE CodeSystem security labels",
+      "description" : "This is the CodeSystem for security labels in accordance with the swedish authorities",
+      "uses" : {
+      },
+      "ValueSet-SecurityLabelVS.html" : "SE ValueSet security labels"
+    },
+    {
+      "url" : "http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "SEBaseMaritalStatusCS",
+      "title" : "SE CodeSystem for marital status",
+      "description" : "This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)",
+      "uses" : {
+      },
+      "ValueSet-SEBaseMaritalStatusVS.html" : "SE ValueSet for marital status"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-SEBaseAddressPersonVS.html" : "SE ValueSet for official address types",
+      "ValueSet-SEBaseSKRYrkeSpecialtyVS.html" : "SKR ValueSet for clinical specialties",
+      "ValueSet-SEBaseSKRYrkeVS.html" : "SKR ValueSet for occupations"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "9.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "ValueSet-SecurityLabelVS.html" : "SE ValueSet security labels"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "EntityNamePartQualifierR2",
+      "title" : "EntityNamePartQualifierR2",
+      "description" : "**Description:**The qualifier is a set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type. For example, a given name may be flagged as a nickname, a family name may be a pseudonym or a name of public records.",
+      "oids" : ["2.16.840.1.113883.5.1122"],
+      "uses" : {
+      },
+      "ValueSet-SEBaseNamePartQualifierVS.html" : "SE ValueSet for preferred name"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "ValueSet-SEBaseMaritalStatusVS.html" : "SE ValueSet for marital status"
+    }
+  ]
+}

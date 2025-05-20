@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.se/fhir/ig/base/CodeSystem/SecurityLabel,1.1.0,active,,SecurityLabelCS,SE CodeSystem security labels,"This is the CodeSystem for security labels in accordance with the swedish authorities",
+http://hl7.se/fhir/ig/base/CodeSystem/se-base-marital-status,1.1.0,active,,SEBaseMaritalStatusCS,SE CodeSystem for marital status,"This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)",

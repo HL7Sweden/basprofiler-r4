@@ -1,0 +1,19 @@
+{
+  "website" : {
+    "style" : "fhir.layout",
+    "url" : "http://hl7.se/fhir/ig",
+    "server" : "Apache",
+    "org" : "HL7 Sweden",
+    "clone-xml-json" : false
+  },
+  "layout-rules" : [{
+    "npm" : "hl7se.fhir.*",
+    "canonical": "http://hl7.se/fhir/ig/{3}",
+    "destination" : "/{3}"
+  }],
+  "feeds" : {
+    "package" : "package-feed.xml",
+    "publication" : "publication-feed.xml"
+  }
+}
+
