@@ -30,6 +30,7 @@ fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
   path-expansion-params: Parameters-exp-params.json
+  pin-canonicals: pin-all
 copyrightYear: 2020+
 releaseLabel: release
 
