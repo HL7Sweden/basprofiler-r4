@@ -1,6 +1,3 @@
-Alias:   $SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
-Alias:   $HL7MS = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
-
 CodeSystem: SEBaseMaritalStatusCS
 Id: se-base-marital-status
 Title: "SE CodeSystem for marital status"
@@ -35,7 +32,6 @@ Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the Swedish authorities"
 * ^status = #active
 * ^experimental = false
-//* ^version = "0.1"
 * $SCT#63391000052104 "särskild postadress"
 * $SCT#63381000052101 "folkbokföringsadress"
 * $SCT#63401000052101 "utlandsadress"
@@ -56,7 +52,7 @@ Description: "This extension defines the official ValueSet to be used when expre
 // alt. * valueCodeableConcept from http://snomed.info/sct/45991000052106/ValueSet?fhir_vs=refset/64691000052109 (required)
 
 Profile: SEBasePatient
-Parent: http://hl7.org/fhir/StructureDefinition/Patient
+Parent: Patient
 Title: "SE base profil for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * ^status = #active
@@ -72,9 +68,9 @@ Description: "This is the base Patient profile to be used when profiling on Pati
     personnummer 0..1 and 
     samordningsnummer 0..1 and 
     nationelltReservnummer 0..1
-* identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
-* identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
-* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer"
+* identifier[personnummer].system = $personnummer
+* identifier[samordningsnummer].system = $samordningsnummer
+* identifier[nationelltReservnummer].system = $nationelltReservnummer
 //* name.extension contains 
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
