@@ -113,16 +113,20 @@ Description: "This is the base Practitioner Role profile to be used when profili
 
 Instance: PractitionerExample1
 InstanceOf: SEBasePractitioner
+Title: "PractitionerExample1"
 Description: "Practitioner example"
+Usage: #example
 * id = "PractitionerExample1"
-* name[0].use = #official
-* name[0].family = "Goode Johansson"
-* name[0].given[0] = "John"
-* name[0].given[1] = "Bob"
-* name[0].extension[middleName].valueString = "Johansson"
-* name[0].extension[ownFamily].valueString = "Goode"
-* name[0].text = "John Bob Goode Johansson"
-* name[0].given[1].extension[nameQualifier].valueCode = #CL
+* name
+  * extension[middleName].valueString = "Johansson"
+  * extension[ownFamily].valueString = "Goode"
+  * given[0] = "John"
+  * given[+] = "Bob"
+    * extension[nameQualifier].valueCode = #CL
+  * use = #official
+  * family = "Goode Johansson"
+  * text = "John Bob Goode Johansson"
 * identifier[hsaid].value = "SE2321000131-P000000123456"
-* qualification.identifier[prescriber].value = "12345678"
-* qualification.code = $SCT#309453006 "barnmorska"
+* qualification
+  * identifier[prescriber].value = "12345678"
+  * code = $SCT#309453006 "barnmorska"
