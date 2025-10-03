@@ -8,7 +8,7 @@ InstanceOf: SEBasePatient
 Title: "PatientExample1"
 Description: "Patient example"
 Usage: #example
-* meta.security[0] = $ACTCODE#DEMO
+* meta.security[0] = $v3-ActCode#DEMO
 * meta.security[1] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample1"
 * identifier[personnummer].value = "195009072553"
@@ -153,7 +153,7 @@ InstanceOf: SEBasePatient
 Title: "PatientExample200001252386"
 Description: "Example patient identified by personnummer 200001252386."
 Usage: #example
-* meta.security[0] = $ACTCODE#DEMO
+* meta.security[0] = $v3-ActCode#DEMO
 * meta.security[1] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample200001252386"
 * identifier[personnummer].value = "200001252386"
@@ -182,7 +182,7 @@ InstanceOf: SEBasePatient
 Title: "PatientExample189602029812"
 Description: "Example patient identified by personnummer 189602029812."
 Usage: #example
-* meta.security[0] = $ACTCODE#DEMO
+* meta.security[0] = $v3-ActCode#DEMO
 * meta.security[1] = SecurityLabelCS#skyddadFolkbokforing
 * id = "PatientExample189602029812"
 * identifier[personnummer].value = "189602029812"
