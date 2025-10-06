@@ -8,14 +8,14 @@ InstanceOf: SEBasePatient
 Title: "PatientExample1"
 Description: "Patient example"
 Usage: #example
-* meta.security[0] = $v3-ActCode#DEMO
-* meta.security[1] = SecurityLabelCS#sekretessmarkering
+* meta.security[+] = $v3-ActCode#DEMO
+* meta.security[+] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample1"
 * identifier[personnummer].value = "195009072553"
 * name
   * extension[middleName].valueString = "Johansson"
   * extension[ownFamily].valueString = "Goode"
-  * given[0] = "John"
+  * given[+] = "John"
   * given[+] = "Bob"
     * extension[nameQualifier].valueCode = #CL
   * use = #official
@@ -44,7 +44,7 @@ Usage: #example
 * id = "PatientExample196101182803"
 * identifier[personnummer].value = "196101182803"
 * name
-  * given[0] = "Maria"
+  * given[+] = "Maria"
     * extension[nameQualifier].valueCode = #CL
   * given[+] = "Birgitta"
   * use = #official
@@ -75,7 +75,7 @@ Usage: #example
 * name
   * extension[middleName].valueString = "VGR"
   * extension[ownFamily].valueString = "Hammar"
-  * given[0] = "Albertina"
+  * given[+] = "Albertina"
   * use = #official
   * family = "VGR Hammar"
   * text = "Albertina VGR Hammar"
@@ -102,7 +102,7 @@ Usage: #example
 * id = "PatientExample200302022389"
 * identifier[personnummer].value = "200302022389"
 * name
-  * given[0] = "Katja"
+  * given[+] = "Katja"
   * use = #official
   * family = "Hennig"
   * text = "Katja Hennig"
@@ -129,14 +129,14 @@ Usage: #example
 * id = "PatientExample199002222397"
 * identifier[personnummer].value = "199002222397"
 * name
-  * given[0] = "Andreas"
+  * given[+] = "Andreas"
   * use = #official
   * family = "Ebers"
   * text = "Andreas Ebers"
 * gender = #male
 * birthDate = "1990-02-22"
 * address
-  * line[0] = "Rosenheimer"
+  * line[+] = "Rosenheimer"
   * line[+] = "Van Kampenstraat"
   * line[+] = "7558 Hengelo"
   * country = "Nederländerna"
@@ -153,20 +153,20 @@ InstanceOf: SEBasePatient
 Title: "PatientExample200001252386"
 Description: "Example patient identified by personnummer 200001252386."
 Usage: #example
-* meta.security[0] = $v3-ActCode#DEMO
-* meta.security[1] = SecurityLabelCS#sekretessmarkering
+* meta.security[+] = $v3-ActCode#DEMO
+* meta.security[+] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample200001252386"
 * identifier[personnummer].value = "200001252386"
 * name
   * extension[middleName].valueString = "Skyddad uppgift"
-  * given[0] = "Skyddad uppgift"
+  * given[+] = "Skyddad uppgift"
   * use = #official
   * family = "Skyddad uppgift"
   * text = "Skyddad uppgift"
 * gender = #female
 * birthDate = "2000-01-25"
 * address
-  * line[0] = "Förmedlingsuppdrag"
+  * line[+] = "Förmedlingsuppdrag"
   * line[+] = "Box 2820"
   * city = "GÖTEBORG"
   * postalCode = "40320"
@@ -182,20 +182,20 @@ InstanceOf: SEBasePatient
 Title: "PatientExample189602029812"
 Description: "Example patient identified by personnummer 189602029812."
 Usage: #example
-* meta.security[0] = $v3-ActCode#DEMO
-* meta.security[1] = SecurityLabelCS#skyddadFolkbokforing
+* meta.security[+] = $v3-ActCode#DEMO
+* meta.security[+] = SecurityLabelCS#skyddadFolkbokforing
 * id = "PatientExample189602029812"
 * identifier[personnummer].value = "189602029812"
 * name
   * extension[middleName].valueString = "Skyddad uppgift"
-  * given[0] = "Skyddad uppgift"
+  * given[+] = "Skyddad uppgift"
   * use = #official
   * family = "Skyddad uppgift"
   * text = "Skyddad uppgift"
 * gender = #male
 * birthDate = "2000-01-25"
 * address
-  * line[0] = "Förmedlingsuppdrag"
+  * line[+] = "Förmedlingsuppdrag"
   * line[+] = "Box 2820"
   * city = "GÖTEBORG"
   * postalCode = "40320"
@@ -215,21 +215,21 @@ Usage: #example
 * name
   * extension[middleName].valueString = "Mellannamn"
   * extension[ownFamily].valueString = "Efternamn"
-  * given[0] = "Förnamn"
+  * given[+] = "Förnamn"
   * use = #official
   * family = "Mellannamn Efternamn"
   * text = "Förnamn Mellannamn Efternamn"
 * gender = #female
 * birthDate = "2024-03-01"
-* address[0]
-  * line[0] = "C/O"
+* address[+]
+  * line[+] = "C/O"
   * line[+] = "Adressrad 1 (Mer än 35 tecken)"
   * line[+] = "Adressrad 2 (Fler än 35 tecken)"
   * city = "Orten"
   * postalCode = "54300"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63411000052104 "uppgiven adress"
 * address[+]
-  * line[0] = "Adressrad 1"
+  * line[+] = "Adressrad 1"
   * line[+] = "Adressrad 2"
   * line[+] = "Adressrad 3"
   * country = "DZ"
@@ -249,20 +249,20 @@ Usage: #example
 * name
   * extension[middleName].valueString = "Mellannamn"
   * extension[ownFamily].valueString = "Efternamn"
-  * given[0] = "Förnamn"
+  * given[+] = "Förnamn"
   * use = #official
   * family = "Mellannamn Efternamn"
   * text = "Förnamn Mellannamn Efternamn"
 * gender = #female
 * birthDate = "2021-03-25"
-* address[0]
-  * line[0] = "Careof"
+* address[+]
+  * line[+] = "Careof"
   * line[+] = "Tillfällig adressrad"
   * city = "Orten"
   * postalCode = "54300"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63411000052104 "uppgiven adress"
 * address[+]
-  * line[0] = "Adressrad 1"
+  * line[+] = "Adressrad 1"
   * line[+] = "Adressrad 2"
   * line[+] = "Adressrad 3"
   * country = "DZ"
@@ -279,14 +279,14 @@ Usage: #example
 * id = "PatientExample196109732393"
 * identifier[samordningsnummer].value = "196109732393"
 * name
-  * given[0] = "Tom"
+  * given[+] = "Tom"
   * use = #official
   * family = "Smith"
   * text = "Tom Smith"
 * gender = #male
 * birthDate = "1961-09-13"
 * address
-  * line[0] = "SANDÅSGATAN 2"
+  * line[+] = "SANDÅSGATAN 2"
   * city = "STOCKHOLM"
   * postalCode = "11327"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 "särskild postadress"

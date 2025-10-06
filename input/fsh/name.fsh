@@ -3,8 +3,8 @@ Title: "SE extension för mellannamn"
 Description: "The extension is used in the base profile for Swedish Patient to express the middle name that a person born before 2017 can have"
 * ^status = #active
 * ^experimental = false
-* ^context[0].type = #element
-* ^context[0].expression = "HumanName"
+* ^context[+].type = #element
+* ^context[=].expression = "HumanName"
 * value[x] only string
 * value[x] 1..1
 
@@ -13,8 +13,8 @@ Title: "SE extension för explicit efternamn"
 Description: "The extension is used in the base profile for Swedish Patient to explicity express which part of the name is used as the family name."
 * ^status = #active
 * ^experimental = false
-* ^context[0].type = #element
-* ^context[0].expression = "HumanName"
+* ^context[+].type = #element
+* ^context[=].expression = "HumanName"
 * value[x] only string
 * value[x] 1..1
 

@@ -120,7 +120,7 @@ Usage: #example
 * name
   * extension[middleName].valueString = "Johansson"
   * extension[ownFamily].valueString = "Goode"
-  * given[0] = "John"
+  * given[+] = "John"
   * given[+] = "Bob"
     * extension[nameQualifier].valueCode = #CL
   * use = #official
