@@ -26,7 +26,7 @@ jurisdiction: urn:iso:std:iso:3166#SE
 #  code: "SE"
 description: Implementation Guide for Swedish Base Profiles
 license: CC0-1.0
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0 #4.0.1
 parameters:
   show-inherited-invariants: false
   path-expansion-params: Parameters-exp-params.json
