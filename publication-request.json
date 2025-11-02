@@ -1,13 +1,10 @@
 {
   "package-id" : "hl7se.fhir.base",
-  "version" : "1.0.0",
-  "path" : "http://hl7.se/fhir/ig/base/1.0.0",
-  "milestone" : false,
+  "version" : "1.1.0",
+  "path" : "http://hl7.se/fhir/ig/base/1.1.0",
   "desc": "Swedish Base Profiles Implementation Guide",
   "status" : "release",
   "sequence" : "Releases",
-  "title" : "Swedish Base Profiles Implementation Guide",
-  "ci-build" : "http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/",
-  "category" : "National profile",
-  "introduction" : "Swedish Base Profiles Implementation Guide"
+  "mode": "milestone",
+  "first": false
 }

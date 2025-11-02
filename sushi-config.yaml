@@ -13,7 +13,7 @@
 # id: hl7.fhir.se.base
 id: hl7se.fhir.base
 canonical: http://hl7.se/fhir/ig/base
-version: 1.0.0
+version: 1.1.0
 name: SEBaseProfileImplementationGuide
 title: Swedish Base Profiles Implementation Guide
 status: active
@@ -21,14 +21,15 @@ publisher:
   name: HL7 Sweden
   url: http://hl7.se/
   email: info@hl7.se
-jurisdiction:
-  system: urn:iso:std:iso:3166
-  code: "SE"
+jurisdiction: urn:iso:std:iso:3166#SE
+#  system: urn:iso:std:iso:3166
+#  code: "SE"
 description: Implementation Guide for Swedish Base Profiles
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
+  path-expansion-params: Parameters-exp-params.json
 copyrightYear: 2020+
 releaseLabel: release
 
@@ -37,11 +38,11 @@ releaseLabel: release
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  FAQ: faq.html
-  Profiles: profiles.html
-  Value Sets: valuesets.html
-  Table of Contents: toc.html
+  # FAQ: faq.html
+  Profiles: 2_profiles.html
+  Value Sets: 3_valuesets.html
   Artifact Index: artifacts.html
+  Table of Contents: toc.html
   #Support:
 
 # ╭────────────────────────────────────────────index.md────────────────────────────────────────────╮
