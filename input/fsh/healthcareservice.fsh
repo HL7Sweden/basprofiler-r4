@@ -2,7 +2,6 @@
 ValueSet: SEBaseHSAVerksamhetVS
 * ^status = #active
 * ^experimental = false
-* insert SEStandardRuleSet
 * include codes from system urn:oid:1.2.752.129.2.2.1.3
 
 Profile: SEBaseHealthcareService
