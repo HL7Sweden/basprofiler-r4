@@ -8,7 +8,7 @@ class "Encounter" as Enc <<ENCOUNTER>> {
     for the purpose of providing healthcare service(s)
     or assessing the health status of a patient.
     ---
-    serviceType : CodeableConcept (SEBaseHSAVerksamhetVS)
+    serviceType : CodeableConcept (ServiceType / SEBaseHSAVerksamhetVS)
     serviceProvider: Reference (Organization)
     location.location: Reference(Location)
 }
@@ -19,8 +19,8 @@ class "SEBaseOrganization" as Org <<ORGANIZATION>> {
     or organizations formed for the purpose of achieving 
     some form of collective action.
     ---
-    identifer:hsaid: Identifier
-    identifier:organizationIdentifer: Identifier
+    identifer[hsaid]: Identifier
+    identifier[organizationIdentifer]: Identifier
     type: CodeableConcept (SEBaseOrganizationTypeVS) 
     partOf : Reference(Organization)
 }
@@ -30,8 +30,8 @@ class "SEBaseHealthcareService" as HSvc <<HEALTHCARE_SERVICE>> {
     that are provided by an organization at a location
     ---
     category: CodeableConcept (ServiceCategory)
-    type: CodeableConcept (SEBaseHSAVerksamhetVS)
-    specialty: CodeableConcept (Practice Setting Code Value Set?) 
+    type: CodeableConcept (ServiceType / SEBaseHSAVerksamhetVS)
+    specialty: CodeableConcept (Practice Setting Code Value Set) 
     location: Reference(Location)
     providedBy: Reference(Organization)
 }
@@ -41,7 +41,7 @@ class "Location" as Loc <<LOCATION>> {
     and resources and participants may be stored, 
     found, contained, or accommodated.
     ---
-    type: CodeableConcept (ServiceType / MVO-kod)
+    type: CodeableConcept (ServiceType / SEBaseHSAVerksamhetVS)
     managingOrganization: Reference(Organization)
     partOf : Reference(Location)
 }
