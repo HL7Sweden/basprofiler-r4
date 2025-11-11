@@ -1,5 +1,5 @@
 @startuml 
-title "R4 - Organization and HealthcareService in Encounter "
+title "HealthcareService resource with its surrounding context."
 skinparam classAttributeIconSize 0
 skinparam roundcorner 5
 
@@ -26,7 +26,7 @@ class "SEBaseOrganization" as Org <<ORGANIZATION>> {
 }
 
 class "SEBaseHealthcareService" as HSvc <<HEALTHCARE_SERVICE>> {
-    a single healthcare service or category of services
+    A single healthcare service or category of services
     that are provided by an organization at a location
     ---
     category: CodeableConcept (ServiceCategory)
@@ -37,9 +37,9 @@ class "SEBaseHealthcareService" as HSvc <<HEALTHCARE_SERVICE>> {
 }
 
 class "Location" as Loc <<LOCATION>> {
-    information for a physical place where services 
-    are provided and resources and participants may
-    be stored, found, contained, or accommodated.
+    A physical place where services are provided 
+    and resources and participants may be stored, 
+    found, contained, or accommodated.
     ---
     type: CodeableConcept (ServiceType / MVO-kod)
     managingOrganization: Reference(Organization)
