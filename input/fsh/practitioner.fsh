@@ -76,7 +76,7 @@ Description: "This is the base Practitioner profile to be used when profiling on
 * qualification.code.coding[sosnyk].code from SEBaseSOSNYKVS (required)
 * qualification.code.coding[sosnyk].system = $professional-categories
 * qualification.code.coding[skr-yrke].code from SEBaseSKRYrkeVS (extensible)
-* qualification.code.coding[skr-yrke].system = $SCT
+* qualification.code.coding[skr-yrke].system = $SCT-versionless
 * qualification.code.coding[hsa-befattning] from SEBaseHSABefattningVS (required)
 * qualification.code.coding[hsa-befattning].system = $occupational-positions
 

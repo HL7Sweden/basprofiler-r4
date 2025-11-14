@@ -9,6 +9,7 @@ Alias: $prescriber = urn:oid:1.2.752.116.3.1.2
 Alias: $professional-categories = urn:oid:1.2.752.116.1.3.6
 Alias: $samordningsnummer = http://electronichealth.se/identifier/samordningsnummer
 Alias: $SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
+Alias: $SCT-versionless = http://snomed.info/sct
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
