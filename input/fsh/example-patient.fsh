@@ -57,7 +57,7 @@ Usage: #example
   * city = "VÄSTRA FRÖLUNDA"
   * postalCode = "42140"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 "folkbokföringsadress"
-* maritalStatus = $HL7MS#M "Married"
+* maritalStatus = $v3-MaritalStatus#M "Married"
 
 /*
     Example patient Albertina VGR Hammar
@@ -86,7 +86,7 @@ Usage: #example
   * city = "GÖTEBORG"
   * postalCode = "41301"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 "folkbokföringsadress"
-* maritalStatus = $HL7MS#M "Married"
+* maritalStatus = $v3-MaritalStatus#M "Married"
 
 /*
     Example patient Katja Hennig
@@ -113,7 +113,7 @@ Usage: #example
   * city = "Trollhättan"
   * postalCode = "46144"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 "folkbokföringsadress"
-* maritalStatus = $HL7MS#U "Unmarried"
+* maritalStatus = $v3-MaritalStatus#U "Unmarried"
 
 /*
     Example patient Andreas Ebers
@@ -141,7 +141,7 @@ Usage: #example
   * line[+] = "7558 Hengelo"
   * country = "Nederländerna"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
-* maritalStatus = $HL7MS#U "Unmarried"
+* maritalStatus = $v3-MaritalStatus#U "Unmarried"
 
 /*
     Example patient PROTECTED demographic information (sekretessmarkering)

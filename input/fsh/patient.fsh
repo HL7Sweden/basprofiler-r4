@@ -5,7 +5,7 @@ Description: "This is the CodeSystem for marital status in accordance with the S
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
-* #G "Gift" 
+* #G "Gift"
 * #OG "Ogift"
 * #S "Skild"
 * #Ä "Änka/änkling"
@@ -19,10 +19,10 @@ Title: "SE ValueSet for marital status"
 Description: "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."
 * ^status = #active
 * ^experimental = false
-* $HL7MS#M "Married"
-* $HL7MS#D "Divorced"
-* $HL7MS#W "Widowed"
-* $HL7MS#U "Unmarried"
+* $v3-MaritalStatus#M "Married"
+* $v3-MaritalStatus#D "Divorced"
+* $v3-MaritalStatus#W "Widowed"
+* $v3-MaritalStatus#U "Unmarried"
 * SEBaseMaritalStatusCS#RP "Registrerad partner"
 * SEBaseMaritalStatusCS#SP "Skild partner"
 * SEBaseMaritalStatusCS#EP "Efterlevande partner"
@@ -64,14 +64,14 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for Swedish patient identifier types"
-* identifier contains 
-    personnummer 0..1 and 
-    samordningsnummer 0..1 and 
+* identifier contains
+    personnummer 0..1 and
+    samordningsnummer 0..1 and
     nationelltReservnummer 0..1
 * identifier[personnummer].system = $personnummer
 * identifier[samordningsnummer].system = $samordningsnummer
 * identifier[nationelltReservnummer].system = $nationelltReservnummer
-//* name.extension contains 
+//* name.extension contains
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
 * name only SEBaseHumanName
