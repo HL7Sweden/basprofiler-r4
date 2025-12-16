@@ -20,6 +20,7 @@ Description: "This is the CodeSystem for marital status in accordance with the S
 ValueSet: SEBaseMaritalStatusVS
 Title: "SE ValueSet for marital status"
 Description: "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."
+* ^extension[http://hl7.org/fhir/StructureDefinition/valueset-supplement].valueCanonical = "http://hl7.org/fhir/langs/CodeSystem/cs-sv-v3-MaritalStatus"
 * ^status = #active
 * ^experimental = false
 * $HL7MS#M "Married"

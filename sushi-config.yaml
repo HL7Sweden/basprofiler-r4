@@ -30,8 +30,15 @@ fhirVersion: 4.0.1
 parameters:
   show-inherited-invariants: false
   path-expansion-params: Parameters-exp-params.json
+  i18n-default-lang: en
+  i18n-lang:
+    - sv
 copyrightYear: 2020+
 releaseLabel: release
+
+dependencies:
+  hl7.fhir.r4.sv: 0.1.0
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
