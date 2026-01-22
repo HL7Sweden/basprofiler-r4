@@ -1,6 +1,3 @@
-Alias:   $SCT = http://snomed.info/sct|http://snomed.info/sct/45991000052106
-Alias:   $HL7MS = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
-
 CodeSystem: SEBaseMaritalStatusCS
 Id: se-base-marital-status
 Title: "SE CodeSystem for marital status"
@@ -8,7 +5,7 @@ Description: "This is the CodeSystem for marital status in accordance with the S
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
-* #G "Gift" 
+* #G "Gift"
 * #OG "Ogift"
 * #S "Skild"
 * #Ä "Änka/änkling"
@@ -22,10 +19,10 @@ Title: "SE ValueSet for marital status"
 Description: "This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities."
 * ^status = #active
 * ^experimental = false
-* $HL7MS#M "Married"
-* $HL7MS#D "Divorced"
-* $HL7MS#W "Widowed"
-* $HL7MS#U "Unmarried"
+* $v3-MaritalStatus#M "Married"
+* $v3-MaritalStatus#D "Divorced"
+* $v3-MaritalStatus#W "Widowed"
+* $v3-MaritalStatus#U "Unmarried"
 * SEBaseMaritalStatusCS#RP "Registrerad partner"
 * SEBaseMaritalStatusCS#SP "Skild partner"
 * SEBaseMaritalStatusCS#EP "Efterlevande partner"
@@ -35,7 +32,6 @@ Title: "SE ValueSet for official address types"
 Description: "This is the ValueSet for address type in accordance with the Swedish authorities"
 * ^status = #active
 * ^experimental = false
-//* ^version = "0.1"
 * $SCT#63391000052104 "särskild postadress"
 * $SCT#63381000052101 "folkbokföringsadress"
 * $SCT#63401000052101 "utlandsadress"
@@ -49,14 +45,14 @@ Title: "SE extension for official address types"
 Description: "This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities"
 * ^status = #active
 * ^experimental = false
-* ^context[0].type = #element
-* ^context[0].expression = "Address"
+* ^context[+].type = #element
+* ^context[=].expression = "Address"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SEBaseAddressPersonVS (required)
 // alt. * valueCodeableConcept from http://snomed.info/sct/45991000052106/ValueSet?fhir_vs=refset/64691000052109 (required)
 
 Profile: SEBasePatient
-Parent: http://hl7.org/fhir/StructureDefinition/Patient
+Parent: Patient
 Title: "SE base profil for patient"
 Description: "This is the base Patient profile to be used when profiling on Patient in a Swedish context"
 * ^status = #active
@@ -68,14 +64,14 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for Swedish patient identifier types"
-* identifier contains 
-    personnummer 0..1 and 
-    samordningsnummer 0..1 and 
+* identifier contains
+    personnummer 0..1 and
+    samordningsnummer 0..1 and
     nationelltReservnummer 0..1
-* identifier[personnummer].system = "http://electronichealth.se/identifier/personnummer"
-* identifier[samordningsnummer].system = "http://electronichealth.se/identifier/samordningsnummer"
-* identifier[nationelltReservnummer].system = "http://electronichealth.se/identifier/nationelltReservnummer"
-//* name.extension contains 
+* identifier[personnummer].system = $personnummer
+* identifier[samordningsnummer].system = $samordningsnummer
+* identifier[nationelltReservnummer].system = $nationelltReservnummer
+//* name.extension contains
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1
 * name only SEBaseHumanName
