@@ -1,10 +1,10 @@
 
-ValueSet: SEBaseHSAVerksamhetVS
-Title: "HSA valueset for business classification codes"
-Description: "Codes used to describe the type of care activities an entity can provide."
-* ^status = #active
-* ^experimental = false
-* include codes from system urn:oid:1.2.752.129.2.2.1.3
+ValueSet: SEBaseOrganizationTypeVS
+Id: SEBaseOrganizationTypeVS
+Title: "SE ValueSet for organization types"
+Description: "This value sets contains organization types relevant for Swedish healthcare"
+* $SCT#43741000 "vårdenhet"
+* $SCT#143591000052106 "vårdgivare"
 
 Profile: SEBaseOrganization
 Parent: Organization
@@ -20,12 +20,14 @@ Description: "This is the base Organization profile to be used when profiling on
 * identifier[hsaid].system = $hsaid // (exactly)
 * identifier[hsaid].type = $v2-0203#PRN // (exactly)
 * identifier contains organizationIdentifier 0..1
-* identifier[organizationIdentifier].system = "urn:oid:2.5.4.97" // (exactly)
-* identifier[organizationIdentifier].type = $v2-0203#XX // (exactly)
-* type from SEBaseHSAVerksamhetVS (extensible)
+* identifier[organizationIdentifier].system = "urn:oid:2.5.4.97" (exactly)
+* identifier[organizationIdentifier].type = http://terminology.hl7.org/CodeSystem/v2-0203#XX (exactly)
+* type from SEBaseOrganizationTypeVS (extensible)
 
 Instance: OrganizationExample1
 InstanceOf: SEBaseOrganization
 Description: "Organization example"
 * id = "Organization1"
 * identifier[hsaid].value = "SE2321000131-P000000123457"
+* type.coding[+] = $SCT#143591000052106
+* type.coding[+] = http://local.org#code-for-care-provider
