@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install Sushi
         run: sudo npm install -g fsh-sushi
@@ -22,9 +22,11 @@ jobs:
 
   ig-publisher:
     runs-on: ubuntu-latest
+    env:
+      JAVA_TOOL_OPTIONS: "-Xmx8g"
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install Jekyll
         run: sudo gem install jekyll
@@ -37,7 +39,50 @@ jobs:
           chmod +x ./_updatePublisher.sh
           ./_updatePublisher.sh -y
 
-      - name: Validate IG
+      - name: Check that the IG builds successfully
         run: |
           chmod +x ./_genonce.sh
           ./_genonce.sh
+          echo "✅ IG built successfully"
+
+      - name: Check QA report
+        run: |
+          # Configuration
+          MAX_ALLOWED_ERRORS=5
+          MAX_ALLOWED_WARNINGS=72
+
+          if [ ! -f "output/qa.json" ]; then
+            echo "❌ QA file not found: output/qa.json"
+            exit 1
+          fi
+
+          # Extract errors and warnings from qa.json
+          ERRORS=$(jq -r '.errs // 0' output/qa.json)
+          WARNINGS=$(jq -r '.warnings // 0' output/qa.json)
+
+          echo "  QA Results:"
+          echo "   Errors: $ERRORS"
+          echo "   Warnings: $WARNINGS"
+
+          # Check if errors exceed threshold
+          if [ "$ERRORS" -gt $MAX_ALLOWED_ERRORS ]; then
+            echo "❌ Too many errors: $ERRORS (maximum allowed: $MAX_ALLOWED_ERRORS known errors)"
+            exit 1
+          fi
+
+          # Check if warnings exceed threshold
+          if [ "$WARNINGS" -gt $MAX_ALLOWED_WARNINGS ]; then
+            echo "❌ Too many warnings: $WARNINGS (maximum allowed: $MAX_ALLOWED_WARNINGS)"
+            exit 1
+          fi
+
+          echo "✅ QA check passed: $ERRORS errors (≤$MAX_ALLOWED_ERRORS) and $WARNINGS warnings (≤$MAX_ALLOWED_WARNINGS)"
+
+      - name: Upload output folder
+        if: always() && hashFiles('output/**/*') != ''
+        uses: actions/upload-artifact@v7
+        with:
+          name: ig-output-${{ github.run_number }}
+          path: output/
+          retention-days: 30
+          if-no-files-found: warn
