@@ -48,8 +48,8 @@ jobs:
       - name: Check QA report
         run: |
           # Configuration
-          MAX_ALLOWED_ERRORS=5
-          MAX_ALLOWED_WARNINGS=72
+          MAX_ALLOWED_ERRORS=0
+          MAX_ALLOWED_WARNINGS=33
 
           if [ ! -f "output/qa.json" ]; then
             echo "❌ QA file not found: output/qa.json"
