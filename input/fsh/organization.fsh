@@ -1,3 +1,28 @@
+Profile: SEBaseOrganization
+Parent: Organization
+Title: "SE base profile for organization"
+Description: "This is the base Organization profile to be used when profiling on Organization in a Swedish context"
+* ^status = #active
+* ^experimental = false
+
+* identifier MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice for swedish organization ID"
+* identifier contains hsaid 0..1
+* identifier[hsaid]
+  * system = $hsaid // (exactly)
+  * type = $v2-0203#PRN // (exactly)
+* identifier contains organizationIdentifier 0..1
+* identifier[organizationIdentifier]
+  * system = "urn:oid:2.5.4.97" (exactly)
+  * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX (exactly)
+
+* type MS
+* type from SEBaseOrganizationTypeVS (extensible)
+
+* partOf MS
 
 ValueSet: SEBaseOrganizationTypeVS
 Id: SEBaseOrganizationTypeVS
@@ -6,23 +31,6 @@ Description: "This value sets contains organization types relevant for Swedish h
 * $SCT#43741000 "vårdenhet"
 * $SCT#143591000052106 "vårdgivare"
 
-Profile: SEBaseOrganization
-Parent: Organization
-Title: "SE base profile for organization"
-Description: "This is the base Organization profile to be used when profiling on Organization in a Swedish context"
-* ^status = #active
-* ^experimental = false
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Slice for swedish organization ID"
-* identifier contains hsaid 0..1
-* identifier[hsaid].system = $hsaid // (exactly)
-* identifier[hsaid].type = $v2-0203#PRN // (exactly)
-* identifier contains organizationIdentifier 0..1
-* identifier[organizationIdentifier].system = "urn:oid:2.5.4.97" (exactly)
-* identifier[organizationIdentifier].type = http://terminology.hl7.org/CodeSystem/v2-0203#XX (exactly)
-* type from SEBaseOrganizationTypeVS (extensible)
 
 Instance: OrganizationExample1
 InstanceOf: SEBaseOrganization
