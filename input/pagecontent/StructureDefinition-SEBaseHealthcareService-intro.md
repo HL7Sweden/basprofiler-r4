@@ -5,7 +5,11 @@ This diagramme shows how the resource healthcareService is used in conjunction w
 
 This information is needed to fullfill Swedish regulations concerning sharing of patient information.
 
+**Classdiagram R4**
 {% include SEBaseHealthcareService.svg %}
+
+**Classdiagram R5**
+{% include SEBaseHealthcareServiceR5.svg %}
 
 
 
