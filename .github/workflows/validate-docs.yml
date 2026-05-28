@@ -47,9 +47,14 @@ jobs:
 
       - name: Check QA report
         run: |
-          # Configuration
-          MAX_ALLOWED_ERRORS=0
-          MAX_ALLOWED_WARNINGS=33
+          # Thresholds are kept in qa-thresholds.json so the workflow stays
+          # independent of the quality progress in various branches.
+          if [ ! -f "qa-thresholds.json" ]; then
+            echo "❌ Threshold file not found: qa-thresholds.json"
+            exit 1
+          fi
+          MAX_ALLOWED_ERRORS=$(jq -r '.max_allowed_errors' qa-thresholds.json)
+          MAX_ALLOWED_WARNINGS=$(jq -r '.max_allowed_warnings' qa-thresholds.json)
 
           if [ ! -f "output/qa.json" ]; then
             echo "❌ QA file not found: output/qa.json"
