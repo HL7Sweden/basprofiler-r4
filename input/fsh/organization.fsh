@@ -16,7 +16,7 @@ Description: "This is the base Organization profile to be used when profiling on
 * identifier contains organizationIdentifier 0..1
 * identifier[organizationIdentifier]
   * system = "urn:oid:2.5.4.97" (exactly)
-  * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX (exactly)
+  * type = $v2-0203#XX (exactly)
 
 * type from SEBaseOrganizationTypeVS (extensible)
 
