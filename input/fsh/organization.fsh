@@ -24,6 +24,7 @@ ValueSet: SEBaseOrganizationTypeVS
 Id: SEBaseOrganizationTypeVS
 Title: "SE ValueSet for organization types"
 Description: "This value sets contains organization types relevant for Swedish healthcare"
+* ^experimental = false
 * $SCT#43741000 "vårdenhet"
 * $SCT#143591000052106 "vårdgivare"
 
