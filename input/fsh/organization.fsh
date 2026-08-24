@@ -5,7 +5,6 @@ Description: "This is the base Organization profile to be used when profiling on
 * ^status = #active
 * ^experimental = false
 
-* identifier MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -19,10 +18,7 @@ Description: "This is the base Organization profile to be used when profiling on
   * system = "urn:oid:2.5.4.97" (exactly)
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#XX (exactly)
 
-* type MS
 * type from SEBaseOrganizationTypeVS (extensible)
-
-* partOf MS
 
 ValueSet: SEBaseOrganizationTypeVS
 Id: SEBaseOrganizationTypeVS
