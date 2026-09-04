@@ -4,7 +4,7 @@ Download the entire implementation guide [here](full-ig.zip).
 
 ### NPM Package and Definitions
 
-The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc. defined as part of this Implementation Guide:
+The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc. defined as part of this implementation guide:
 
 - [NPM Package](package.tgz)
 
@@ -19,7 +19,7 @@ These files should be the first choice whenever generating any implementation ar
 
 ### Examples
 
-All of the examples that are used in this Implementation Guide are available for download:
+All of the examples that are used in this implementation guide are available for download:
 
 - [XML](examples.xml.zip)
 - [JSON](examples.json.zip)
