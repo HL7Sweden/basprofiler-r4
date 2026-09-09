@@ -1,0 +1,37 @@
+{
+  "id" : "ValueSet-SEBaseSOSNYKVS",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "sv",
+    "entries" : [{
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "SEBaseSOSNYKVS",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "HL7 Sweden",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "HL7 Sweden",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc.",
+      "target" : null
+    }]
+  }]
+}

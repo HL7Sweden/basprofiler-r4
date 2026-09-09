@@ -1,0 +1,51 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "SEBaseAddressPersonVS"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "SE ValueSet for official address types"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "HL7 Sweden"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "HL7 Sweden"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "This is the ValueSet for address type in accordance with the Swedish authorities"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "http://snomed.info/sct/45991000052106"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "särskild postadress"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "folkbokföringsadress"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "utlandsadress"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "uppgiven adress"
+msgstr ""
+

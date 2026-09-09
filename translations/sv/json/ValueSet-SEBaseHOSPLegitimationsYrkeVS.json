@@ -1,0 +1,37 @@
+{
+  "id" : "ValueSet-SEBaseHOSPLegitimationsYrkeVS",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "sv",
+    "entries" : [{
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "SEBaseHOSPLegitimationsYrkeVS",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "ValueSet for certification occupation from HOSP",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "HL7 Sweden",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "HL7 Sweden",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "Certified occupations as listed in the Register of Authorised Healthcare Professionals (HOSP)",
+      "target" : null
+    }]
+  }]
+}

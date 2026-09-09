@@ -1,0 +1,37 @@
+{
+  "id" : "ValueSet-SEBaseHSAVerksamhetVS",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "sv",
+    "entries" : [{
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "SEBaseHSAVerksamhetVS",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "HSA valueset for business classification codes",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "HL7 Sweden",
+      "target" : null
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "HL7 Sweden",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "Codes used to describe the type of care activities an entity can provide.",
+      "target" : null
+    }]
+  }]
+}

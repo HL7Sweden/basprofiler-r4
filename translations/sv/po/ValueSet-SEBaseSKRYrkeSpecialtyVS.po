@@ -1,0 +1,46 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "SEBaseSKRYrkeSpecialtyVS"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "SKR ValueSet for clinical specialties"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "HL7 Sweden"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "HL7 Sweden"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "SKR ValueSet for clinical specialties"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "http://snomed.info/sct/45991000052106"
+msgstr ""
+
+# ValueSet.compose.include.filter.value
+#: ValueSet.compose.include.filter.value
+msgid "67051000052103"
+msgstr ""
+
+# ValueSet.compose.include.filter.value
+#: ValueSet.compose.include.filter.value
+msgid "67081000052106"
+msgstr ""
+
+# ValueSet.compose.include.filter.value
+#: ValueSet.compose.include.filter.value
+msgid "67071000052109"
+msgstr ""
+

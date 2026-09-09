@@ -1,0 +1,46 @@
+
+# CodeSystem.name
+#: CodeSystem.name
+msgid "SecurityLabelCS"
+msgstr ""
+
+# CodeSystem.title
+#: CodeSystem.title
+msgid "SE CodeSystem security labels"
+msgstr ""
+
+# CodeSystem.publisher
+#: CodeSystem.publisher
+msgid "HL7 Sweden"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "HL7 Sweden"
+msgstr ""
+
+# CodeSystem.description
+#: CodeSystem.description
+msgid "This is the CodeSystem for security labels in accordance with the swedish authorities"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Sekretessmarkering"
+msgstr ""
+
+# CodeSystem.concept.definition
+#: CodeSystem.concept.definition
+msgid "Protected demographic information according to 22 kap. 1 § OSL (Offentlighets- och sekretesslagen)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Skyddad folkbokföring"
+msgstr ""
+
+# CodeSystem.concept.definition
+#: CodeSystem.concept.definition
+msgid "Protected demographic information according to Skatteverket"
+msgstr ""
+

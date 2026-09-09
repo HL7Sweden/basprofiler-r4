@@ -1,0 +1,41 @@
+
+# HumanName.text
+#: HumanName.text
+msgid "Katja Hennig"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "Hennig"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Katja"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "folkbokföringsadress"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Södra vägen 5"
+msgstr ""
+
+# Address.city
+#: Address.city
+msgid "Trollhättan"
+msgstr ""
+
+# Address.postalCode
+#: Address.postalCode
+msgid "46144"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Unmarried"
+msgstr ""
+

@@ -1,0 +1,26 @@
+
+# HumanName.text
+#: HumanName.text
+msgid "John Bob Goode Johansson"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "Goode Johansson"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "John"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Bob"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "barnmorska"
+msgstr ""
+

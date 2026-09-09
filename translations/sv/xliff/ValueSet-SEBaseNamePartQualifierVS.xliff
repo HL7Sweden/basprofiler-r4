@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="ValueSet-SEBaseNamePartQualifierVS" original="Resource ValueSet-SEBaseNamePartQualifierVS" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-SEBaseNamePartQualifierVS" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>SEBaseNamePartQualifierVS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseNamePartQualifierVS" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>SE ValueSet for preferred name</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseNamePartQualifierVS" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseNamePartQualifierVS" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseNamePartQualifierVS" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseNamePartQualifierVS" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>Call me</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

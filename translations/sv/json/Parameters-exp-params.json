@@ -1,0 +1,13 @@
+{
+  "id" : "Parameters-exp-params",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "sv",
+    "entries" : [{
+      "id" : "Parameters.parameter.name",
+      "context" : "Parameters.parameter.name",
+      "source" : "system-version",
+      "target" : null
+    }]
+  }]
+}

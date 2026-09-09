@@ -1,0 +1,71 @@
+
+# HumanName.text
+#: HumanName.text
+msgid "Förnamn Mellannamn Efternamn"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "Mellannamn Efternamn"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Förnamn"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "uppgiven adress"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "C/O"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Adressrad 1 (Mer än 35 tecken)"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Adressrad 2 (Fler än 35 tecken)"
+msgstr ""
+
+# Address.city
+#: Address.city
+msgid "Orten"
+msgstr ""
+
+# Address.postalCode
+#: Address.postalCode
+msgid "54300"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "utlandsadress"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Adressrad 1"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Adressrad 2"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Adressrad 3"
+msgstr ""
+
+# Address.country
+#: Address.country
+msgid "DZ"
+msgstr ""
+

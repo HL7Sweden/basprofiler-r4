@@ -1,0 +1,55 @@
+{
+  "id" : "Patient-PatientExample200302022389",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "sv",
+    "entries" : [{
+      "id" : "HumanName.text",
+      "context" : "HumanName.text",
+      "source" : "Katja Hennig",
+      "target" : null
+    },
+    {
+      "id" : "HumanName.family",
+      "context" : "HumanName.family",
+      "source" : "Hennig",
+      "target" : null
+    },
+    {
+      "id" : "HumanName.given",
+      "context" : "HumanName.given",
+      "source" : "Katja",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "folkbokföringsadress",
+      "target" : null
+    },
+    {
+      "id" : "Address.line",
+      "context" : "Address.line",
+      "source" : "Södra vägen 5",
+      "target" : null
+    },
+    {
+      "id" : "Address.city",
+      "context" : "Address.city",
+      "source" : "Trollhättan",
+      "target" : null
+    },
+    {
+      "id" : "Address.postalCode",
+      "context" : "Address.postalCode",
+      "source" : "46144",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Unmarried",
+      "target" : null
+    }]
+  }]
+}

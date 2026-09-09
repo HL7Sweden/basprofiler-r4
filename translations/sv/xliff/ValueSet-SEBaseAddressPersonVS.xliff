@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="ValueSet-SEBaseAddressPersonVS" original="Resource ValueSet-SEBaseAddressPersonVS" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>SEBaseAddressPersonVS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>SE ValueSet for official address types</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>This is the ValueSet for address type in accordance with the Swedish authorities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>http://snomed.info/sct/45991000052106</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>särskild postadress</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>folkbokföringsadress</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>utlandsadress</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseAddressPersonVS" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>uppgiven adress</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

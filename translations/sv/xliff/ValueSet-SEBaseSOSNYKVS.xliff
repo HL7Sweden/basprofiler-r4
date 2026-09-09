@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="ValueSet-SEBaseSOSNYKVS" original="Resource ValueSet-SEBaseSOSNYKVS" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-SEBaseSOSNYKVS" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>SEBaseSOSNYKVS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSOSNYKVS" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSOSNYKVS" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSOSNYKVS" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSOSNYKVS" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

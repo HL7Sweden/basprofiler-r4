@@ -1,0 +1,26 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "SEBaseSOSNYKVS"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "HL7 Sweden"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "HL7 Sweden"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc."
+msgstr ""
+

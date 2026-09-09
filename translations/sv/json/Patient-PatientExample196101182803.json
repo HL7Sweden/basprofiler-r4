@@ -1,0 +1,61 @@
+{
+  "id" : "Patient-PatientExample196101182803",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "sv",
+    "entries" : [{
+      "id" : "HumanName.text",
+      "context" : "HumanName.text",
+      "source" : "Maria Ljungberg",
+      "target" : null
+    },
+    {
+      "id" : "HumanName.family",
+      "context" : "HumanName.family",
+      "source" : "Ljungberg",
+      "target" : null
+    },
+    {
+      "id" : "HumanName.given",
+      "context" : "HumanName.given",
+      "source" : "Maria",
+      "target" : null
+    },
+    {
+      "id" : "HumanName.given",
+      "context" : "HumanName.given",
+      "source" : "Birgitta",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "folkbokföringsadress",
+      "target" : null
+    },
+    {
+      "id" : "Address.line",
+      "context" : "Address.line",
+      "source" : "Vänervägen 7",
+      "target" : null
+    },
+    {
+      "id" : "Address.city",
+      "context" : "Address.city",
+      "source" : "VÄSTRA FRÖLUNDA",
+      "target" : null
+    },
+    {
+      "id" : "Address.postalCode",
+      "context" : "Address.postalCode",
+      "source" : "42140",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Married",
+      "target" : null
+    }]
+  }]
+}

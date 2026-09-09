@@ -1,0 +1,582 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="ImplementationGuide-hl7se.fhir.base" original="Resource ImplementationGuide-hl7se.fhir.base" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.name">
+             <notes>
+               <note id="n1">ImplementationGuide.name</note>
+             </notes>
+        <source>SEBaseProfileImplementationGuide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.title">
+             <notes>
+               <note id="n1">ImplementationGuide.title</note>
+             </notes>
+        <source>Swedish Base Profiles Implementation Guide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.publisher">
+             <notes>
+               <note id="n1">ImplementationGuide.publisher</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.description">
+             <notes>
+               <note id="n1">ImplementationGuide.description</note>
+             </notes>
+        <source>Implementation Guide for Swedish Base Profiles</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Condition with ICD-11 code</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Profile of Condition that requires the code to use ICD-11 (MMS) codes.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>HSA valueset for business classification codes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Codes used to describe the type of care activities an entity can provide.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>ICD-11 (MMS) Value Set</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Value set for ICD-11 (MMS) codes, sourced from the WHO ICD-11 MMS release.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>OrganizationExample1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Organization example</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Parameters for Terminology selection of SNOMED CT-SE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This parameter resource is used to specify the system version of SNOMED CT-SE to be used in the terminology service.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Patient example</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample189002029800</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by personnummer 189002029800.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample189602029812</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by personnummer 189602029812.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample196101182803</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by personnummer 196101182803.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample196109732393</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by samordningsnummer 196109732393.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample199002222397</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by personnummer 199002222397.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample200001252386</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by personnummer 200001252386.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample200302022389</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by personnummer 200302022389.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample20210325K069</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by nationellt reservnummer 20210325K069.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PatientExample98240301AA06</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Example patient identified by nationellt reservnummer 98240301AA06.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>PractitionerExample1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Practitioner example</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Profile for LMA number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This profile is to be used specifically for expressing an LMA number as an identifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE base profil for patient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the base Patient profile to be used when profiling on Patient in a Swedish context</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE base profil for practitioner role</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the base Practitioner Role profile to be used when profiling on Practitioner Role in a Swedish context</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE base profile for organization</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the base Organization profile to be used when profiling on Organization in a Swedish context</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE base profile for practitioner</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the base Practitioner profile to be used when profiling on Practitioner in a Swedish context</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE CodeSystem for marital status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the CodeSystem for marital status in accordance with the Swedish authorities (Skatteverket Navet)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE CodeSystem security labels</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the CodeSystem for security labels in accordance with the swedish authorities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE extension for official address types</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This extension defines the official ValueSet to be used when expressing address type in accordance with the Swedish authorities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE extension för explicit efternamn</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>The extension is used in the base profile for Swedish Patient to explicity express which part of the name is used as the family name.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE extension för mellannamn</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>The extension is used in the base profile for Swedish Patient to express the middle name that a person born before 2017 can have</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE ValueSet for marital status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is a value set of marital status types that include both the HL7 official codesystem and the ones specific from the Swedish authorities.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE ValueSet for official address types</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the ValueSet for address type in accordance with the Swedish authorities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE ValueSet for preferred name</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the ValueSet for a code used on the name that is the preferred name. I.e, the name that is the official name the person would like to be called by according to the national person registry</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SE ValueSet security labels</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This is the ValueSet for security labels in accordance with the swedish authorities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SEBaseHumanName</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This profile provides the use of Swedish middlename and own family name as extensions and is used in the base Patient profile</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SKR ValueSet for clinical specialties</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SKR ValueSet for clinical specialties</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>SKR ValueSet for occupations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SKR ValueSet for occupations</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>ValueSet for certification occupation from HOSP</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Certified occupations as listed in the Register of Authorised Healthcare Professionals (HOSP)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Valueset for HSA occupational positions in healthcare</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>The code system is used in the data element 'paTitleCode' in the HSA catalogue</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>ValueSet for occupation codes from the National Board of Health and Welfare (SOSNYK)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>The code system for professional categories is developed to be used in digital documentation, for reporting to registers, etc.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Table of Contents</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Home</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Profiles</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Valuesets</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-hl7se.fhir.base" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Extensions</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

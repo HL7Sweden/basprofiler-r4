@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="ValueSet-SEBaseSKRYrkeSpecialtyVS" original="Resource ValueSet-SEBaseSKRYrkeSpecialtyVS" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>SEBaseSKRYrkeSpecialtyVS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>SKR ValueSet for clinical specialties</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>SKR ValueSet for clinical specialties</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>http://snomed.info/sct/45991000052106</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.compose.include.filter.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.filter.value</note>
+             </notes>
+        <source>67051000052103</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.compose.include.filter.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.filter.value</note>
+             </notes>
+        <source>67081000052106</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-SEBaseSKRYrkeSpecialtyVS" resname="ValueSet.compose.include.filter.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.filter.value</note>
+             </notes>
+        <source>67071000052109</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="Patient-PatientExample98240301AA06" original="Resource Patient-PatientExample98240301AA06" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="HumanName.text">
+             <notes>
+               <note id="n1">HumanName.text</note>
+             </notes>
+        <source>Förnamn Mellannamn Efternamn</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>Mellannamn Efternamn</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Förnamn</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>uppgiven adress</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>C/O</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Adressrad 1 (Mer än 35 tecken)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Adressrad 2 (Fler än 35 tecken)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.city">
+             <notes>
+               <note id="n1">Address.city</note>
+             </notes>
+        <source>Orten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.postalCode">
+             <notes>
+               <note id="n1">Address.postalCode</note>
+             </notes>
+        <source>54300</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>utlandsadress</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Adressrad 1</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Adressrad 2</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Adressrad 3</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample98240301AA06" resname="Address.country">
+             <notes>
+               <note id="n1">Address.country</note>
+             </notes>
+        <source>DZ</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

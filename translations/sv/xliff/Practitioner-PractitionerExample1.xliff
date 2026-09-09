@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="Practitioner-PractitionerExample1" original="Resource Practitioner-PractitionerExample1" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Practitioner-PractitionerExample1" resname="HumanName.text">
+             <notes>
+               <note id="n1">HumanName.text</note>
+             </notes>
+        <source>John Bob Goode Johansson</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Practitioner-PractitionerExample1" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>Goode Johansson</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Practitioner-PractitionerExample1" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>John</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Practitioner-PractitionerExample1" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Bob</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Practitioner-PractitionerExample1" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>barnmorska</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

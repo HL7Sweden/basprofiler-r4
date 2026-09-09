@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="Parameters-exp-params" original="Resource Parameters-exp-params" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Parameters-exp-params" resname="Parameters.parameter.name">
+             <notes>
+               <note id="n1">Parameters.parameter.name</note>
+             </notes>
+        <source>system-version</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,46 @@
+
+# HumanName.text
+#: HumanName.text
+msgid "Maria Ljungberg"
+msgstr ""
+
+# HumanName.family
+#: HumanName.family
+msgid "Ljungberg"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Maria"
+msgstr ""
+
+# HumanName.given
+#: HumanName.given
+msgid "Birgitta"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "folkbokföringsadress"
+msgstr ""
+
+# Address.line
+#: Address.line
+msgid "Vänervägen 7"
+msgstr ""
+
+# Address.city
+#: Address.city
+msgid "VÄSTRA FRÖLUNDA"
+msgstr ""
+
+# Address.postalCode
+#: Address.postalCode
+msgid "42140"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Married"
+msgstr ""
+

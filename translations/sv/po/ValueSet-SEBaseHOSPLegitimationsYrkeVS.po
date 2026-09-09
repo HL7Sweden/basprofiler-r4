@@ -1,0 +1,26 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "SEBaseHOSPLegitimationsYrkeVS"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "ValueSet for certification occupation from HOSP"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "HL7 Sweden"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "HL7 Sweden"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "Certified occupations as listed in the Register of Authorised Healthcare Professionals (HOSP)"
+msgstr ""
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="ValueSet-icd11-vs" original="Resource ValueSet-icd11-vs" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-icd11-vs" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>ICD11VS</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-icd11-vs" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>ICD-11 (MMS) Value Set</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-icd11-vs" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-icd11-vs" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>HL7 Sweden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-icd11-vs" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>Value set for ICD-11 (MMS) codes, sourced from the WHO ICD-11 MMS release.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

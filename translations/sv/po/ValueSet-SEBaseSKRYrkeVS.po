@@ -1,0 +1,41 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "SEBaseSKRYrkeVS"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "SKR ValueSet for occupations"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "HL7 Sweden"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "HL7 Sweden"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "SKR ValueSet for occupations"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "http://snomed.info/sct/45991000052106"
+msgstr ""
+
+# ValueSet.compose.include.filter.value
+#: ValueSet.compose.include.filter.value
+msgid "67031000052107"
+msgstr ""
+
+# ValueSet.compose.include.filter.value
+#: ValueSet.compose.include.filter.value
+msgid "68591000052102"
+msgstr ""
+

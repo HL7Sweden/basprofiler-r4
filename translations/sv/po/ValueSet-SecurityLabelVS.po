@@ -1,0 +1,26 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "SecurityLabelVS"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "SE ValueSet security labels"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "HL7 Sweden"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "HL7 Sweden"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "This is the ValueSet for security labels in accordance with the swedish authorities"
+msgstr ""
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="sv" id="Patient-PatientExample189002029800" original="Resource Patient-PatientExample189002029800" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Patient-PatientExample189002029800" resname="HumanName.text">
+             <notes>
+               <note id="n1">HumanName.text</note>
+             </notes>
+        <source>Albertina VGR Hammar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample189002029800" resname="HumanName.family">
+             <notes>
+               <note id="n1">HumanName.family</note>
+             </notes>
+        <source>VGR Hammar</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample189002029800" resname="HumanName.given">
+             <notes>
+               <note id="n1">HumanName.given</note>
+             </notes>
+        <source>Albertina</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample189002029800" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>folkbokföringsadress</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample189002029800" resname="Address.line">
+             <notes>
+               <note id="n1">Address.line</note>
+             </notes>
+        <source>Haga Östergata</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample189002029800" resname="Address.city">
+             <notes>
+               <note id="n1">Address.city</note>
+             </notes>
+        <source>GÖTEBORG</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample189002029800" resname="Address.postalCode">
+             <notes>
+               <note id="n1">Address.postalCode</note>
+             </notes>
+        <source>41301</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Patient-PatientExample189002029800" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Married</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
