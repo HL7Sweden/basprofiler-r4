@@ -1,5 +1,6 @@
 ValueSet: SEBaseSKRYrkeVS
 Title: "ValueSet for occuptation by SKR (Kodverk för yrken i hälso- och sjukvården)"
+Description: "ValueSet for occuptation by SKR (Kodverk för yrken i hälso- och sjukvården)"
 // imported 2026-07-30 from https://kunskapsstyrningvard.se/kunskapsstyrningvard/programomradenochsamverkansgrupper/nationellasamverkansgrupper/nsghalsodata/struktureradvardinformation/kodverkforyrkenihalsoochsjukvarden.95152.html
 
 * insert SNOMEDCopyrightForVS
