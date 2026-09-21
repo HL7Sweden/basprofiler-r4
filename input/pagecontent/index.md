@@ -1,6 +1,9 @@
 ### HL7 FHIR version R4 base profiles for Sweden
-This FHIR implementation guide is published by HL7 Sweden and expresses the base profiles and extensions of FHIR resourses that are widely used in Sweden. The implementations guide is a description of the lowerst common denominator in adjustesments that needs to be made on the FHIR standard for applying it in a Swedish context. The profiles in this IG can be used without an further altering, but in most cases it is probably neccesary (and recommended) to make further adjustments in accordance with your applicable use case.
-The extenstions on the other hand will often be useful without further alteration.
+This FHIR implementation guide is published by HL7 Sweden and expresses the base profiles and extensions of FHIR resourses that are widely used in Sweden. The implementations guide is a description of the lowest common denominator in adjustments for applying FHIR in a Swedish context.
+
+The profiles in this IG can be used without a further altering, but in most cases it is probably necessary (and recommended) to make further
+adjustments in accordance with your applicable use case.
+The extensions may be useful without further alteration.
 
 <!---
 Denna implementationsguide publiceras av HL7 Sverige och samlar de grundläggande profileringar och utökningar av FHIR resurser som har bred användning i Sverige. I guiden beskrivs minsta gemensamma nämnare i förändingar som behöver göras på FHIR standarden för tillämpning i ett svenskt sammanhang. Profilerna kan användas utan vidare förändingar men det är antagligen nödvändigt (och rekommenderat) att anpassa dessa genom ytterligare profilering för att bättre passa tänkt användning.
@@ -14,9 +17,9 @@ Framtagandet av dessa basprofiler och utökningar genomförs av en arbetsgrupp u
 -->
 
 ### Getting involved
-Work on this implementation guide is coordinated through HL7 Sweden's open meetings and working groups. The base profiles working group meets regularly, and the monthly Samordningsmöte (coordination meeting) is open to anyone interested in Swedish FHIR work.
+The work is coordinated through HL7 Sweden's meetings and working groups. All meetings are fully open to participation and anyone interested in FHIR in Sweden are welcome to join.
 
-For meeting cadence, joining instructions, and other communication channels, see the HL7 Sweden [Meetings page](https://confluence.hl7.org/spaces/HS/pages/248875365/Meetings). General enquiries can be sent to <info@hl7.se>.
+For meeting cadence, joining instructions, and other communication channels, find more info at [HL7 Sweden](https://hl7.se). General enquiries can be sent to <info@hl7.se>.
 
 ### Raising issues
 Issues, errata, and change requests against this implementation guide are tracked on GitHub at <https://github.com/HL7Sweden/basprofiler-r4/issues>. To raise an issue, open a new issue in that tracker; please include the affected resource, the IG version, and a clear description of the problem or proposal.
@@ -25,8 +28,6 @@ For general questions or discussion that are not issues against the specificatio
 
 ### Security, safety, and privacy
 This implementation guide defines structural profiles, extensions, value sets, and code systems only. It does not specify exchange protocols, authentication, authorisation, or audit mechanisms, and it does not itself process or transmit personal data. Implementers remain responsible for applying appropriate security, safety, and privacy controls in their own systems, including (but not limited to) compliance with the EU General Data Protection Regulation (GDPR), the Swedish Patient Data Act, Patientdatalag (2008:355), and any sector-specific requirements that apply to their deployment.
-
-The Swedish personal identity number (`personnummer`) and other identifiers profiled in this guide are sensitive personal data under Swedish law. Implementations using these profiles must ensure that storage, transmission, access control, and audit logging meet the applicable legal and organisational requirements.
 
 No security, safety, or privacy issues specific to the artefacts in this implementation guide are currently known. To report a suspected security, safety, or privacy issue, open an issue at <https://github.com/HL7Sweden/basprofiler-r4/issues>; if the issue is sensitive and should not be disclosed publicly, contact HL7 Sweden directly at <info@hl7.se> instead.
 
