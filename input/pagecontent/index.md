@@ -17,7 +17,7 @@ Framtagandet av dessa basprofiler och utökningar genomförs av en arbetsgrupp u
 -->
 
 ### Getting involved
-The work is coordinated through HL7 Sweden's meetings and working groups. All meetings are fully open to participation and anyone interested in FHIR in Sweden are welcome to join.
+The work is coordinated through HL7 Sweden's meetings and working groups. All meetings are fully open to participation and everyone interested in FHIR in Sweden are welcome to join.
 
 For meeting cadence, joining instructions, and other communication channels, find more info at [HL7 Sweden](https://hl7.se). General enquiries can be sent to <info@hl7.se>.
 
