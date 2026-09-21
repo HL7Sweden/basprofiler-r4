@@ -1,8 +1,7 @@
-# basprofiler-r4
-Repository for suggested Swedish base profiles withing the r4 release
+# Basprofiler-r4
+Repository for national Swedish base profiles.
 
 CI Build: http://build.fhir.org/ig/HL7Sweden/basprofiler-r4/
-
 
 Release process
 Prereq: https://github.com/HL7/fhir-ig-history-template.git and https://github.com/FHIR/ig-registry.git have been added as git submodules. Ensure they have been retrieved before running `npm run build`
