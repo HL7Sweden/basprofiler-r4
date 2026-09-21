@@ -22,14 +22,14 @@ Usage: #example
   * family = "Goode Johansson"
   * text = "John Bob Goode Johansson"
 * gender = #male
-* maritalStatus = SEBaseMaritalStatusCS#RP "Registrerad partner"
+* maritalStatus = SEBaseMaritalStatusCS#RP // "Registrerad partner"
 * birthDate = "1950-09-07"
 * address
   * line = "2120 S Michigan Ave"
   * city = "Chicago"
   * postalCode = "60616"
   * country = "US"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 // "utlandsadress"
 
 /*
     Example patient Maria Ljungberg
@@ -56,8 +56,8 @@ Usage: #example
   * line = "Vänervägen 7"
   * city = "VÄSTRA FRÖLUNDA"
   * postalCode = "42140"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 "folkbokföringsadress"
-* maritalStatus = $v3-MaritalStatus#M "Married"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 // "folkbokföringsadress"
+* maritalStatus = $v3-MaritalStatus#M // "Married"
 
 /*
     Example patient Albertina VGR Hammar
@@ -85,8 +85,8 @@ Usage: #example
   * line = "Haga Östergata"
   * city = "GÖTEBORG"
   * postalCode = "41301"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 "folkbokföringsadress"
-* maritalStatus = $v3-MaritalStatus#M "Married"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 // "folkbokföringsadress"
+* maritalStatus = $v3-MaritalStatus#M // "Married"
 
 /*
     Example patient Katja Hennig
@@ -112,8 +112,8 @@ Usage: #example
   * line = "Södra vägen 5"
   * city = "Trollhättan"
   * postalCode = "46144"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 "folkbokföringsadress"
-* maritalStatus = $v3-MaritalStatus#U "Unmarried"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63381000052101 // "folkbokföringsadress"
+* maritalStatus = $v3-MaritalStatus#U // "Unmarried"
 
 /*
     Example patient Andreas Ebers
@@ -140,8 +140,8 @@ Usage: #example
   * line[+] = "Van Kampenstraat"
   * line[+] = "7558 Hengelo"
   * country = "Nederländerna"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
-* maritalStatus = $v3-MaritalStatus#U "Unmarried"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 // "utlandsadress"
+* maritalStatus = $v3-MaritalStatus#U // "Unmarried"
 
 /*
     Example patient PROTECTED demographic information (sekretessmarkering)
@@ -170,7 +170,7 @@ Usage: #example
   * line[+] = "Box 2820"
   * city = "GÖTEBORG"
   * postalCode = "40320"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 "särskild postadress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 // "särskild postadress"
 
 /*
     Example patient PROTECTED demographic information (skyddadFolkbokforing)
@@ -199,7 +199,7 @@ Usage: #example
   * line[+] = "Box 2820"
   * city = "GÖTEBORG"
   * postalCode = "40320"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 "särskild postadress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 //"särskild postadress"
 
 /*
     Example patient Nationellt Reservnummer
@@ -227,13 +227,13 @@ Usage: #example
   * line[+] = "Adressrad 2 (Fler än 35 tecken)"
   * city = "Orten"
   * postalCode = "54300"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63411000052104 "uppgiven adress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63411000052104 // "uppgiven adress"
 * address[+]
   * line[+] = "Adressrad 1"
   * line[+] = "Adressrad 2"
   * line[+] = "Adressrad 3"
   * country = "DZ"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 // "utlandsadress"
 
 /*
     Example patient Nationellt Reservnummer
@@ -260,13 +260,13 @@ Usage: #example
   * line[+] = "Tillfällig adressrad"
   * city = "Orten"
   * postalCode = "54300"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63411000052104 "uppgiven adress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63411000052104 // "uppgiven adress"
 * address[+]
   * line[+] = "Adressrad 1"
   * line[+] = "Adressrad 2"
   * line[+] = "Adressrad 3"
   * country = "DZ"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 "utlandsadress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63401000052101 // "utlandsadress"
 
 /*
     Example patient identified by SKV samordningsnummer 196109732393
@@ -289,4 +289,4 @@ Usage: #example
   * line[+] = "SANDÅSGATAN 2"
   * city = "STOCKHOLM"
   * postalCode = "11327"
-  * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 "särskild postadress"
+  * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 // "särskild postadress"
