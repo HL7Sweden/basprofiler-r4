@@ -2,7 +2,7 @@ Alias: $hsaid = urn:oid:1.2.752.29.4.19
 Alias: $legitimation = urn:oid:1.2.752.116.3.1.1
 Alias: $LMA-nummer = http://electronichealth.se/identifier/LMA-nummer
 Alias: $nationelltReservnummer = http://electronichealth.se/identifier/nationelltReservnummer
-Alias: $occupational-positions = urn:oid:1.2.759.129.2.2.1.4
+Alias: $occupational-positions = urn:oid:1.2.752.129.2.2.1.4
 Alias: $occupations = urn:oid:1.2.752.116.3.1.3
 Alias: $personnummer = http://electronichealth.se/identifier/personnummer
 Alias: $prescriber = urn:oid:1.2.752.116.3.1.2
@@ -14,3 +14,4 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias: $v3-EntityNamePartQualifierR2 = http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2
+
