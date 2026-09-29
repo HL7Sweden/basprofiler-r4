@@ -5,3 +5,5 @@ Description: "This parameter resource is used to specify the system version of S
 Usage: #definition
 * parameter[+].name = "system-version"
 * parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/45991000052106"
+* parameter[+].name = "displayLanguage"
+* parameter[=].valueCode = urn:ietf:bcp:47#sv-SE
