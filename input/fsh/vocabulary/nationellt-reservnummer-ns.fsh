@@ -2,7 +2,7 @@ Instance: NationelltReservnummerNS
 InstanceOf: NamingSystem
 Title: "Nationellt Reservnummer NamingSystem"
 Usage: #definition
-Description: "NamingSystem for the Swedish national reserve identifier (nationellt reservnummer, NRID), an identifier issued by Inera for individuals who need to be identified in healthcare or administrative systems."y
+Description: "NamingSystem for the Swedish national reserve identifier (nationellt reservnummer, NRID), an identifier issued by Inera for individuals who need to be identified in healthcare or administrative systems."
 
 * name = "NationelltReservnummerNS"
 * status = #active
