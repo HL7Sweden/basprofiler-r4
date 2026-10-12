@@ -13,3 +13,5 @@ node_modules
 .index.json
 package-lock.json
 .index.db
+_build.bat
+_build.sh
