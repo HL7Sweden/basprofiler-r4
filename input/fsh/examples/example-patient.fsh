@@ -290,3 +290,61 @@ Usage: #example
   * city = "STOCKHOLM"
   * postalCode = "11327"
   * extension[officialAddressType].valueCodeableConcept = $SCT#63391000052104 // "särskild postadress"
+
+/*
+    Example patient with a preferred name that is not one of the
+    registered given names. Registered as Vilhelm, called Ville.
+    Identified by SKV test personnummer 201301012397
+*/
+Instance: PatientExample201301012397
+InstanceOf: SEBasePatient
+Title: "PatientExample201301012397"
+Description: "Example patient registered as Vilhelm who prefers to be called Ville, a name that is not one of the registered given names."
+Usage: #example
+* id = "PatientExample201301012397"
+* identifier[personnummer].value = "201301012397"
+* name[+]
+  * use = #official
+  * given[+] = "Vilhelm"
+  * family = "Lindqvist"
+  * text = "Vilhelm Lindqvist"
+* name[+]
+  * use = #usual
+  * given[+] = "Ville"
+  * family = "Lindqvist"
+  * text = "Ville Lindqvist"
+* gender = #male
+* birthDate = "2013-01-01"
+
+/*
+    Example patient whose personnummer changed after a change of legal
+    gender. The earlier personnummer is kept with use = old.
+    SKV test personnummer 198506152381 (earlier) and 198506152399 (current)
+*/
+Instance: PatientExample198506152399
+InstanceOf: SEBasePatient
+Title: "PatientExample198506152399"
+Description: "Example patient with a current personnummer and an earlier one that was replaced after a change of legal gender."
+Usage: #example
+* id = "PatientExample198506152399"
+* identifier[personnummer][+]
+  * use = #official
+  * value = "198506152399"
+  * period.start = "2021-03-15"
+* identifier[personnummer][+]
+  * use = #old
+  * value = "198506152381"
+  * period.end = "2021-03-15"
+* name[+]
+  * use = #official
+  * given[+] = "Alex"
+  * family = "Berg"
+  * text = "Alex Berg"
+* name[+]
+  * use = #old
+  * given[+] = "Alexandra"
+  * family = "Berg"
+  * text = "Alexandra Berg"
+  * period.end = "2021-03-15"
+* gender = #male
+* birthDate = "1985-06-15"
