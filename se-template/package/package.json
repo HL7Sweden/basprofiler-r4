@@ -6,8 +6,8 @@
   "description": "SE FHIR Template",
   "author": "http://hl7.se",
   "canonical": "http://hl7.se.fhir.template",
-  "base": "fhir.base.template",
+  "base": "fhir2.base.template",
   "dependencies": {
-      "fhir.base.template": "current"
+      "fhir2.base.template": "current"
   }
 }
