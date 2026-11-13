@@ -12,16 +12,19 @@ Description: "This is the base Patient profile to be used when profiling on Pati
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice for Swedish patient identifier types"
 * identifier contains
-    personnummer 0..* and
-    samordningsnummer 0..* and
-    nationelltReservnummer 0..*
+    personalIdentityNumber 0..* and
+    coordinationNumber 0..* and
+    nationalReserveNumber 0..*
 * obeys se-base-patient-1
-* identifier[personnummer].system = $personnummer
-* identifier[personnummer] ^comment = "A personnummer can change, for example after a change of legal gender or a corrected date of birth. Earlier numbers are kept with use = old, and at most one personnummer can be current (see se-base-patient-1)."
-* identifier[samordningsnummer].system = $samordningsnummer
-* identifier[samordningsnummer] ^comment = "Earlier samordningsnummer are kept with use = old, and at most one samordningsnummer can be current (see se-base-patient-1)."
-* identifier[nationelltReservnummer].system = $nationelltReservnummer
-* identifier[nationelltReservnummer] ^comment = "Earlier nationella reservnummer are kept with use = old, and at most one nationellt reservnummer can be current (see se-base-patient-1)."
+* identifier[personalIdentityNumber].system = $personnummer
+* identifier[personalIdentityNumber] ^short = "Personnummer"
+* identifier[personalIdentityNumber] ^comment = "A personnummer can change, for example after a change of legal gender or a corrected date of birth. Earlier numbers are kept with use = old, and at most one personnummer can be current (see se-base-patient-1)."
+* identifier[coordinationNumber].system = $samordningsnummer
+* identifier[coordinationNumber] ^short = "Samordningsnummer"
+* identifier[coordinationNumber] ^comment = "Earlier samordningsnummer are kept with use = old, and at most one samordningsnummer can be current (see se-base-patient-1)."
+* identifier[nationalReserveNumber].system = $nationelltReservnummer
+* identifier[nationalReserveNumber] ^short = "Nationellt reservnummer"
+* identifier[nationalReserveNumber] ^comment = "Earlier nationella reservnummer are kept with use = old, and at most one nationellt reservnummer can be current (see se-base-patient-1)."
 //* name.extension contains
 //    SEBasisMiddleNameExtension named middleName 0..1 and
 //    SEBasisOwnFamilyExtension named ownFamily 0..1

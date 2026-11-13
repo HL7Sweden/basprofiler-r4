@@ -11,7 +11,7 @@ Usage: #example
 * meta.security[+] = $v3-ActCode#DEMO
 * meta.security[+] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample1"
-* identifier[personnummer].value = "195009072553"
+* identifier[personalIdentityNumber].value = "195009072553"
 * name
   * extension[middleName].valueString = "Johansson"
   * extension[ownFamily].valueString = "Goode"
@@ -42,7 +42,7 @@ Title: "PatientExample196101182803"
 Description: "Example patient identified by personnummer 196101182803."
 Usage: #example
 * id = "PatientExample196101182803"
-* identifier[personnummer].value = "196101182803"
+* identifier[personalIdentityNumber].value = "196101182803"
 * name
   * given[+] = "Maria"
     * extension[nameQualifier].valueCode = #CL
@@ -71,7 +71,7 @@ Title: "PatientExample189002029800"
 Description: "Example patient identified by personnummer 189002029800."
 Usage: #example
 * id = "PatientExample189002029800"
-* identifier[personnummer].value = "189002029800"
+* identifier[personalIdentityNumber].value = "189002029800"
 * name
   * extension[middleName].valueString = "VGR"
   * extension[ownFamily].valueString = "Hammar"
@@ -100,7 +100,7 @@ Title: "PatientExample200302022389"
 Description: "Example patient identified by personnummer 200302022389."
 Usage: #example
 * id = "PatientExample200302022389"
-* identifier[personnummer].value = "200302022389"
+* identifier[personalIdentityNumber].value = "200302022389"
 * name
   * given[+] = "Katja"
   * use = #official
@@ -127,7 +127,7 @@ Title: "PatientExample199002222397"
 Description: "Example patient identified by personnummer 199002222397."
 Usage: #example
 * id = "PatientExample199002222397"
-* identifier[personnummer].value = "199002222397"
+* identifier[personalIdentityNumber].value = "199002222397"
 * name
   * given[+] = "Andreas"
   * use = #official
@@ -156,7 +156,7 @@ Usage: #example
 * meta.security[+] = $v3-ActCode#DEMO
 * meta.security[+] = SecurityLabelCS#sekretessmarkering
 * id = "PatientExample200001252386"
-* identifier[personnummer].value = "200001252386"
+* identifier[personalIdentityNumber].value = "200001252386"
 * name
   * extension[middleName].valueString = "Skyddad uppgift"
   * given[+] = "Skyddad uppgift"
@@ -185,7 +185,7 @@ Usage: #example
 * meta.security[+] = $v3-ActCode#DEMO
 * meta.security[+] = SecurityLabelCS#skyddadFolkbokforing
 * id = "PatientExample189602029812"
-* identifier[personnummer].value = "189602029812"
+* identifier[personalIdentityNumber].value = "189602029812"
 * name
   * extension[middleName].valueString = "Skyddad uppgift"
   * given[+] = "Skyddad uppgift"
@@ -211,7 +211,7 @@ Title: "PatientExample98240301AA06"
 Description: "Example patient identified by nationellt reservnummer 98240301AA06."
 Usage: #example
 * id = "PatientExample98240301AA06"
-* identifier[nationelltReservnummer].value = "98240301AA06"
+* identifier[nationalReserveNumber].value = "98240301AA06"
 * name
   * extension[middleName].valueString = "Mellannamn"
   * extension[ownFamily].valueString = "Efternamn"
@@ -245,7 +245,7 @@ Title: "PatientExample20210325K069"
 Description: "Example patient identified by nationellt reservnummer 20210325K069."
 Usage: #example
 * id = "PatientExample20210325K069"
-* identifier[nationelltReservnummer].value = "20210325K069"
+* identifier[nationalReserveNumber].value = "20210325K069"
 * name
   * extension[middleName].valueString = "Mellannamn"
   * extension[ownFamily].valueString = "Efternamn"
@@ -277,7 +277,7 @@ Title: "PatientExample196109732393"
 Description: "Example patient identified by samordningsnummer 196109732393."
 Usage: #example
 * id = "PatientExample196109732393"
-* identifier[samordningsnummer].value = "196109732393"
+* identifier[coordinationNumber].value = "196109732393"
 * name
   * given[+] = "Tom"
   * use = #official
@@ -302,7 +302,7 @@ Title: "PatientExample201301012397"
 Description: "Example patient registered as Vilhelm who prefers to be called Ville, a name that is not one of the registered given names."
 Usage: #example
 * id = "PatientExample201301012397"
-* identifier[personnummer].value = "201301012397"
+* identifier[personalIdentityNumber].value = "201301012397"
 * name[+]
   * use = #official
   * given[+] = "Vilhelm"
@@ -327,11 +327,11 @@ Title: "PatientExample198506152399"
 Description: "Example patient with a current personnummer and an earlier one that was replaced after a change of legal gender."
 Usage: #example
 * id = "PatientExample198506152399"
-* identifier[personnummer][+]
+* identifier[personalIdentityNumber][+]
   * use = #official
   * value = "198506152399"
   * period.start = "2021-03-15"
-* identifier[personnummer][+]
+* identifier[personalIdentityNumber][+]
   * use = #old
   * value = "198506152381"
   * period.end = "2021-03-15"
