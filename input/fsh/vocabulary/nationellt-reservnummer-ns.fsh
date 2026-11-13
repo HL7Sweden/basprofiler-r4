@@ -22,7 +22,7 @@ Description: "NamingSystem for the Swedish national reserve identifier (nationel
   * type = #oid
   * value = "1.2.752.74.9.1"
   * preferred = false
-  * comment = "Use the OID type where required for interoperability in contexts where this is the preferred. E.g RIV TA service contracts."
+  * comment = "Use the OID where required for interoperability, e.g. RIV TA service contracts."
 
 * uniqueId[+]
   * type = #uri
