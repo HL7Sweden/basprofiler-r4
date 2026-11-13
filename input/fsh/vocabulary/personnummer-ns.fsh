@@ -22,7 +22,7 @@ Description: "NamingSystem for the Swedish personal identity number (personnumme
   * type = #oid
   * value = "1.2.752.129.2.1.3.1"
   * preferred = false
-  * comment = "Use the OID type where required for interoperability in contexts where this is the preferred. E.g RIV TA service contracts."
+  * comment = "Use the OID where required for interoperability, e.g. RIV TA service contracts."
 
 * uniqueId[+]
   * type = #uri
