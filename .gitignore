@@ -13,3 +13,7 @@ node_modules
 .index.json
 package-lock.json
 .index.db
+
+# Claude Code personal files (may hold secrets)
+**/.claude/settings.local.json
+CLAUDE.local.md
